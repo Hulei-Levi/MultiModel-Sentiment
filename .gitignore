@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 虚拟环境
+.venv*/
+venv/
+env/
+
+# 数据集、模型、权重（大文件）
+datasets/
+work/
+results/
+.cache/
+*.pkl
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.safetensors
+*.whl
+*.tar.xz
+
+# 系统 / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
