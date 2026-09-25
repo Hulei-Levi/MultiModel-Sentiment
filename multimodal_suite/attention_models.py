@@ -264,6 +264,7 @@ class Zheng2022Model(nn.Module):
         union = validate_inputs(features, masks, self.feature_dims, self.max_length)
         masks = {m: masks[m].bool() for m in MODALITIES}
         projected = self.project(features, masks)
+
         x = {m: self.encoders[m](projected[m], masks[m]) for m in MODALITIES}
         # This same latent tensor supplies every decoder, so reconstruction
         # gradients really optimize the common attention/Conv fusion weights.
@@ -271,6 +272,7 @@ class Zheng2022Model(nn.Module):
             fused, paths, pairs = self.fusion(x, masks, return_intermediates=True)
         else:
             fused, paths = self.fusion(x, masks)
+            
         pooled = masked_mean(fused, union)
         logits = self.classifier(pooled)
         auxiliary, reconstructions, losses = {}, {}, {}

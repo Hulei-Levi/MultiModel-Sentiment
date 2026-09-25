@@ -1,5 +1,19 @@
 """Persist the evidence and adaptation scope beside every experiment."""
 MODEL_INFO = {
+    "careflow2026": {
+        "label": "CaReFlow relaxed rectified-flow matching and cyclic information preservation",
+        "fidelity": "official_code_and_paper_checked; cached_feature_classification_and_mask_adaptation",
+        "source": "https://openaccess.thecvf.com/content/CVPR2026/html/Mai_CaReFlow_Cyclic_Adaptive_Rectified_Flow_for_Multimodal_Fusion_CVPR_2026_paper.html",
+        "code": "https://github.com/TmacMai/CaReFlow/tree/5c9f9c7a0bb3f1202ebb3258052da2b99710c565",
+        "supplement": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Mai_CaReFlow_Cyclic_Adaptive_CVPR_2026_supplemental.pdf",
+        "limitations": ["Cached BERT replaces fine-tuned DeBERTa; explicit independent masks and train-only AV standardization replace released preprocessing",
+                        "AV kernel-3 convolutions and mask-aware Transformer use the suite backbone with original slot positions",
+                        "Feature-mean squared error, live forward source and detached Euler velocity inputs follow the released code",
+                        "Backward matching starts from a stochastic same-pair one-step estimate, not the deterministic prediction Euler endpoint",
+                        "Cross-sample proposals use available endpoints with replacement, then discard equal batch indices without refilling",
+                        "MOSI supplement flow weights, margin and pair ratio are starting values; widths, optimizer and multiclass CE/regression MAE are experiment adaptations",
+                        "Missing branches stay zero; backward matching is representation preservation, not raw-media or missing-slot reconstruction"],
+    },
     "emoe2025": {
         "label": "EMOE code-based dense modality routing and online unimodal feature distillation",
         "fidelity": "official_code_checked; cached_feature_classification_and_mask_adaptation",

@@ -25,7 +25,7 @@ from .common import MODALITIES
 from .model_info import MODEL_INFO
 
 MODEL_NAMES = ("ren2021", "zheng2022", "pan2020", "m3er2020", "mfrm2022",
-               "transmodality2020", "memobert2022", "hycon2022", "emoe2025")
+               "transmodality2020", "memobert2022", "hycon2022", "emoe2025", "careflow2026")
 FORMAT = "aligned_multimodal_suite_v1"
 
 
@@ -86,9 +86,10 @@ def create_model(feature_dims, output_dim, max_length, config):
     from .memory_translation import MFRM2022Model, TransModality2020Model
     from .robust_pretraining import M3ER2020Model, MEmoBERT2022Model, HyCon2022Model
     from .emotion_experts import EMOE2025Model
+    from .rectified_flow import CaReFlow2026Model
     classes = dict(zip(MODEL_NAMES, (Ren2021Model, Zheng2022Model, Pan2020Model,
                    M3ER2020Model, MFRM2022Model, TransModality2020Model,
-                   MEmoBERT2022Model, HyCon2022Model, EMOE2025Model)))
+                   MEmoBERT2022Model, HyCon2022Model, EMOE2025Model, CaReFlow2026Model)))
     return classes[config.model_name](feature_dims, output_dim, max_length, config)
 
 
