@@ -219,8 +219,11 @@ def fit_experiment(data, config=None, mask_overrides=None):
     if config.task == "classification" and config.class_weighted_loss:
         counts = np.bincount(datasets["train"].targets, minlength=output_dim)
         class_weights = torch.tensor(len(datasets["train"]) / (output_dim * counts), dtype=torch.float32, device=device)
+    
+    # 计算损失，这里设置两种计算方式，针对分类任务使用CEL，另一个使用L1
     criterion = nn.CrossEntropyLoss(weight=class_weights) if config.task == "classification" else nn.L1Loss()
     optimizer = torch.optim.AdamW(model.parameters(), lr=config.lr, weight_decay=config.weight_decay)
+    
     run_dir = Path(config.output_root).expanduser().resolve() / config.model_name / datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     run_dir.mkdir(parents=True, exist_ok=False)
     _json(run_dir / "config.json", {**asdict(config), "actual_device": str(device),
@@ -345,7 +348,6 @@ def load_experiment_model(checkpoint_path, device=None):
     metadata["normalizers"] = {m: {"mean": v["mean"].numpy(), "std": v["std"].numpy(),
                                    "observed_count": v["observed_count"]} for m, v in metadata["normalizers"].items()}
     return model, metadata
-
 
 def predict_split(model, split, metadata, masks=None, batch_size=32):
     valid = resolve_masks(split, masks)

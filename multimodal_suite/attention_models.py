@@ -198,18 +198,23 @@ class _BidirectionalPairFusion(nn.Module):
 
 
 class _CascadeFusion(nn.Module):
-    """(A,T)->V, (A,V)->T, (T,V)->A, each with two bidirectional blocks."""
+    """
+    这个模块主要给出了三个融合方向，即不同的融合顺序
+    (A,T)->V, (A,V)->T, (T,V)->A, each with two bidirectional blocks.
+    """
     routes = (("audio", "text", "vision"), ("audio", "vision", "text"),
               ("text", "vision", "audio"))
 
     def __init__(self, d_model, nhead, dropout):
         super().__init__()
+        # 从构造上看，先后顺序其实完全没区别，因为他们完全采用了相同的架构，但是这里要注意，注意力使用的是双向的注意力
         self.first = nn.ModuleList([
             _BidirectionalPairFusion(d_model, nhead, dropout) for _ in self.routes
         ])
         self.second = nn.ModuleList([
             _BidirectionalPairFusion(d_model, nhead, dropout) for _ in self.routes
         ])
+
         self.merge = nn.Conv1d(3 * d_model, d_model, kernel_size=1)
 
     def forward(self, x, masks, return_intermediates=False):
@@ -220,11 +225,124 @@ class _CascadeFusion(nn.Module):
             paths.append(triple)
             if return_intermediates:
                 pairs[f"{a}_{b}"] = pair
+        ## 在完成三个方向的融合之后，把这三个方向的特征拼接起来
         fused = self.merge(torch.cat(paths, dim=-1).transpose(1, 2)).transpose(1, 2)
         fused = fused.masked_fill(~union.unsqueeze(-1), 0)
+
         if return_intermediates:
             return fused, paths, pairs
         return fused, paths
+
+class ThisWork(nn.Module):
+    default_auxiliary_weights = {"reconstruction": 0.1}
+    default_pretrain_epochs = 3
+
+    def __init__(self, feature_dims, output_dim, max_length, config):
+        super().__init__()
+        d = config.d_model
+        head_hidden = 64
+
+        self.feature_dims = dict(feature_dims)
+        self.max_length = max_length
+        self.project = ProjectedInputs(feature_dims, d, config.dropout)
+        self.encoders = nn.ModuleDict({m: _ResidualSequenceEncoder(d, config.nhead, config.dropout)
+                                      for m in MODALITIES})
+        self.fusion = _CascadeFusion(d, config.nhead, config.dropout)
+        self.decoders = nn.ModuleDict({m: nn.Sequential(
+            nn.Linear(d, d), nn.GELU(), nn.Linear(d, feature_dims[m])
+        ) for m in MODALITIES})
+        # self.classifier = nn.Sequential(nn.LayerNorm(d), nn.Dropout(config.dropout), nn.Linear(d, output_dim))
+
+        # 分类塔：输出各类别的原始分数
+        self.classification_head = nn.Sequential(
+            nn.LayerNorm(d),
+            nn.Linear(d, head_hidden),
+            nn.GELU(),
+            nn.Dropout(config.dropout),
+            nn.Linear(head_hidden, output_dim),
+        )
+
+        # 回归塔：输出一个连续情感分数
+        self.regression_head = nn.Sequential(
+            nn.LayerNorm(d),
+            nn.Linear(d, head_hidden),
+            nn.GELU(),
+            nn.Dropout(config.dropout),
+            nn.Linear(head_hidden, 1),
+        )
+
+    def forward(self, features, masks, targets=None, return_intermediates=False):
+        ## 这里的 union 是三路掩码的 “或” ，也就是某个位置只要至少一路有效，这个位置就可以进入最终池化。
+        union = validate_inputs(features, masks, self.feature_dims, self.max_length)
+        masks = {m: masks[m].bool() for m in MODALITIES}
+        # 这里用于统一不同模态的特征维度，将三个维度都统一成（B，50，128）
+        projected = self.project(features, masks)
+        ##========================= 下面的这个部分是序列编码器 ========================================
+        x = {m: self.encoders[m](projected[m], masks[m]) for m in MODALITIES}
+
+        ##======================= 下面的这个部分是fusion融合模块 ======================================
+        if return_intermediates:
+            fused, paths, pairs = self.fusion(x, masks, return_intermediates=True)
+        else:
+            fused, paths = self.fusion(x, masks)
+
+        pooled = masked_mean(fused, union)
+        classification_logits = self.classification_head(pooled)  # [B,3]
+
+        regression_prediction = (
+            self.regression_head(pooled).squeeze(-1)
+        )  # [B]
+        
+        ##======================= 下面的这个部分是 重构模块 ======================================
+        auxiliary, reconstructions, losses = {}, {}, {}
+        if self.training or return_intermediates:
+            for m in MODALITIES:
+                # 这里首先基于 fusion 特征输入至一个网络
+                prediction = self.decoders[m](fused)
+                target = features[m].detach().masked_fill(~masks[m].unsqueeze(-1), 0)
+
+                # 计算预测值 和 目标值 之间的差距
+                difference = (prediction - target).masked_fill(~masks[m].unsqueeze(-1), 0)
+
+                denominator = (masks[m].sum() * self.feature_dims[m]).clamp_min(1)
+                losses[m] = difference.square().sum() / denominator
+                if return_intermediates:
+                    reconstructions[m] = prediction.masked_fill(~masks[m].unsqueeze(-1), 0).detach()
+            if self.training:
+                #### 这里会把复原的特征与原始特征进行对比，然后把损失作为辅助特征
+                auxiliary["reconstruction"] = torch.stack(list(losses.values())).sum()
+
+        # result = {"logits": logits, "aux_losses": auxiliary,
+        #         "diagnostics": {"path_representations": torch.stack(
+        #             [masked_mean(p, union) for p in paths], dim=1
+        #         ).detach()}}
+
+        result = {
+            "classification_logits": classification_logits,
+            "regression_prediction": regression_prediction,
+            "aux_losses": auxiliary,
+            "diagnostics": {
+                "path_representations": torch.stack(
+                    [masked_mean(p, union) for p in paths],
+                    dim=1,
+                ).detach(),
+            },
+        }
+
+        if return_intermediates:
+            result.update(
+                projected_sequences={m: value.detach() for m, value in projected.items()},
+                encoded_sequences={m: value.detach() for m, value in x.items()},
+                pair_sequences={name: value.detach() for name, value in pairs.items()},
+                cascade_sequences={"_".join(route): value.detach()
+                                   for route, value in zip(self.fusion.routes, paths)},
+                concatenated=torch.cat(paths, dim=-1).detach(),
+                fusion_sequence=fused.detach(), pooled_features=pooled.detach(),
+                reconstructions=reconstructions,
+                reconstruction_losses={m: value.detach() for m, value in losses.items()},
+                fusion_mask=union.detach(),
+            )
+        return result
 
 
 class Zheng2022Model(nn.Module):
@@ -261,32 +379,42 @@ class Zheng2022Model(nn.Module):
         self.classifier = nn.Sequential(nn.LayerNorm(d), nn.Dropout(config.dropout), nn.Linear(d, output_dim))
 
     def forward(self, features, masks, targets=None, return_intermediates=False):
+        ## 这里的 union 是三路掩码的 “或” ，也就是某个位置只要至少一路有效，这个位置就可以进入最终池化。
         union = validate_inputs(features, masks, self.feature_dims, self.max_length)
         masks = {m: masks[m].bool() for m in MODALITIES}
+        # 这里用于统一不同模态的特征维度，将三个维度都统一成（B，50，128）
         projected = self.project(features, masks)
-
+        ##========================= 下面的这个部分是序列编码器 ========================================
         x = {m: self.encoders[m](projected[m], masks[m]) for m in MODALITIES}
-        # This same latent tensor supplies every decoder, so reconstruction
-        # gradients really optimize the common attention/Conv fusion weights.
+
+        ##======================= 下面的这个部分是fusion融合模块 ======================================
         if return_intermediates:
             fused, paths, pairs = self.fusion(x, masks, return_intermediates=True)
         else:
             fused, paths = self.fusion(x, masks)
-            
+
         pooled = masked_mean(fused, union)
-        logits = self.classifier(pooled)
+        logits = self.classifier(pooled)    # 这里就是进行了分类
+
+        ##======================= 下面的这个部分是 重构模块 ======================================
         auxiliary, reconstructions, losses = {}, {}, {}
         if self.training or return_intermediates:
             for m in MODALITIES:
+                # 这里首先基于 fusion 特征输入至一个网络
                 prediction = self.decoders[m](fused)
                 target = features[m].detach().masked_fill(~masks[m].unsqueeze(-1), 0)
+
+                # 计算预测值 和 目标值 之间的差距
                 difference = (prediction - target).masked_fill(~masks[m].unsqueeze(-1), 0)
+
                 denominator = (masks[m].sum() * self.feature_dims[m]).clamp_min(1)
                 losses[m] = difference.square().sum() / denominator
                 if return_intermediates:
                     reconstructions[m] = prediction.masked_fill(~masks[m].unsqueeze(-1), 0).detach()
             if self.training:
+                #### 这里会把复原的特征与原始特征进行对比，然后把损失作为辅助特征
                 auxiliary["reconstruction"] = torch.stack(list(losses.values())).sum()
+
         result = {"logits": logits, "aux_losses": auxiliary,
                 "diagnostics": {"path_representations": torch.stack(
                     [masked_mean(p, union) for p in paths], dim=1

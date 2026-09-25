@@ -28,3 +28,8 @@ results/
 Thumbs.db
 .vscode/
 .idea/
+
+# 实验输出（中间特征、检查点，体积大）
+experiments/
+*.npy
+*.npz
