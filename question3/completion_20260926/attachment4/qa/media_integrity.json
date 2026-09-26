@@ -1,0 +1,1010 @@
+{
+  "created_utc": "2026-09-26T08:07:37.986830+00:00",
+  "status": "passed",
+  "independent_audit": true,
+  "model_rerun": false,
+  "source_video_count": 20,
+  "top_evidence_item_count": 360,
+  "top_evidence_status_counts": {
+    "raw_text_located": 120,
+    "lexical_temporal_anchor_available": 186,
+    "needs_review_alignment": 48,
+    "unavailable_raw_zero_input": 6
+  },
+  "top_evidence_status_by_head_modality": {
+    "classification/text": {
+      "raw_text_located": 60
+    },
+    "classification/audio": {
+      "lexical_temporal_anchor_available": 49,
+      "needs_review_alignment": 11
+    },
+    "classification/vision": {
+      "lexical_temporal_anchor_available": 44,
+      "needs_review_alignment": 13,
+      "unavailable_raw_zero_input": 3
+    },
+    "regression/text": {
+      "raw_text_located": 60
+    },
+    "regression/audio": {
+      "lexical_temporal_anchor_available": 48,
+      "needs_review_alignment": 12
+    },
+    "regression/vision": {
+      "lexical_temporal_anchor_available": 45,
+      "needs_review_alignment": 12,
+      "unavailable_raw_zero_input": 3
+    }
+  },
+  "word_count": 481,
+  "represented_word_count": 459,
+  "content_slot_count": 564,
+  "text_exact_location_count": 120,
+  "unique_assets": {
+    "wav": 55,
+    "png": 51
+  },
+  "max_attribution_mass_balance_error": 4.884981308350689e-15,
+  "max_wav_duration_error_s": 5.350000000006738e-05,
+  "verification": [
+    "20 source-video SHA256 values matched",
+    "fresh ffprobe presentation timestamps matched cached timelines",
+    "word timestamps equal original cached CTC alignment; no interpolation or suffix attribution",
+    "360 top evidence rankings match saved attribution arrays",
+    "word/slot signed and absolute attribution values verified",
+    "WAV format/duration and complete PCM bytes match independent source-interval decode",
+    "PNG RGB pixels match independent decode at claimed presentation-order frame indices",
+    "sample 13 raw-zero vision unavailable, no visual assets",
+    "samples 07 and 18 truncated suffixes receive zero attribution",
+    "source-feature time provenance explicitly unavailable; exports labeled post-hoc lexical anchors"
+  ],
+  "review_items": [
+    {
+      "sample_id": "07",
+      "head": "classification",
+      "modality": "audio",
+      "word": "Baadke",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4764,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "07",
+      "head": "classification",
+      "modality": "vision",
+      "word": "Baadke",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4764,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "07",
+      "head": "regression",
+      "modality": "audio",
+      "word": "Baadke",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4764,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "07",
+      "head": "regression",
+      "modality": "vision",
+      "word": "Baadke",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4764,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "09",
+      "head": "classification",
+      "modality": "audio",
+      "word": "uhh",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.2896,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "09",
+      "head": "classification",
+      "modality": "vision",
+      "word": "uhh",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.2896,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "09",
+      "head": "classification",
+      "modality": "vision",
+      "word": "it",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.468,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "09",
+      "head": "regression",
+      "modality": "audio",
+      "word": "uhh",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.2896,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "09",
+      "head": "regression",
+      "modality": "vision",
+      "word": "uhh",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.2896,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "10",
+      "head": "classification",
+      "modality": "audio",
+      "word": "I'm",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3256,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "10",
+      "head": "classification",
+      "modality": "vision",
+      "word": "I'm",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3256,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "10",
+      "head": "regression",
+      "modality": "audio",
+      "word": "I'm",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3256,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "10",
+      "head": "regression",
+      "modality": "vision",
+      "word": "I'm",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3256,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "11",
+      "head": "classification",
+      "modality": "audio",
+      "word": "I",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4409,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "11",
+      "head": "classification",
+      "modality": "vision",
+      "word": "would",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.1694,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "11",
+      "head": "classification",
+      "modality": "vision",
+      "word": "I",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4409,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "11",
+      "head": "regression",
+      "modality": "audio",
+      "word": "I",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4409,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "11",
+      "head": "regression",
+      "modality": "vision",
+      "word": "would",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.1694,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "11",
+      "head": "regression",
+      "modality": "vision",
+      "word": "I",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4409,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "13",
+      "head": "classification",
+      "modality": "vision",
+      "word": "For",
+      "status": "unavailable_raw_zero_input",
+      "alignment_status": "aligned",
+      "score": 0.919,
+      "flags": []
+    },
+    {
+      "sample_id": "13",
+      "head": "classification",
+      "modality": "vision",
+      "word": "example",
+      "status": "unavailable_raw_zero_input",
+      "alignment_status": "aligned",
+      "score": 0.9932,
+      "flags": []
+    },
+    {
+      "sample_id": "13",
+      "head": "classification",
+      "modality": "vision",
+      "word": "more",
+      "status": "unavailable_raw_zero_input",
+      "alignment_status": "aligned",
+      "score": 0.5253,
+      "flags": []
+    },
+    {
+      "sample_id": "13",
+      "head": "regression",
+      "modality": "vision",
+      "word": "For",
+      "status": "unavailable_raw_zero_input",
+      "alignment_status": "aligned",
+      "score": 0.919,
+      "flags": []
+    },
+    {
+      "sample_id": "13",
+      "head": "regression",
+      "modality": "vision",
+      "word": "example",
+      "status": "unavailable_raw_zero_input",
+      "alignment_status": "aligned",
+      "score": 0.9932,
+      "flags": []
+    },
+    {
+      "sample_id": "13",
+      "head": "regression",
+      "modality": "vision",
+      "word": "more",
+      "status": "unavailable_raw_zero_input",
+      "alignment_status": "aligned",
+      "score": 0.5253,
+      "flags": []
+    },
+    {
+      "sample_id": "15",
+      "head": "classification",
+      "modality": "audio",
+      "word": "prioritize",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.0018,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "classification",
+      "modality": "audio",
+      "word": "in",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.9994,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "classification",
+      "modality": "audio",
+      "word": "poverty",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.1428,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "classification",
+      "modality": "vision",
+      "word": "lives",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3945,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "classification",
+      "modality": "vision",
+      "word": "prioritize",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.0018,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "classification",
+      "modality": "vision",
+      "word": "its",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.6666,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "regression",
+      "modality": "audio",
+      "word": "prioritize",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.0018,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "regression",
+      "modality": "audio",
+      "word": "in",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.9994,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "regression",
+      "modality": "audio",
+      "word": "poverty",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.1428,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "regression",
+      "modality": "vision",
+      "word": "lives",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3945,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "regression",
+      "modality": "vision",
+      "word": "prioritize",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.0018,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "15",
+      "head": "regression",
+      "modality": "vision",
+      "word": "transform",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.2136,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "classification",
+      "modality": "audio",
+      "word": "It's",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3727,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "classification",
+      "modality": "audio",
+      "word": "terrible",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.9682,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "classification",
+      "modality": "audio",
+      "word": "this",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.244,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "classification",
+      "modality": "vision",
+      "word": "It's",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3727,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "classification",
+      "modality": "vision",
+      "word": "this",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.244,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "classification",
+      "modality": "vision",
+      "word": "terrible",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.9935,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "regression",
+      "modality": "audio",
+      "word": "It's",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3727,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "regression",
+      "modality": "audio",
+      "word": "terrible",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.9682,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "regression",
+      "modality": "audio",
+      "word": "terrible",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.9935,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "regression",
+      "modality": "vision",
+      "word": "It's",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.3727,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "regression",
+      "modality": "vision",
+      "word": "this",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.244,
+      "flags": [
+        "low_alignment_score",
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "16",
+      "head": "regression",
+      "modality": "vision",
+      "word": "terrible",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.9935,
+      "flags": [
+        "transcript_mismatch_candidate"
+      ]
+    },
+    {
+      "sample_id": "18",
+      "head": "classification",
+      "modality": "audio",
+      "word": "Faeroese",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4005,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "18",
+      "head": "classification",
+      "modality": "vision",
+      "word": "Faeroese",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4005,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "18",
+      "head": "regression",
+      "modality": "audio",
+      "word": "Faeroese",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4005,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "18",
+      "head": "regression",
+      "modality": "vision",
+      "word": "Faeroese",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.4005,
+      "flags": [
+        "low_alignment_score"
+      ]
+    },
+    {
+      "sample_id": "20",
+      "head": "regression",
+      "modality": "audio",
+      "word": "of",
+      "status": "needs_review_alignment",
+      "alignment_status": "needs_review",
+      "score": 0.0009,
+      "flags": [
+        "low_alignment_score"
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "sample_id": "01",
+      "words": 21,
+      "represented_words": 21,
+      "suffix_words": 0,
+      "content_slots": 22,
+      "decoded_frames": 270,
+      "audio_duration_s": 8.986125,
+      "alignment_statuses": {
+        "aligned": 21
+      },
+      "text_match_ratio": 0.8095,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "02",
+      "words": 13,
+      "represented_words": 13,
+      "suffix_words": 0,
+      "content_slots": 19,
+      "decoded_frames": 101,
+      "audio_duration_s": 3.328375,
+      "alignment_statuses": {
+        "aligned": 13
+      },
+      "text_match_ratio": 1.0,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "03",
+      "words": 25,
+      "represented_words": 25,
+      "suffix_words": 0,
+      "content_slots": 33,
+      "decoded_frames": 289,
+      "audio_duration_s": 9.5835,
+      "alignment_statuses": {
+        "aligned": 25
+      },
+      "text_match_ratio": 0.7407,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "04",
+      "words": 20,
+      "represented_words": 20,
+      "suffix_words": 0,
+      "content_slots": 26,
+      "decoded_frames": 207,
+      "audio_duration_s": 6.8475,
+      "alignment_statuses": {
+        "aligned": 20
+      },
+      "text_match_ratio": 0.9048,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "05",
+      "words": 11,
+      "represented_words": 11,
+      "suffix_words": 0,
+      "content_slots": 15,
+      "decoded_frames": 183,
+      "audio_duration_s": 6.014,
+      "alignment_statuses": {
+        "aligned": 11
+      },
+      "text_match_ratio": 0.6087,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "06",
+      "words": 31,
+      "represented_words": 31,
+      "suffix_words": 0,
+      "content_slots": 35,
+      "decoded_frames": 247,
+      "audio_duration_s": 8.1580625,
+      "alignment_statuses": {
+        "aligned": 25,
+        "needs_review": 6
+      },
+      "text_match_ratio": 0.7586,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "07",
+      "words": 51,
+      "represented_words": 36,
+      "suffix_words": 15,
+      "content_slots": 48,
+      "decoded_frames": 639,
+      "audio_duration_s": 21.2655625,
+      "alignment_statuses": {
+        "aligned": 49,
+        "needs_review": 2
+      },
+      "text_match_ratio": 0.7451,
+      "input_truncated": true
+    },
+    {
+      "sample_id": "08",
+      "words": 10,
+      "represented_words": 10,
+      "suffix_words": 0,
+      "content_slots": 11,
+      "decoded_frames": 149,
+      "audio_duration_s": 4.9084375,
+      "alignment_statuses": {
+        "aligned": 10
+      },
+      "text_match_ratio": 0.8182,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "09",
+      "words": 14,
+      "represented_words": 14,
+      "suffix_words": 0,
+      "content_slots": 18,
+      "decoded_frames": 151,
+      "audio_duration_s": 4.9643125,
+      "alignment_statuses": {
+        "needs_review": 2,
+        "aligned": 12
+      },
+      "text_match_ratio": 0.8387,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "10",
+      "words": 25,
+      "represented_words": 25,
+      "suffix_words": 0,
+      "content_slots": 30,
+      "decoded_frames": 295,
+      "audio_duration_s": 9.7755625,
+      "alignment_statuses": {
+        "needs_review": 3,
+        "aligned": 22
+      },
+      "text_match_ratio": 0.76,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "11",
+      "words": 14,
+      "represented_words": 14,
+      "suffix_words": 0,
+      "content_slots": 14,
+      "decoded_frames": 174,
+      "audio_duration_s": 5.759,
+      "alignment_statuses": {
+        "needs_review": 4,
+        "aligned": 10
+      },
+      "text_match_ratio": 0.7407,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "12",
+      "words": 35,
+      "represented_words": 35,
+      "suffix_words": 0,
+      "content_slots": 42,
+      "decoded_frames": 388,
+      "audio_duration_s": 12.8745625,
+      "alignment_statuses": {
+        "aligned": 34,
+        "needs_review": 1
+      },
+      "text_match_ratio": 0.8986,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "13",
+      "words": 27,
+      "represented_words": 27,
+      "suffix_words": 0,
+      "content_slots": 30,
+      "decoded_frames": 260,
+      "audio_duration_s": 8.68425,
+      "alignment_statuses": {
+        "aligned": 24,
+        "needs_review": 3
+      },
+      "text_match_ratio": 0.72,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "14",
+      "words": 25,
+      "represented_words": 25,
+      "suffix_words": 0,
+      "content_slots": 35,
+      "decoded_frames": 308,
+      "audio_duration_s": 10.226375,
+      "alignment_statuses": {
+        "aligned": 23,
+        "needs_review": 2
+      },
+      "text_match_ratio": 0.6531,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "15",
+      "words": 17,
+      "represented_words": 17,
+      "suffix_words": 0,
+      "content_slots": 21,
+      "decoded_frames": 220,
+      "audio_duration_s": 7.3143125,
+      "alignment_statuses": {
+        "needs_review": 17
+      },
+      "text_match_ratio": 0.1429,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "16",
+      "words": 8,
+      "represented_words": 8,
+      "suffix_words": 0,
+      "content_slots": 11,
+      "decoded_frames": 93,
+      "audio_duration_s": 3.0436875,
+      "alignment_statuses": {
+        "needs_review": 8
+      },
+      "text_match_ratio": 0.4706,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "17",
+      "words": 22,
+      "represented_words": 22,
+      "suffix_words": 0,
+      "content_slots": 24,
+      "decoded_frames": 289,
+      "audio_duration_s": 9.563375,
+      "alignment_statuses": {
+        "aligned": 22
+      },
+      "text_match_ratio": 0.8889,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "18",
+      "words": 44,
+      "represented_words": 37,
+      "suffix_words": 7,
+      "content_slots": 48,
+      "decoded_frames": 561,
+      "audio_duration_s": 18.6365625,
+      "alignment_statuses": {
+        "aligned": 41,
+        "needs_review": 3
+      },
+      "text_match_ratio": 0.7253,
+      "input_truncated": true
+    },
+    {
+      "sample_id": "19",
+      "words": 33,
+      "represented_words": 33,
+      "suffix_words": 0,
+      "content_slots": 39,
+      "decoded_frames": 409,
+      "audio_duration_s": 13.6108125,
+      "alignment_statuses": {
+        "aligned": 33
+      },
+      "text_match_ratio": 0.9552,
+      "input_truncated": false
+    },
+    {
+      "sample_id": "20",
+      "words": 35,
+      "represented_words": 35,
+      "suffix_words": 0,
+      "content_slots": 43,
+      "decoded_frames": 326,
+      "audio_duration_s": 10.809875,
+      "alignment_statuses": {
+        "aligned": 30,
+        "needs_review": 5
+      },
+      "text_match_ratio": 0.6923,
+      "input_truncated": false
+    }
+  ],
+  "errors": [],
+  "limitation": "Audit verifies outputs and temporal associations. Cached 74-D/35-D feature source time remains unrecoverable; source-feature correspondence is not established."
+}

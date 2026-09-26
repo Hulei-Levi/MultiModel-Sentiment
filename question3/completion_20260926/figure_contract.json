@@ -1,0 +1,25 @@
+{
+  "backend": "python-matplotlib",
+  "prediction_scope": "All 728 validation cases plus all 20 Attachment-4 cases",
+  "diagnostic_scope": "60 preselected validation cases, 10 per true-class/correctness stratum",
+  "claims": [
+    "Quantify validation class confusion and continuous prediction errors",
+    "Describe modality dependence and labelled effects of fixed-reference replacements",
+    "Test local ranking against matched-budget low/random controls, retaining counterexamples",
+    "Show each Attachment-4 prediction with modality shares and auditable lexical temporal anchors"
+  ],
+  "exports": [
+    "CSV",
+    "JSON",
+    "NPZ",
+    "PNG",
+    "SVG for quantitative figures",
+    "PDF explanation books",
+    "WAV",
+    "HTML result index"
+  ],
+  "source_data": "All quantitative marks come from saved cohort/detail/evidence records",
+  "exclusions": "No validation or Attachment-4 prediction omitted. Undefined ratios/ranks flagged. 60-case sampling explicitly authorised.",
+  "error_bar_policy": "No population confidence intervals; boxplots display IQR and 1.5-IQR whiskers; random controls retain 20 draws",
+  "media_integrity": "No enhancement of original frames. Audio clips use the source timeline. Missing source-feature times explicitly unavailable."
+}

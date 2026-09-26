@@ -1,0 +1,179 @@
+{
+  "sha256": "fa91e0c3fa971b0406935f6cbd226aaaf8b87ed0ef2d1924663852628a92f0c9",
+  "summary": {
+    "ready": true,
+    "strict": false,
+    "counts": {
+      "PASS": 17,
+      "WARN": 4,
+      "FAIL": 0
+    }
+  },
+  "findings": [
+    {
+      "check_id": "SOURCE-SYNTAX",
+      "level": "PASS",
+      "message": "Python source parses successfully",
+      "evidence": []
+    },
+    {
+      "check_id": "FONT-FAMILY",
+      "level": "PASS",
+      "message": "A publication-safe sans-serif family is configured",
+      "evidence": [
+        "sans-serif"
+      ]
+    },
+    {
+      "check_id": "FONT-SIZE",
+      "level": "PASS",
+      "message": "All detected text sizes are at least 5 pt (minimum 7 pt)",
+      "evidence": []
+    },
+    {
+      "check_id": "FONT-GLYPH-FLOOR",
+      "level": "PASS",
+      "message": "No mathtext superscript/subscript expression detected",
+      "evidence": []
+    },
+    {
+      "check_id": "LEGEND-LABEL-CASE",
+      "level": "PASS",
+      "message": "Detected literal legend labels start with display-style capitalization",
+      "evidence": []
+    },
+    {
+      "check_id": "COLOR-MAP",
+      "level": "PASS",
+      "message": "No rainbow/jet/hsv color mapping detected",
+      "evidence": []
+    },
+    {
+      "check_id": "EDITABLE-TEXT",
+      "level": "PASS",
+      "message": "SVG and PDF editable-text settings are configured",
+      "evidence": []
+    },
+    {
+      "check_id": "EXPORT-VECTOR",
+      "level": "PASS",
+      "message": "Both SVG and PDF exports are present",
+      "evidence": []
+    },
+    {
+      "check_id": "EXPORT-RASTER",
+      "level": "WARN",
+      "message": "PNG preview is present but no TIFF submission raster was found",
+      "evidence": []
+    },
+    {
+      "check_id": "RASTER-DPI",
+      "level": "WARN",
+      "message": "Raster export meets the 300 dpi floor but not the 600 dpi default",
+      "evidence": [
+        "360"
+      ]
+    },
+    {
+      "check_id": "FINAL-WIDTH",
+      "level": "WARN",
+      "message": "Detected width 243.8 mm is not near the common 89/183 mm defaults; verify the target journal",
+      "evidence": []
+    },
+    {
+      "check_id": "DATA-SAMPLING",
+      "level": "PASS",
+      "message": "No high-confidence row-sampling operation detected",
+      "evidence": []
+    },
+    {
+      "check_id": "DATA-EXCLUSION",
+      "level": "PASS",
+      "message": "No high-confidence missing-data exclusion detected",
+      "evidence": []
+    },
+    {
+      "check_id": "DEMO-DATA",
+      "level": "WARN",
+      "message": "Simulated data appears in the plotting source without an explicit demo boundary",
+      "evidence": [
+        "np.random.default_rng(",
+        "rng.choice("
+      ]
+    },
+    {
+      "check_id": "LOG-GUARD",
+      "level": "PASS",
+      "message": "A logarithmic transform/axis and a positivity or pseudocount guard were both detected",
+      "evidence": [
+        "not 0 <= minimum <= 1 or topk < 1:",
+        "eps"
+      ]
+    },
+    {
+      "check_id": "INTERP-MONOTONIC",
+      "level": "PASS",
+      "message": "No NumPy interpolation requiring an increasing x-grid detected",
+      "evidence": []
+    },
+    {
+      "check_id": "UNCERTAINTY-ENCODING",
+      "level": "PASS",
+      "message": "A stochastic aggregate and uncertainty encoding are both present; still verify every comparable panel",
+      "evidence": [
+        ".fill_between("
+      ]
+    },
+    {
+      "check_id": "ROTATION-ANCHOR",
+      "level": "PASS",
+      "message": "Every detected rotated text call uses anchor-based placement",
+      "evidence": [
+        "line 1569: rotation=..."
+      ]
+    },
+    {
+      "check_id": "ANNOTATION-WORKAROUND",
+      "level": "PASS",
+      "message": "No high-risk hard-coded label height or opaque white text mask detected",
+      "evidence": []
+    },
+    {
+      "check_id": "PANEL-ALIGNMENT-GATE",
+      "level": "PASS",
+      "message": "Render-time panel-alignment gate is wired into the plotting source",
+      "evidence": [
+        "require_matplotlib_panel_alignment("
+      ]
+    },
+    {
+      "check_id": "BACKEND-EXCLUSIVE",
+      "level": "PASS",
+      "message": "No obvious cross-backend plotting reference found for python",
+      "evidence": []
+    }
+  ],
+  "warning_reviews": [
+    {
+      "check_id": "EXPORT-RASTER",
+      "status": "REVIEWED_ACCEPTABLE",
+      "reason": "本任务以矢量PDF和360 dpi PNG交付，未要求TIFF；PNG作为报告插图及预览，原WARN保留并人工确认。"
+    },
+    {
+      "check_id": "RASTER-DPI",
+      "status": "REVIEWED_ACCEPTABLE",
+      "reason": "全部109张PNG的元数据达到360 dpi，超过300 dpi下限；600 dpi为技能默认建议，本任务未指定该输出要求，主要绘图另有矢量PDF。"
+    },
+    {
+      "check_id": "FINAL-WIDTH",
+      "status": "REVIEWED_ACCEPTABLE",
+      "reason": "扫描到243.8 mm来自未纳入本轮completion输出的旧绘图接口。本轮普通单图按4.1/5.5/6.9英寸设计，分析卡及媒体卡使用报告页面版式；用户未指定期刊单栏或双栏尺寸。"
+    },
+    {
+      "check_id": "DEMO-DATA",
+      "status": "REVIEWED_ACCEPTABLE",
+      "reason": "随机数用于可复现的随机位置干预对照、诊断子集和散点横向抖动；交付数值来自实际样本与模型结果。独立自检中的合成输入与交付分析隔离，未将模拟数据冒充实测结果。"
+    }
+  ],
+  "reviewed_result": "PASS_WITH_REVIEWED_WARNINGS"
+}

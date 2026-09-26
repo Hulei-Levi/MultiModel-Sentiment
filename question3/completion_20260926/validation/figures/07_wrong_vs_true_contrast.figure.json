@@ -1,0 +1,39 @@
+{
+  "rendered_text": [
+    "文本",
+    "语音",
+    "视觉",
+    "错类相对真类得分差的 Shapley 值",
+    "−4",
+    "−3",
+    "−2",
+    "−1",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "错误预测的模态贡献分析（267条）",
+    "采用训练均值参考；正值增强错误类别相对真实类别的得分优势。"
+  ],
+  "question": "哪些模态增强了错误类别相对真实类别的优势？",
+  "source_data": "wrong_vs_true_modality_contributions.csv",
+  "backend": "python-matplotlib",
+  "display_language": "zh-CN",
+  "archetype": "single quantitative panel",
+  "size_inches": [
+    5.1,
+    3.8
+  ],
+  "minimum_requested_font_pt": 7,
+  "uncertainty": "Descriptive fixed-cohort observations. No population confidence intervals.",
+  "alignment_verdict": "NOT APPLICABLE",
+  "color_semantics": {
+    "text": "#3B6E8C",
+    "audio": "#BF8845",
+    "vision": "#5C8D78"
+  },
+  "pdf": "07_wrong_vs_true_contrast.pdf"
+}

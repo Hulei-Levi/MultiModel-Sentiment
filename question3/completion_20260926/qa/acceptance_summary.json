@@ -1,0 +1,31 @@
+{
+  "status": "PASS_WITH_DOCUMENTED_DATA_LIMITATIONS",
+  "completed_utc": "2026-09-26T08:26:03.603963+00:00",
+  "script_sha256": "e8f91188e3eaaca5951c10cc006e9c76acd5a89ddfa949ab13f9f17a2343e9cc",
+  "validation_count": 728,
+  "detailed_validation_count": 60,
+  "attachment4_count": 20,
+  "numeric_audit": "PASS",
+  "media_integrity_audit": "PASS",
+  "rendered_audit": "PASS",
+  "html_link_audit": "PASS",
+  "source_warnings": "4 reviewed scope/default warnings; retained in source_preflight.json",
+  "qa_files": [
+    "qa/independent_validation_audit.json",
+    "qa/independent_wrong_vs_true_audit.json",
+    "attachment4/qa/media_integrity.json",
+    "qa/rendered_qa_summary.json",
+    "qa/delivery_integrity.json",
+    "qa/source_preflight.json",
+    "qa/png_export_audit.json",
+    "qa/visual_review.json"
+  ],
+  "limitations": [
+    "Validation participated in checkpoint/adapter selection and is not an independent test set.",
+    "Validation has no raw audio/video; AV attribution is located in cached feature slots.",
+    "Attachment-4 time localization uses post-hoc lexical CTC alignment, not recovered cached-feature extraction windows.",
+    "Attachment-4 samples 15/16 have low transcript-acoustic match; uncertain media not exported as verified evidence.",
+    "Attachment-4 sample 13 has raw-zero visual features; samples 07/18 have model-truncated text.",
+    "The 60 diagnostic cases are deliberately balanced and do not estimate full-validation proportions without weighting."
+  ]
+}

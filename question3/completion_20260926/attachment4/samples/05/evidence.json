@@ -1,0 +1,2548 @@
+{
+  "schema_version": 2,
+  "sample_id": "05",
+  "source_video": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/datasets/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/videos/05.mp4",
+  "source_sha256": "715d7c1dd52a78eac6c0a10cd78ba1c4f632dc778839c86fcf7a510ea4184420",
+  "raw_text": "Hi, my name is Chloe, video marketer for Red Wagon Marketing.",
+  "prediction": {
+    "logits": [
+      -1.6968752145767212,
+      0.20088335871696472,
+      1.4993294477462769
+    ],
+    "probabilities": [
+      0.031142439162937508,
+      0.20774888476531655,
+      0.7611086760717459
+    ],
+    "class_index": 2,
+    "runnerup_index": 1,
+    "class_value": 2.0,
+    "regression": 0.6402804255485535,
+    "margin": 1.2984460592269897
+  },
+  "modality_phi": [
+    [
+      0.6283077994982401,
+      -0.4166118105252583,
+      -0.18028922875722247
+    ],
+    [
+      0.23048370579878488,
+      -0.10576497515042621,
+      0.08758773903052011
+    ]
+  ],
+  "modality_shares": [
+    [
+      0.5128169007689392,
+      0.340033304803656,
+      0.14714979442740483
+    ],
+    [
+      0.5438034461734249,
+      0.24954196988424007,
+      0.206654583942335
+    ]
+  ],
+  "dominant_modalities": {
+    "classification": "text",
+    "regression": "text"
+  },
+  "data_quality": {
+    "input_truncated": false,
+    "full_content_token_count": 15,
+    "visible_content_token_count": 15,
+    "visible_content_token_fraction": 1.0,
+    "raw_zero_content_slots": {
+      "text": [],
+      "audio": [],
+      "vision": []
+    },
+    "all_zero_content_modalities": [],
+    "notes": []
+  },
+  "alignment_file": "samples/05/alignment.json",
+  "alignment_error": null,
+  "acoustic_text_match_ratio": 0.6087,
+  "source_feature_provenance": {
+    "status": "checked",
+    "source_time_mapping_status": "unavailable",
+    "source_time_reason": "Supplied cached feature arrays contain no source intervals.",
+    "source_file": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/datasets/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/未对齐版本/05.pkl",
+    "source_sha256": "cf0cd1b562e4516a25a04c23953f9baecaa0f42ce4044aa4eb9b1aba221e70a9",
+    "modalities": {
+      "audio": {
+        "1": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            109
+          ],
+          "unique_source_row": 109
+        },
+        "2": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            109
+          ],
+          "unique_source_row": 109
+        },
+        "3": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            110
+          ],
+          "unique_source_row": 110
+        },
+        "4": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            111
+          ],
+          "unique_source_row": 111
+        },
+        "5": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            112
+          ],
+          "unique_source_row": 112
+        },
+        "6": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            113
+          ],
+          "unique_source_row": 113
+        },
+        "7": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            113
+          ],
+          "unique_source_row": 113
+        },
+        "8": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            114
+          ],
+          "unique_source_row": 114
+        },
+        "9": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            115
+          ],
+          "unique_source_row": 115
+        },
+        "10": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            115
+          ],
+          "unique_source_row": 115
+        },
+        "11": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            116
+          ],
+          "unique_source_row": 116
+        },
+        "12": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            117
+          ],
+          "unique_source_row": 117
+        },
+        "13": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            118
+          ],
+          "unique_source_row": 118
+        },
+        "14": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            119
+          ],
+          "unique_source_row": 119
+        },
+        "15": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            119
+          ],
+          "unique_source_row": 119
+        }
+      },
+      "vision": {
+        "1": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            79
+          ],
+          "unique_source_row": 79
+        },
+        "2": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            79
+          ],
+          "unique_source_row": 79
+        },
+        "3": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            80
+          ],
+          "unique_source_row": 80
+        },
+        "4": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            81
+          ],
+          "unique_source_row": 81
+        },
+        "5": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            82
+          ],
+          "unique_source_row": 82
+        },
+        "6": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            83
+          ],
+          "unique_source_row": 83
+        },
+        "7": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            83
+          ],
+          "unique_source_row": 83
+        },
+        "8": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            84
+          ],
+          "unique_source_row": 84
+        },
+        "9": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            85
+          ],
+          "unique_source_row": 85
+        },
+        "10": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            85
+          ],
+          "unique_source_row": 85
+        },
+        "11": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            86
+          ],
+          "unique_source_row": 86
+        },
+        "12": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            87
+          ],
+          "unique_source_row": 87
+        },
+        "13": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            88
+          ],
+          "unique_source_row": 88
+        },
+        "14": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            89
+          ],
+          "unique_source_row": 89
+        },
+        "15": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            89
+          ],
+          "unique_source_row": 89
+        }
+      }
+    }
+  },
+  "interpretation": {
+    "text": "Exact raw-character locations of saved model-visible BERT content slots.",
+    "audio_vision": "Post-hoc lexical time anchors obtained by q1 WhisperX/CTC alignment; temporal correspondence only.",
+    "limitation": "Cached 74-D audio / 35-D visual features have no source intervals. Exact matched source row indices do not establish source time. Media exports are auditable contextual anchors, not certified source windows of attributed feature values.",
+    "truncation": "Only saved content slots receive attribution. Unencoded suffix and special tokens are excluded.",
+    "raw_zero": "Raw-zero modality inputs retain numerical model attribution but are not observed media evidence.",
+    "review_policy": "No interpolated times; low score, partial alignment, unusual normalization, transcript mismatch and long intervals require review."
+  },
+  "words": [
+    {
+      "word_index": 0,
+      "word": "Hi",
+      "raw_char_span": [
+        0,
+        2
+      ],
+      "alignment_text": "hi",
+      "alignment_char_span": [
+        0,
+        2
+      ],
+      "start_s": 1.26294,
+      "end_s": 1.483453,
+      "score": 0.9359,
+      "char_coverage": 1.0,
+      "frame_start": 37,
+      "frame_end_exclusive": 45,
+      "frame_indices": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        1
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          0,
+          2
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.7903312316547164,
+          "audio": 0.24576215627456022,
+          "vision": 0.4958960681811502
+        },
+        "regression": {
+          "text": 0.2513636987280957,
+          "audio": 0.07357962600089073,
+          "vision": 0.20382972362345192
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.06275051316573939,
+          "audio": -0.03448335667002518,
+          "vision": 0.1295533437602547
+        },
+        "regression": {
+          "text": -0.02149680970938768,
+          "audio": -0.010463418170116909,
+          "vision": 0.06851586545751553
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 1,
+      "word": "my",
+      "raw_char_span": [
+        4,
+        6
+      ],
+      "alignment_text": "my",
+      "alignment_char_span": [
+        3,
+        5
+      ],
+      "start_s": 1.964573,
+      "end_s": 2.064807,
+      "score": 0.9998,
+      "char_coverage": 1.0,
+      "frame_start": 58,
+      "frame_end_exclusive": 62,
+      "frame_indices": [
+        58,
+        59,
+        60,
+        61
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        3
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          4,
+          6
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.9708604937249934,
+          "audio": 0.16906725659187233,
+          "vision": 0.3533862521501295
+        },
+        "regression": {
+          "text": 0.6216895149082045,
+          "audio": 0.05205282870841911,
+          "vision": 0.14824242342760668
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.11962935628025066,
+          "audio": -0.007762082213839317,
+          "vision": 0.0957845633650899
+        },
+        "regression": {
+          "text": 0.03744359693827088,
+          "audio": -0.0018147882178899373,
+          "vision": 0.05386682916494142
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 2,
+      "word": "name",
+      "raw_char_span": [
+        7,
+        11
+      ],
+      "alignment_text": "name",
+      "alignment_char_span": [
+        6,
+        10
+      ],
+      "start_s": 2.124947,
+      "end_s": 2.245227,
+      "score": 0.9915,
+      "char_coverage": 1.0,
+      "frame_start": 63,
+      "frame_end_exclusive": 68,
+      "frame_indices": [
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        4
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          7,
+          11
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 3.3194418317078282,
+          "audio": 0.19490852613299206,
+          "vision": 0.3657702471222402
+        },
+        "regression": {
+          "text": 1.0641223680520873,
+          "audio": 0.06633098398017911,
+          "vision": 0.15384596215728205
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.14553767378652305,
+          "audio": -0.0043529800583117185,
+          "vision": 0.10199773247372139
+        },
+        "regression": {
+          "text": 0.050596584925055296,
+          "audio": 0.0014991488752442521,
+          "vision": 0.05621909553742892
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 3,
+      "word": "is",
+      "raw_char_span": [
+        12,
+        14
+      ],
+      "alignment_text": "is",
+      "alignment_char_span": [
+        11,
+        13
+      ],
+      "start_s": 2.325413,
+      "end_s": 2.365507,
+      "score": 0.615,
+      "char_coverage": 1.0,
+      "frame_start": 69,
+      "frame_end_exclusive": 71,
+      "frame_indices": [
+        69,
+        70
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        5
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          12,
+          14
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 2.6555256490192125,
+          "audio": 0.1985831317024947,
+          "vision": 0.3477053487755166
+        },
+        "regression": {
+          "text": 0.8491634618100565,
+          "audio": 0.06566157094276377,
+          "vision": 0.15051338027120476
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.14814768152165822,
+          "audio": 0.004007835218017511,
+          "vision": 0.09315781600264064
+        },
+        "regression": {
+          "text": 0.05069226972463714,
+          "audio": 0.004620294936590088,
+          "vision": 0.05305397366016775
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 4,
+      "word": "Chloe",
+      "raw_char_span": [
+        15,
+        20
+      ],
+      "alignment_text": "chloe",
+      "alignment_char_span": [
+        14,
+        19
+      ],
+      "start_s": 2.445693,
+      "end_s": 2.786487,
+      "score": 0.7781,
+      "char_coverage": 1.0,
+      "frame_start": 73,
+      "frame_end_exclusive": 84,
+      "frame_indices": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        6
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          15,
+          20
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.9593364993363567,
+          "audio": 0.1676074721077172,
+          "vision": 0.3144871597522191
+        },
+        "regression": {
+          "text": 0.6338899370328979,
+          "audio": 0.05033665208012341,
+          "vision": 0.1456412252295691
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.051922709008282615,
+          "audio": 0.001343765178975863,
+          "vision": 0.06882756554945804
+        },
+        "regression": {
+          "text": -0.009332256545665243,
+          "audio": 0.0017239183370366953,
+          "vision": 0.043752004521077296
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 5,
+      "word": "video",
+      "raw_char_span": [
+        22,
+        27
+      ],
+      "alignment_text": "video",
+      "alignment_char_span": [
+        20,
+        25
+      ],
+      "start_s": 3.227513,
+      "end_s": 3.528213,
+      "score": 0.7658,
+      "char_coverage": 1.0,
+      "frame_start": 96,
+      "frame_end_exclusive": 106,
+      "frame_indices": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        8
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          22,
+          27
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.5506126604832065,
+          "audio": 0.17905373013922007,
+          "vision": 0.23838327153508254
+        },
+        "regression": {
+          "text": 0.49863086621648123,
+          "audio": 0.05377382849674014,
+          "vision": 0.1247310775813788
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.09228535492586963,
+          "audio": -0.0004876252649389694,
+          "vision": 0.032360934478918496
+        },
+        "regression": {
+          "text": -0.019829007663327014,
+          "audio": 0.0012796283812667264,
+          "vision": 0.02695128089487069
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 6,
+      "word": "marketer",
+      "raw_char_span": [
+        28,
+        36
+      ],
+      "alignment_text": "marketer",
+      "alignment_char_span": [
+        26,
+        34
+      ],
+      "start_s": 3.628447,
+      "end_s": 4.02938,
+      "score": 0.9761,
+      "char_coverage": 1.0,
+      "frame_start": 108,
+      "frame_end_exclusive": 121,
+      "frame_indices": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        9,
+        10
+      ],
+      "slot_weights": [
+        1.0,
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          28,
+          34
+        ],
+        [
+          34,
+          36
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 5.208358595589257,
+          "audio": 0.2956208420238452,
+          "vision": 0.38935343544019674
+        },
+        "regression": {
+          "text": 1.653934101432469,
+          "audio": 0.09477097801901808,
+          "vision": 0.20438122013778687
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.26220190748816363,
+          "audio": -0.0029686144923702176,
+          "vision": -0.010817549477561063
+        },
+        "regression": {
+          "text": 0.09155509934854461,
+          "audio": 0.0025281061178261247,
+          "vision": 0.012525963011446047
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 7,
+      "word": "for",
+      "raw_char_span": [
+        37,
+        40
+      ],
+      "alignment_text": "for",
+      "alignment_char_span": [
+        35,
+        38
+      ],
+      "start_s": 4.169707,
+      "end_s": 4.26994,
+      "score": 0.9995,
+      "char_coverage": 1.0,
+      "frame_start": 125,
+      "frame_end_exclusive": 129,
+      "frame_indices": [
+        125,
+        126,
+        127,
+        128
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        11
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          37,
+          40
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2515284016823007,
+          "audio": 0.1586098761832661,
+          "vision": 0.17694096769528933
+        },
+        "regression": {
+          "text": 0.40148471733223084,
+          "audio": 0.04803427227649649,
+          "vision": 0.09001698702414866
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.027431314816676506,
+          "audio": -0.009816072450848022,
+          "vision": -0.012289834634938056
+        },
+        "regression": {
+          "text": -0.005670881205903472,
+          "audio": -0.0028435471865776215,
+          "vision": 0.00234992254112812
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 8,
+      "word": "Red",
+      "raw_char_span": [
+        41,
+        44
+      ],
+      "alignment_text": "red",
+      "alignment_char_span": [
+        39,
+        42
+      ],
+      "start_s": 4.39022,
+      "end_s": 4.57064,
+      "score": 0.9893,
+      "char_coverage": 1.0,
+      "frame_start": 131,
+      "frame_end_exclusive": 138,
+      "frame_indices": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        12
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          41,
+          44
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2749380418123186,
+          "audio": 0.16219869815139418,
+          "vision": 0.12765580761913803
+        },
+        "regression": {
+          "text": 0.4074499897372734,
+          "audio": 0.04819899943554499,
+          "vision": 0.06881843629632078
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.03129744631088166,
+          "audio": -0.01556534046343421,
+          "vision": -0.0033816683131377783
+        },
+        "regression": {
+          "text": 0.010915367410900271,
+          "audio": -0.005776679616701303,
+          "vision": 0.012779258086058174
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 9,
+      "word": "Wagon",
+      "raw_char_span": [
+        45,
+        50
+      ],
+      "alignment_text": "wagon",
+      "alignment_char_span": [
+        43,
+        48
+      ],
+      "start_s": 4.650827,
+      "end_s": 4.93148,
+      "score": 0.6628,
+      "char_coverage": 1.0,
+      "frame_start": 139,
+      "frame_end_exclusive": 148,
+      "frame_indices": [
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        13
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          45,
+          50
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.1099188824188126,
+          "audio": 0.1394284700163399,
+          "vision": 0.09969826018847365
+        },
+        "regression": {
+          "text": 0.35979495208196954,
+          "audio": 0.04187800359983848,
+          "vision": 0.05214738878113423
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.08191004566156501,
+          "audio": -0.021585064011393977,
+          "vision": -0.022329039932340606
+        },
+        "regression": {
+          "text": -0.024962955075754415,
+          "audio": -0.006670800344436018,
+          "vision": 0.0026798152614966216
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 10,
+      "word": "Marketing",
+      "raw_char_span": [
+        51,
+        60
+      ],
+      "alignment_text": "marketing",
+      "alignment_char_span": [
+        49,
+        58
+      ],
+      "start_s": 4.99162,
+      "end_s": 5.47274,
+      "score": 0.9059,
+      "char_coverage": 1.0,
+      "frame_start": 149,
+      "frame_end_exclusive": 165,
+      "frame_indices": [
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        14
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          51,
+          60
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.708232897966753,
+          "audio": 0.21244295903270866,
+          "vision": 0.11102325368610863
+        },
+        "regression": {
+          "text": 0.542588425221097,
+          "audio": 0.06706764718870031,
+          "vision": 0.06075871362422876
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.03915910636560661,
+          "audio": -0.02991754473124428,
+          "vision": -0.027128941503760155
+        },
+        "regression": {
+          "text": 0.01804735782412952,
+          "audio": -0.00625769528825048,
+          "vision": -0.0005852386961650309
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    }
+  ],
+  "content_slot_mapping": [
+    {
+      "slot": 1,
+      "token": "hi",
+      "raw_char_span": [
+        0,
+        2
+      ],
+      "raw_fragment": "Hi",
+      "word_links": [
+        {
+          "word_index": 0,
+          "weight": 1.0,
+          "start_s": 1.26294,
+          "end_s": 1.483453,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9359
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.7903312316547164,
+          "audio": 0.24576215627456022,
+          "vision": 0.4958960681811502
+        },
+        "regression": {
+          "text": 0.2513636987280957,
+          "audio": 0.07357962600089073,
+          "vision": 0.20382972362345192
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.06275051316573939,
+          "audio": -0.03448335667002518,
+          "vision": 0.1295533437602547
+        },
+        "regression": {
+          "text": -0.02149680970938768,
+          "audio": -0.010463418170116909,
+          "vision": 0.06851586545751553
+        }
+      }
+    },
+    {
+      "slot": 2,
+      "token": ",",
+      "raw_char_span": [
+        2,
+        3
+      ],
+      "raw_fragment": ",",
+      "word_links": [],
+      "time_mapping_status": "unavailable_nonlexical",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.9752235375341867,
+          "audio": 0.23313130760161715,
+          "vision": 0.4183980905688596
+        },
+        "regression": {
+          "text": 0.6172675570627251,
+          "audio": 0.07093071697362605,
+          "vision": 0.1699356780053617
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.16146209832331498,
+          "audio": -0.032653336038225705,
+          "vision": 0.11386824863480621
+        },
+        "regression": {
+          "text": 0.048982258496447224,
+          "audio": -0.01034199621872386,
+          "vision": 0.06266806743771941
+        }
+      }
+    },
+    {
+      "slot": 3,
+      "token": "my",
+      "raw_char_span": [
+        4,
+        6
+      ],
+      "raw_fragment": "my",
+      "word_links": [
+        {
+          "word_index": 1,
+          "weight": 1.0,
+          "start_s": 1.964573,
+          "end_s": 2.064807,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9998
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.9708604937249934,
+          "audio": 0.16906725659187233,
+          "vision": 0.3533862521501295
+        },
+        "regression": {
+          "text": 0.6216895149082045,
+          "audio": 0.05205282870841911,
+          "vision": 0.14824242342760668
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.11962935628025066,
+          "audio": -0.007762082213839317,
+          "vision": 0.0957845633650899
+        },
+        "regression": {
+          "text": 0.03744359693827088,
+          "audio": -0.0018147882178899373,
+          "vision": 0.05386682916494142
+        }
+      }
+    },
+    {
+      "slot": 4,
+      "token": "name",
+      "raw_char_span": [
+        7,
+        11
+      ],
+      "raw_fragment": "name",
+      "word_links": [
+        {
+          "word_index": 2,
+          "weight": 1.0,
+          "start_s": 2.124947,
+          "end_s": 2.245227,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9915
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 3.3194418317078282,
+          "audio": 0.19490852613299206,
+          "vision": 0.3657702471222402
+        },
+        "regression": {
+          "text": 1.0641223680520873,
+          "audio": 0.06633098398017911,
+          "vision": 0.15384596215728205
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.14553767378652305,
+          "audio": -0.0043529800583117185,
+          "vision": 0.10199773247372139
+        },
+        "regression": {
+          "text": 0.050596584925055296,
+          "audio": 0.0014991488752442521,
+          "vision": 0.05621909553742892
+        }
+      }
+    },
+    {
+      "slot": 5,
+      "token": "is",
+      "raw_char_span": [
+        12,
+        14
+      ],
+      "raw_fragment": "is",
+      "word_links": [
+        {
+          "word_index": 3,
+          "weight": 1.0,
+          "start_s": 2.325413,
+          "end_s": 2.365507,
+          "alignment_status": "aligned",
+          "alignment_score": 0.615
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 2.6555256490192125,
+          "audio": 0.1985831317024947,
+          "vision": 0.3477053487755166
+        },
+        "regression": {
+          "text": 0.8491634618100565,
+          "audio": 0.06566157094276377,
+          "vision": 0.15051338027120476
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.14814768152165822,
+          "audio": 0.004007835218017511,
+          "vision": 0.09315781600264064
+        },
+        "regression": {
+          "text": 0.05069226972463714,
+          "audio": 0.004620294936590088,
+          "vision": 0.05305397366016775
+        }
+      }
+    },
+    {
+      "slot": 6,
+      "token": "chloe",
+      "raw_char_span": [
+        15,
+        20
+      ],
+      "raw_fragment": "Chloe",
+      "word_links": [
+        {
+          "word_index": 4,
+          "weight": 1.0,
+          "start_s": 2.445693,
+          "end_s": 2.786487,
+          "alignment_status": "aligned",
+          "alignment_score": 0.7781
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.9593364993363567,
+          "audio": 0.1676074721077172,
+          "vision": 0.3144871597522191
+        },
+        "regression": {
+          "text": 0.6338899370328979,
+          "audio": 0.05033665208012341,
+          "vision": 0.1456412252295691
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.051922709008282615,
+          "audio": 0.001343765178975863,
+          "vision": 0.06882756554945804
+        },
+        "regression": {
+          "text": -0.009332256545665243,
+          "audio": 0.0017239183370366953,
+          "vision": 0.043752004521077296
+        }
+      }
+    },
+    {
+      "slot": 7,
+      "token": ",",
+      "raw_char_span": [
+        20,
+        21
+      ],
+      "raw_fragment": ",",
+      "word_links": [],
+      "time_mapping_status": "unavailable_nonlexical",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.6773179673643726,
+          "audio": 0.16270581859015992,
+          "vision": 0.32169857894277953
+        },
+        "regression": {
+          "text": 0.5298296485696056,
+          "audio": 0.04890624342749871,
+          "vision": 0.14931525156867892
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.04328623864135156,
+          "audio": 0.0011634489279057814,
+          "vision": 0.06779613789272797
+        },
+        "regression": {
+          "text": 0.017202290431742033,
+          "audio": 0.001763482383214615,
+          "vision": 0.04253449002320167
+        }
+      }
+    },
+    {
+      "slot": 8,
+      "token": "video",
+      "raw_char_span": [
+        22,
+        27
+      ],
+      "raw_fragment": "video",
+      "word_links": [
+        {
+          "word_index": 5,
+          "weight": 1.0,
+          "start_s": 3.227513,
+          "end_s": 3.528213,
+          "alignment_status": "aligned",
+          "alignment_score": 0.7658
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.5506126604832065,
+          "audio": 0.17905373013922007,
+          "vision": 0.23838327153508254
+        },
+        "regression": {
+          "text": 0.49863086621648123,
+          "audio": 0.05377382849674014,
+          "vision": 0.1247310775813788
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.09228535492586963,
+          "audio": -0.0004876252649389694,
+          "vision": 0.032360934478918496
+        },
+        "regression": {
+          "text": -0.019829007663327014,
+          "audio": 0.0012796283812667264,
+          "vision": 0.02695128089487069
+        }
+      }
+    },
+    {
+      "slot": 9,
+      "token": "market",
+      "raw_char_span": [
+        28,
+        34
+      ],
+      "raw_fragment": "market",
+      "word_links": [
+        {
+          "word_index": 6,
+          "weight": 1.0,
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 2.6086994736660056,
+          "audio": 0.14561982078159807,
+          "vision": 0.1926141557693645
+        },
+        "regression": {
+          "text": 0.8296624047215141,
+          "audio": 0.04665736981097029,
+          "vision": 0.10154923573316943
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.12079087502073871,
+          "audio": -0.0009448045549166439,
+          "vision": -0.004847588967190463
+        },
+        "regression": {
+          "text": 0.04447326294407056,
+          "audio": 0.0013478219061722988,
+          "vision": 0.006589410803482872
+        }
+      }
+    },
+    {
+      "slot": 10,
+      "token": "##er",
+      "raw_char_span": [
+        34,
+        36
+      ],
+      "raw_fragment": "er",
+      "word_links": [
+        {
+          "word_index": 6,
+          "weight": 1.0,
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 2.599659121923251,
+          "audio": 0.15000102124224715,
+          "vision": 0.1967392796708322
+        },
+        "regression": {
+          "text": 0.8242716967109551,
+          "audio": 0.048113608208047796,
+          "vision": 0.10283198440461745
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.1414110324674249,
+          "audio": -0.0020238099374535736,
+          "vision": -0.005969960510370601
+        },
+        "regression": {
+          "text": 0.04708183640447406,
+          "audio": 0.001180284211653826,
+          "vision": 0.005936552207963176
+        }
+      }
+    },
+    {
+      "slot": 11,
+      "token": "for",
+      "raw_char_span": [
+        37,
+        40
+      ],
+      "raw_fragment": "for",
+      "word_links": [
+        {
+          "word_index": 7,
+          "weight": 1.0,
+          "start_s": 4.169707,
+          "end_s": 4.26994,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9995
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2515284016823007,
+          "audio": 0.1586098761832661,
+          "vision": 0.17694096769528933
+        },
+        "regression": {
+          "text": 0.40148471733223084,
+          "audio": 0.04803427227649649,
+          "vision": 0.09001698702414866
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.027431314816676506,
+          "audio": -0.009816072450848022,
+          "vision": -0.012289834634938056
+        },
+        "regression": {
+          "text": -0.005670881205903472,
+          "audio": -0.0028435471865776215,
+          "vision": 0.00234992254112812
+        }
+      }
+    },
+    {
+      "slot": 12,
+      "token": "red",
+      "raw_char_span": [
+        41,
+        44
+      ],
+      "raw_fragment": "Red",
+      "word_links": [
+        {
+          "word_index": 8,
+          "weight": 1.0,
+          "start_s": 4.39022,
+          "end_s": 4.57064,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9893
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2749380418123186,
+          "audio": 0.16219869815139418,
+          "vision": 0.12765580761913803
+        },
+        "regression": {
+          "text": 0.4074499897372734,
+          "audio": 0.04819899943554499,
+          "vision": 0.06881843629632078
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.03129744631088166,
+          "audio": -0.01556534046343421,
+          "vision": -0.0033816683131377783
+        },
+        "regression": {
+          "text": 0.010915367410900271,
+          "audio": -0.005776679616701303,
+          "vision": 0.012779258086058174
+        }
+      }
+    },
+    {
+      "slot": 13,
+      "token": "wagon",
+      "raw_char_span": [
+        45,
+        50
+      ],
+      "raw_fragment": "Wagon",
+      "word_links": [
+        {
+          "word_index": 9,
+          "weight": 1.0,
+          "start_s": 4.650827,
+          "end_s": 4.93148,
+          "alignment_status": "aligned",
+          "alignment_score": 0.6628
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.1099188824188126,
+          "audio": 0.1394284700163399,
+          "vision": 0.09969826018847365
+        },
+        "regression": {
+          "text": 0.35979495208196954,
+          "audio": 0.04187800359983848,
+          "vision": 0.05214738878113423
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.08191004566156501,
+          "audio": -0.021585064011393977,
+          "vision": -0.022329039932340606
+        },
+        "regression": {
+          "text": -0.024962955075754415,
+          "audio": -0.006670800344436018,
+          "vision": 0.0026798152614966216
+        }
+      }
+    },
+    {
+      "slot": 14,
+      "token": "marketing",
+      "raw_char_span": [
+        51,
+        60
+      ],
+      "raw_fragment": "Marketing",
+      "word_links": [
+        {
+          "word_index": 10,
+          "weight": 1.0,
+          "start_s": 4.99162,
+          "end_s": 5.47274,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9059
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.708232897966753,
+          "audio": 0.21244295903270866,
+          "vision": 0.11102325368610863
+        },
+        "regression": {
+          "text": 0.542588425221097,
+          "audio": 0.06706764718870031,
+          "vision": 0.06075871362422876
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.03915910636560661,
+          "audio": -0.02991754473124428,
+          "vision": -0.027128941503760155
+        },
+        "regression": {
+          "text": 0.01804735782412952,
+          "audio": -0.00625769528825048,
+          "vision": -0.0005852386961650309
+        }
+      }
+    },
+    {
+      "slot": 15,
+      "token": ".",
+      "raw_char_span": [
+        60,
+        61
+      ],
+      "raw_fragment": ".",
+      "word_links": [],
+      "time_mapping_status": "unavailable_nonlexical",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.9460865411276371,
+          "audio": 0.2198736292151611,
+          "vision": 0.14822480127766524
+        },
+        "regression": {
+          "text": 0.28581676075899476,
+          "audio": 0.06939286843473398,
+          "vision": 0.07598720075643749
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.02256247030069795,
+          "audio": -0.032754145722764895,
+          "vision": -0.037528655512092245
+        },
+        "regression": {
+          "text": 0.0036331268626375282,
+          "audio": -0.006992085898728532,
+          "vision": -0.0024244238380749577
+        }
+      }
+    }
+  ],
+  "attribution_mapping_balance": {
+    "classification": {
+      "text": {
+        "content_mass": 27.39771323142195,
+        "lexically_mapped_mass": 22.799085185395754,
+        "unlocalized_mass": 4.598628046026196,
+        "mapped_fraction": 0.8321528513280404
+      },
+      "audio": {
+        "content_mass": 2.7389938737633486,
+        "lexically_mapped_mass": 2.1232831183564107,
+        "unlocalized_mass": 0.6157107554069382,
+        "mapped_fraction": 0.775205501076584
+      },
+      "vision": {
+        "content_mass": 3.908621542934849,
+        "lexically_mapped_mass": 3.0203000721455444,
+        "unlocalized_mass": 0.8883214707893043,
+        "mapped_fraction": 0.7727276839081497
+      }
+    },
+    "regression": {
+      "text": {
+        "content_mass": 8.71702599894419,
+        "lexically_mapped_mass": 7.284112032552863,
+        "unlocalized_mass": 1.4329139663913253,
+        "mapped_fraction": 0.835618940844632
+      },
+      "audio": {
+        "content_mass": 0.8509152195645733,
+        "lexically_mapped_mass": 0.6616853907287146,
+        "unlocalized_mass": 0.18922982883585873,
+        "mapped_fraction": 0.777616119109151
+      },
+      "vision": {
+        "content_mass": 1.7981646684845907,
+        "lexically_mapped_mass": 1.4029265381541127,
+        "unlocalized_mass": 0.3952381303304781,
+        "mapped_fraction": 0.7801991456858252
+      }
+    }
+  },
+  "top_evidence": {
+    "classification": {
+      "text": [
+        {
+          "rank": 1,
+          "word_index": 6,
+          "word": "marketer",
+          "raw_char_span": [
+            28,
+            36
+          ],
+          "token_slots": [
+            9,
+            10
+          ],
+          "model_visible_char_spans": [
+            [
+              28,
+              34
+            ],
+            [
+              34,
+              36
+            ]
+          ],
+          "attribution_mass": 5.208358595589257,
+          "attribution_net": 0.26220190748816363,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761,
+          "alignment_flags": [],
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 2,
+          "word_index": 2,
+          "word": "name",
+          "raw_char_span": [
+            7,
+            11
+          ],
+          "token_slots": [
+            4
+          ],
+          "model_visible_char_spans": [
+            [
+              7,
+              11
+            ]
+          ],
+          "attribution_mass": 3.3194418317078282,
+          "attribution_net": 0.14553767378652305,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9915,
+          "alignment_flags": [],
+          "start_s": 2.124947,
+          "end_s": 2.245227,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 3,
+          "word_index": 3,
+          "word": "is",
+          "raw_char_span": [
+            12,
+            14
+          ],
+          "token_slots": [
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              12,
+              14
+            ]
+          ],
+          "attribution_mass": 2.6555256490192125,
+          "attribution_net": 0.14814768152165822,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.615,
+          "alignment_flags": [],
+          "start_s": 2.325413,
+          "end_s": 2.365507,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        }
+      ],
+      "audio": [
+        {
+          "rank": 1,
+          "word_index": 6,
+          "word": "marketer",
+          "raw_char_span": [
+            28,
+            36
+          ],
+          "token_slots": [
+            9,
+            10
+          ],
+          "model_visible_char_spans": [
+            [
+              28,
+              34
+            ],
+            [
+              34,
+              36
+            ]
+          ],
+          "attribution_mass": 0.2956208420238452,
+          "attribution_net": -0.0029686144923702176,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761,
+          "alignment_flags": [],
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/audio_clips/word006_3628447_4029380.wav",
+            "kind": "audio_wav",
+            "start_s": 3.628447,
+            "end_s": 4.02938,
+            "duration_s": 0.4009375,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 0,
+          "word": "Hi",
+          "raw_char_span": [
+            0,
+            2
+          ],
+          "token_slots": [
+            1
+          ],
+          "model_visible_char_spans": [
+            [
+              0,
+              2
+            ]
+          ],
+          "attribution_mass": 0.24576215627456022,
+          "attribution_net": -0.03448335667002518,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9359,
+          "alignment_flags": [],
+          "start_s": 1.26294,
+          "end_s": 1.483453,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/audio_clips/word000_1262940_1483453.wav",
+            "kind": "audio_wav",
+            "start_s": 1.26294,
+            "end_s": 1.483453,
+            "duration_s": 0.2205,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 10,
+          "word": "Marketing",
+          "raw_char_span": [
+            51,
+            60
+          ],
+          "token_slots": [
+            14
+          ],
+          "model_visible_char_spans": [
+            [
+              51,
+              60
+            ]
+          ],
+          "attribution_mass": 0.21244295903270866,
+          "attribution_net": -0.02991754473124428,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9059,
+          "alignment_flags": [],
+          "start_s": 4.99162,
+          "end_s": 5.47274,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/audio_clips/word010_4991620_5472740.wav",
+            "kind": "audio_wav",
+            "start_s": 4.99162,
+            "end_s": 5.47274,
+            "duration_s": 0.481125,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        }
+      ],
+      "vision": [
+        {
+          "rank": 1,
+          "word_index": 0,
+          "word": "Hi",
+          "raw_char_span": [
+            0,
+            2
+          ],
+          "token_slots": [
+            1
+          ],
+          "model_visible_char_spans": [
+            [
+              0,
+              2
+            ]
+          ],
+          "attribution_mass": 0.4958960681811502,
+          "attribution_net": 0.1295533437602547,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9359,
+          "alignment_flags": [],
+          "start_s": 1.26294,
+          "end_s": 1.483453,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/keyframes/frame000041.png",
+            "kind": "video_png",
+            "decoded_frame_index": 41,
+            "frame_pts_s": 1.366667,
+            "frame_end_s": 1.4,
+            "overlapping_decoded_frame_indices": [
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 6,
+          "word": "marketer",
+          "raw_char_span": [
+            28,
+            36
+          ],
+          "token_slots": [
+            9,
+            10
+          ],
+          "model_visible_char_spans": [
+            [
+              28,
+              34
+            ],
+            [
+              34,
+              36
+            ]
+          ],
+          "attribution_mass": 0.38935343544019674,
+          "attribution_net": -0.010817549477561063,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761,
+          "alignment_flags": [],
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/keyframes/frame000114.png",
+            "kind": "video_png",
+            "decoded_frame_index": 114,
+            "frame_pts_s": 3.8,
+            "frame_end_s": 3.833333,
+            "overlapping_decoded_frame_indices": [
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 2,
+          "word": "name",
+          "raw_char_span": [
+            7,
+            11
+          ],
+          "token_slots": [
+            4
+          ],
+          "model_visible_char_spans": [
+            [
+              7,
+              11
+            ]
+          ],
+          "attribution_mass": 0.3657702471222402,
+          "attribution_net": 0.10199773247372139,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9915,
+          "alignment_flags": [],
+          "start_s": 2.124947,
+          "end_s": 2.245227,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/keyframes/frame000065.png",
+            "kind": "video_png",
+            "decoded_frame_index": 65,
+            "frame_pts_s": 2.166667,
+            "frame_end_s": 2.2,
+            "overlapping_decoded_frame_indices": [
+              63,
+              64,
+              65,
+              66,
+              67
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        }
+      ]
+    },
+    "regression": {
+      "text": [
+        {
+          "rank": 1,
+          "word_index": 6,
+          "word": "marketer",
+          "raw_char_span": [
+            28,
+            36
+          ],
+          "token_slots": [
+            9,
+            10
+          ],
+          "model_visible_char_spans": [
+            [
+              28,
+              34
+            ],
+            [
+              34,
+              36
+            ]
+          ],
+          "attribution_mass": 1.653934101432469,
+          "attribution_net": 0.09155509934854461,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761,
+          "alignment_flags": [],
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 2,
+          "word_index": 2,
+          "word": "name",
+          "raw_char_span": [
+            7,
+            11
+          ],
+          "token_slots": [
+            4
+          ],
+          "model_visible_char_spans": [
+            [
+              7,
+              11
+            ]
+          ],
+          "attribution_mass": 1.0641223680520873,
+          "attribution_net": 0.050596584925055296,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9915,
+          "alignment_flags": [],
+          "start_s": 2.124947,
+          "end_s": 2.245227,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 3,
+          "word_index": 3,
+          "word": "is",
+          "raw_char_span": [
+            12,
+            14
+          ],
+          "token_slots": [
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              12,
+              14
+            ]
+          ],
+          "attribution_mass": 0.8491634618100565,
+          "attribution_net": 0.05069226972463714,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.615,
+          "alignment_flags": [],
+          "start_s": 2.325413,
+          "end_s": 2.365507,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        }
+      ],
+      "audio": [
+        {
+          "rank": 1,
+          "word_index": 6,
+          "word": "marketer",
+          "raw_char_span": [
+            28,
+            36
+          ],
+          "token_slots": [
+            9,
+            10
+          ],
+          "model_visible_char_spans": [
+            [
+              28,
+              34
+            ],
+            [
+              34,
+              36
+            ]
+          ],
+          "attribution_mass": 0.09477097801901808,
+          "attribution_net": 0.0025281061178261247,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761,
+          "alignment_flags": [],
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/audio_clips/word006_3628447_4029380.wav",
+            "kind": "audio_wav",
+            "start_s": 3.628447,
+            "end_s": 4.02938,
+            "duration_s": 0.4009375,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 0,
+          "word": "Hi",
+          "raw_char_span": [
+            0,
+            2
+          ],
+          "token_slots": [
+            1
+          ],
+          "model_visible_char_spans": [
+            [
+              0,
+              2
+            ]
+          ],
+          "attribution_mass": 0.07357962600089073,
+          "attribution_net": -0.010463418170116909,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9359,
+          "alignment_flags": [],
+          "start_s": 1.26294,
+          "end_s": 1.483453,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/audio_clips/word000_1262940_1483453.wav",
+            "kind": "audio_wav",
+            "start_s": 1.26294,
+            "end_s": 1.483453,
+            "duration_s": 0.2205,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 10,
+          "word": "Marketing",
+          "raw_char_span": [
+            51,
+            60
+          ],
+          "token_slots": [
+            14
+          ],
+          "model_visible_char_spans": [
+            [
+              51,
+              60
+            ]
+          ],
+          "attribution_mass": 0.06706764718870031,
+          "attribution_net": -0.00625769528825048,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9059,
+          "alignment_flags": [],
+          "start_s": 4.99162,
+          "end_s": 5.47274,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/audio_clips/word010_4991620_5472740.wav",
+            "kind": "audio_wav",
+            "start_s": 4.99162,
+            "end_s": 5.47274,
+            "duration_s": 0.481125,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        }
+      ],
+      "vision": [
+        {
+          "rank": 1,
+          "word_index": 6,
+          "word": "marketer",
+          "raw_char_span": [
+            28,
+            36
+          ],
+          "token_slots": [
+            9,
+            10
+          ],
+          "model_visible_char_spans": [
+            [
+              28,
+              34
+            ],
+            [
+              34,
+              36
+            ]
+          ],
+          "attribution_mass": 0.20438122013778687,
+          "attribution_net": 0.012525963011446047,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9761,
+          "alignment_flags": [],
+          "start_s": 3.628447,
+          "end_s": 4.02938,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/keyframes/frame000114.png",
+            "kind": "video_png",
+            "decoded_frame_index": 114,
+            "frame_pts_s": 3.8,
+            "frame_end_s": 3.833333,
+            "overlapping_decoded_frame_indices": [
+              108,
+              109,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 0,
+          "word": "Hi",
+          "raw_char_span": [
+            0,
+            2
+          ],
+          "token_slots": [
+            1
+          ],
+          "model_visible_char_spans": [
+            [
+              0,
+              2
+            ]
+          ],
+          "attribution_mass": 0.20382972362345192,
+          "attribution_net": 0.06851586545751553,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9359,
+          "alignment_flags": [],
+          "start_s": 1.26294,
+          "end_s": 1.483453,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/keyframes/frame000041.png",
+            "kind": "video_png",
+            "decoded_frame_index": 41,
+            "frame_pts_s": 1.366667,
+            "frame_end_s": 1.4,
+            "overlapping_decoded_frame_indices": [
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 2,
+          "word": "name",
+          "raw_char_span": [
+            7,
+            11
+          ],
+          "token_slots": [
+            4
+          ],
+          "model_visible_char_spans": [
+            [
+              7,
+              11
+            ]
+          ],
+          "attribution_mass": 0.15384596215728205,
+          "attribution_net": 0.05621909553742892,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9915,
+          "alignment_flags": [],
+          "start_s": 2.124947,
+          "end_s": 2.245227,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/05/keyframes/frame000065.png",
+            "kind": "video_png",
+            "decoded_frame_index": 65,
+            "frame_pts_s": 2.166667,
+            "frame_end_s": 2.2,
+            "overlapping_decoded_frame_indices": [
+              63,
+              64,
+              65,
+              66,
+              67
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        }
+      ]
+    }
+  }
+}

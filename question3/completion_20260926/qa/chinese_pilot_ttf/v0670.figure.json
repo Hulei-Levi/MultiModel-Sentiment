@@ -1,0 +1,20 @@
+{
+  "question": "该样本的模态作用与局部输入重要性如何解释当前预测？",
+  "source_data": "逐样本分析记录及归因数组",
+  "backend": "python-matplotlib",
+  "display_language": "zh-CN",
+  "archetype": "quantitative grid",
+  "size_inches": [
+    8.27,
+    11.69
+  ],
+  "minimum_requested_font_pt": 7,
+  "uncertainty": "Descriptive fixed-cohort observations. No population confidence intervals.",
+  "alignment_verdict": "PASS",
+  "color_semantics": {
+    "text": "#3B6E8C",
+    "audio": "#BF8845",
+    "vision": "#5C8D78"
+  },
+  "pdf": "page in the associated PDF book"
+}

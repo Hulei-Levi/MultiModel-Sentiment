@@ -1,0 +1,49 @@
+{
+  "pdf": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/completion_20260926/validation/figures/05_regression_occlusion.pdf",
+  "auditable": true,
+  "verdict": "PASS",
+  "page_count": 1,
+  "visible_text_box_count": 19,
+  "text_trace_count": 19,
+  "stroke_path_count": 17,
+  "filled_region_count": 78,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [],
+  "sha256": "13d9f32114ce7afefac9b5a59ed3a6fc33c4ecc6340f2633252f4b30cb1dcc46",
+  "font_audit": {
+    "auditable": true,
+    "minimum_required_pt": 5.0,
+    "minimum_found_pt": 7.0,
+    "text_run_count": 19,
+    "below_minimum_count": 0,
+    "below_minimum": [],
+    "warnings": [],
+    "pages": [
+      {
+        "page": 1,
+        "minimum_font_pt": 7.0,
+        "text_trace_count": 19,
+        "below_minimum": [],
+        "page_size_pt": [
+          0.0,
+          0.0,
+          324.0,
+          280.79998779296875
+        ]
+      }
+    ],
+    "page_glyph_floor_pass": true
+  },
+  "manual_warn_review_status": "not_required"
+}

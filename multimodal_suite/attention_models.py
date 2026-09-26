@@ -372,7 +372,16 @@ class Zheng2022Model(nn.Module):
         self.project = ProjectedInputs(feature_dims, d, config.dropout)
         self.encoders = nn.ModuleDict({m: _ResidualSequenceEncoder(d, config.nhead, config.dropout)
                                       for m in MODALITIES})
-        self.fusion = _CascadeFusion(d, config.nhead, config.dropout)
+        self.fusion_variant = _options(config).get("zheng_fusion_variant", "cascade")
+        self.reconstruction_enabled = _options(config).get("zheng_reconstruction_enabled", True)
+        if not isinstance(self.reconstruction_enabled, bool):
+            raise ValueError("zheng_reconstruction_enabled must be bool")
+        if self.fusion_variant == "cascade":
+            self.fusion = _CascadeFusion(d, config.nhead, config.dropout)
+        elif self.fusion_variant == "pan_directional":
+            self.fusion = _PanDirectionalFusion(d, config.dropout)
+        else:
+            raise ValueError("zheng_fusion_variant must be 'cascade' or 'pan_directional'")
         self.decoders = nn.ModuleDict({m: nn.Sequential(
             nn.Linear(d, d), nn.GELU(), nn.Linear(d, feature_dims[m])
         ) for m in MODALITIES})
@@ -388,17 +397,22 @@ class Zheng2022Model(nn.Module):
         x = {m: self.encoders[m](projected[m], masks[m]) for m in MODALITIES}
 
         ##======================= 下面的这个部分是fusion融合模块 ======================================
-        if return_intermediates:
-            fused, paths, pairs = self.fusion(x, masks, return_intermediates=True)
+        if self.fusion_variant == "cascade":
+            if return_intermediates:
+                fused, paths, pairs = self.fusion(x, masks, return_intermediates=True)
+            else:
+                fused, paths = self.fusion(x, masks)
+        elif return_intermediates:
+            fused, paths, attention, joined = self.fusion(x, masks, return_intermediates=True)
         else:
-            fused, paths = self.fusion(x, masks)
+            fused, paths, attention = self.fusion(x, masks)
 
         pooled = masked_mean(fused, union)
         logits = self.classifier(pooled)    # 这里就是进行了分类
 
         ##======================= 下面的这个部分是 重构模块 ======================================
         auxiliary, reconstructions, losses = {}, {}, {}
-        if self.training or return_intermediates:
+        if self.reconstruction_enabled and (self.training or return_intermediates):
             for m in MODALITIES:
                 # 这里首先基于 fusion 特征输入至一个网络
                 prediction = self.decoders[m](fused)
@@ -415,23 +429,36 @@ class Zheng2022Model(nn.Module):
                 #### 这里会把复原的特征与原始特征进行对比，然后把损失作为辅助特征
                 auxiliary["reconstruction"] = torch.stack(list(losses.values())).sum()
 
-        result = {"logits": logits, "aux_losses": auxiliary,
-                "diagnostics": {"path_representations": torch.stack(
-                    [masked_mean(p, union) for p in paths], dim=1
-                ).detach()}}
+        diagnostics = {"path_representations": torch.stack(
+            [masked_mean(p, union) for p in paths], dim=1
+        ).detach()}
+        if self.fusion_variant == "pan_directional":
+            diagnostics["directional_modality_attention"] = attention.detach()
+            diagnostics["attention_is_feature_routing_not_attribution"] = True
+        result = {"logits": logits, "aux_losses": auxiliary, "diagnostics": diagnostics}
         if return_intermediates:
             result.update(
                 projected_sequences={m: value.detach() for m, value in projected.items()},
                 encoded_sequences={m: value.detach() for m, value in x.items()},
-                pair_sequences={name: value.detach() for name, value in pairs.items()},
-                cascade_sequences={"_".join(route): value.detach()
-                                   for route, value in zip(self.fusion.routes, paths)},
-                concatenated=torch.cat(paths, dim=-1).detach(),
                 fusion_sequence=fused.detach(), pooled_features=pooled.detach(),
                 reconstructions=reconstructions,
                 reconstruction_losses={m: value.detach() for m, value in losses.items()},
                 fusion_mask=union.detach(),
             )
+            if self.fusion_variant == "cascade":
+                result.update(
+                    pair_sequences={name: value.detach() for name, value in pairs.items()},
+                    cascade_sequences={"_".join(route): value.detach()
+                                       for route, value in zip(self.fusion.routes, paths)},
+                    concatenated=torch.cat(paths, dim=-1).detach(),
+                )
+            else:
+                result.update(
+                    directional_sequences={m: value.detach()
+                                           for m, value in zip(MODALITIES, paths)},
+                    modality_attention=attention.detach(),
+                    directional_concatenated=joined.detach(),
+                )
         return result
 
 
@@ -478,6 +505,33 @@ class _DirectionalModalityAttention(nn.Module):
         if return_intermediates:
             return (*result, attended_sequences)
         return result
+
+
+class _PanDirectionalFusion(nn.Module):
+    """Pan's within-slot three-query fusion adapted to Zheng's shared latent.
+
+    Figure 1's attended and original streams form 6d channels. A 1x1
+    projection restores d channels for Zheng's unchanged three decoders.
+    This is a feature-space hybrid, not the full Pan MMAN with cLSTMs.
+    """
+    def __init__(self, d_model, dropout):
+        super().__init__()
+        self.directional = _DirectionalModalityAttention(
+            d_model, dropout, concat_skip=True, share_source_kv=True
+        )
+        self.merge = nn.Conv1d(6 * d_model, d_model, kernel_size=1)
+
+    def forward(self, x, masks, return_intermediates=False):
+        joined, weights, directional = self.directional(
+            x, masks, return_intermediates=True
+        )
+        union = torch.stack([masks[m].bool() for m in MODALITIES], dim=-1).any(-1)
+        fused = self.merge(joined.transpose(1, 2)).transpose(1, 2)
+        fused = fused.masked_fill(~union.unsqueeze(-1), 0)
+        paths = [directional[m] for m in MODALITIES]
+        if return_intermediates:
+            return fused, paths, weights, joined
+        return fused, paths, weights
 
 
 class _ContextualPredictor(nn.Module):

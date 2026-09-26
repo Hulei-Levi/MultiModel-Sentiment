@@ -1,0 +1,39 @@
+{
+  "rendered_text": [
+    "文本\n分类正确",
+    "文本\n分类错误",
+    "语音\n分类正确",
+    "语音\n分类错误",
+    "视觉\n分类正确",
+    "视觉\n分类错误",
+    "绝对 Shapley 份额（%）",
+    "−20",
+    "0",
+    "20",
+    "40",
+    "60",
+    "80",
+    "100",
+    "120",
+    "情感强度解释：分类正确与错误样本的模态作用",
+    "全部728条验证样本；按分类对错分组。箱体为四分位区间，中线为中位数，须线范围为1.5倍四分位距。"
+  ],
+  "question": "分类正确与错误样本的模态作用有何差异？",
+  "source_data": "cohort.json and group_modality_shares.csv",
+  "backend": "python-matplotlib",
+  "display_language": "zh-CN",
+  "archetype": "single quantitative panel",
+  "size_inches": [
+    6.9,
+    3.6
+  ],
+  "minimum_requested_font_pt": 7,
+  "uncertainty": "Descriptive fixed-cohort observations. No population confidence intervals.",
+  "alignment_verdict": "NOT APPLICABLE",
+  "color_semantics": {
+    "text": "#3B6E8C",
+    "audio": "#BF8845",
+    "vision": "#5C8D78"
+  },
+  "pdf": "03_regression_modality_groups.pdf"
+}

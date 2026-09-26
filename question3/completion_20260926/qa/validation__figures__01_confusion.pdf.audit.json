@@ -1,0 +1,49 @@
+{
+  "pdf": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/completion_20260926/validation/figures/01_confusion.pdf",
+  "auditable": true,
+  "verdict": "PASS",
+  "page_count": 1,
+  "visible_text_box_count": 27,
+  "text_trace_count": 27,
+  "stroke_path_count": 8,
+  "filled_region_count": 8,
+  "image_region_count": 1,
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [],
+  "sha256": "12a76284c9ee00996eecf2ac9201213807570fdea81da77b04dc4bf8617cbcc8",
+  "font_audit": {
+    "auditable": true,
+    "minimum_required_pt": 5.0,
+    "minimum_found_pt": 7.0,
+    "text_run_count": 27,
+    "below_minimum_count": 0,
+    "below_minimum": [],
+    "warnings": [],
+    "pages": [
+      {
+        "page": 1,
+        "minimum_font_pt": 7.0,
+        "text_trace_count": 27,
+        "below_minimum": [],
+        "page_size_pt": [
+          0.0,
+          0.0,
+          295.20001220703125,
+          273.6000061035156
+        ]
+      }
+    ],
+    "page_glyph_floor_pass": true
+  },
+  "manual_warn_review_status": "not_required"
+}

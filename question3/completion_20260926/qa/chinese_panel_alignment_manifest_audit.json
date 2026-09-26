@@ -1,0 +1,1318 @@
+{
+  "files": [
+    {
+      "file": "attachment4/cards/01_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/01_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/02_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/02_media.alignment.json",
+      "sha256": "e1833d54fa5e587d270be6c8041b120efc1dcc24b1b209a624ea336b68b90cdd",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/03_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/03_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/04_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/04_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/05_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/05_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/06_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/06_media.alignment.json",
+      "sha256": "e1833d54fa5e587d270be6c8041b120efc1dcc24b1b209a624ea336b68b90cdd",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/07_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/07_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/08_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/08_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/09_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/09_media.alignment.json",
+      "sha256": "e1833d54fa5e587d270be6c8041b120efc1dcc24b1b209a624ea336b68b90cdd",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/10_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/10_media.alignment.json",
+      "sha256": "e1833d54fa5e587d270be6c8041b120efc1dcc24b1b209a624ea336b68b90cdd",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/11_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/11_media.alignment.json",
+      "sha256": "e1833d54fa5e587d270be6c8041b120efc1dcc24b1b209a624ea336b68b90cdd",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/12_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/12_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/13_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/13_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/14_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/14_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/15_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/15_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/16_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/16_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/17_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/17_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/18_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/18_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/19_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/19_media.alignment.json",
+      "sha256": "acc17aa0536c5e072f7e39bfd029db6370a45632f7737868572257e63f5c2457",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/20_analysis.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "attachment4/cards/20_media.alignment.json",
+      "sha256": "5022eb6a56bedf9cf471c9c333ad8ad3167390e7282693a616aae9a6b158f738",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0003.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0014.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0017.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0048.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0050.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0062.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0063.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0069.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0072.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0083.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0128.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0138.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0143.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0144.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0156.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0161.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0182.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0189.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0207.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0218.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0230.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0243.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0249.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0257.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0264.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0289.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0300.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0312.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0338.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0347.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0372.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0382.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0388.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0400.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0416.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0417.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0418.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0427.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0444.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0456.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0489.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0500.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0520.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0526.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0543.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0554.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0563.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0566.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0609.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0612.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0614.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0626.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0629.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0634.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0666.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0669.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0670.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0677.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0704.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/cards/v0708.alignment.json",
+      "sha256": "9275f01ad0a109e19373f06f903af631865eaea8f647788775dfc8d2505a5048",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/01_confusion.alignment.json",
+      "sha256": "be389aee8f7ec043083bd4015dcaaa76466e5ed9d0f5b7da0dd8374408b73eda",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/02_regression.alignment.json",
+      "sha256": "4c98d25f85d7be475521bf8ced0ce0e27b48124fb91cc0eb1377757db2771642",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.alignment.json",
+      "sha256": "8a70808a3c1c6ea49e83ade044087bf0dced1440b4b9cd93f89f37677ad1b45f",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.alignment.json",
+      "sha256": "8a70808a3c1c6ea49e83ade044087bf0dced1440b4b9cd93f89f37677ad1b45f",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.alignment.json",
+      "sha256": "b736694cb3e1ed1b64732f1920917b9fbc9c9c98b0b525770df480f9394f9e52",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.alignment.json",
+      "sha256": "ba8c3fe6082da6f54572c406d40e8d8e5974e74fa46c0e022b3f4ba63ebff870",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.alignment.json",
+      "sha256": "ba8c3fe6082da6f54572c406d40e8d8e5974e74fa46c0e022b3f4ba63ebff870",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.alignment.json",
+      "sha256": "7d56fbf567200e3d0e165ab7e5ea4aa487b38106b8e756d18a7c9436b75340da",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.alignment.json",
+      "sha256": "261be4f532f66169c9a0fe57406a19516bea6a9c89892c47e85dd11c86b5df42",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      },
+      "thresholds": null
+    }
+  ],
+  "count": 109,
+  "verdict_counts": {
+    "NOT APPLICABLE": 9,
+    "PASS": 100
+  },
+  "result": "PASS"
+}

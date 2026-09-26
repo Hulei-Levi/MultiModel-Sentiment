@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "independent_audit": "Recomputed from saved eight-coalition logits using all six permutations; no model rerun",
+  "cohort_wrong_count": 267,
+  "error_contrast_rows": 534,
+  "references": [
+    "mean",
+    "zero"
+  ],
+  "wrong_vs_true_target_verified": true,
+  "max_shapley_abs_error": 1.7763568394002505e-15,
+  "max_efficiency_abs_error": 1.7763568394002505e-15,
+  "mean_contributions_by_reference": {
+    "mean": [
+      0.9608039228006101,
+      0.014196458106369875,
+      -0.07515613343589915
+    ],
+    "zero": [
+      1.2285677338374803,
+      0.014388867472525178,
+      -0.028723565997618657
+    ]
+  },
+  "wrong_cases_with_truth_not_runnerup": 98,
+  "wrong_cases_with_new_vs_original_margin_shapley_difference": 98,
+  "new_error_contrast_shares_exported": false,
+  "absolute_dominant_modalities_verified": true,
+  "diagnostic_case_count": 60,
+  "diagnostic_wrong_count": 30,
+  "tested_word_response_count": 599,
+  "word_response_contrast_and_truth_metrics_verified": true,
+  "recovered_diagnostic_wrong_count": 10,
+  "recovered_diagnostic_ids": [
+    "v0050",
+    "v0218",
+    "v0230",
+    "v0249",
+    "v0416",
+    "v0417",
+    "v0520",
+    "v0543",
+    "v0554",
+    "v0629"
+  ],
+  "winner_runner_supporting_word_labels_kept_separate": true,
+  "csv_json_conclusions_consistent": true,
+  "clarifications": [],
+  "final_checked_utc": "2026-09-26T08:22:47.827573+00:00",
+  "final_script_sha256": "e8f91188e3eaaca5951c10cc006e9c76acd5a89ddfa949ab13f9f17a2343e9cc",
+  "presentation_corrections_verified": {
+    "originally_correct_case_contrast_is_null": true,
+    "correct_case_null_response_count": 303,
+    "mean_reference_explicitly_named": true,
+    "basis_includes_new_error_analysis_files": true,
+    "csv_json_txt_summary_consistent_after_refresh": true
+  },
+  "remaining_interpretation_notes": [
+    "Wrong-vs-true Shapley is modality-level; word-level IG remains the separately labelled original winner-versus-runner-up target.",
+    "Input interventions measure model responses and do not establish causal blame."
+  ],
+  "verification_scope": "Original independent full numeric audit retained; final check verifies the three presentation fixes and refreshed JSON/CSV/TXT/summary consistency, without rerunning models."
+}

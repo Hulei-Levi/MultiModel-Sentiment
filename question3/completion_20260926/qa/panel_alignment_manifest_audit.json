@@ -1,0 +1,1095 @@
+{
+  "files": [
+    {
+      "file": "attachment4/cards/01_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/01_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/02_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/02_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/03_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/03_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/04_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/04_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/05_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/05_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/06_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/06_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/07_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/07_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/08_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/08_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/09_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/09_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/10_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/10_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/11_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/11_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/12_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/12_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/13_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/13_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/14_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/14_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/15_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/15_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/16_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/16_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/17_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/17_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/18_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/18_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/19_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/19_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/20_analysis.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "attachment4/cards/20_media.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 2,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0003.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0014.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0017.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0048.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0050.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0062.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0063.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0069.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0072.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0083.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0128.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0138.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0143.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0144.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0156.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0161.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0182.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0189.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0207.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0218.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0230.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0243.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0249.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0257.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0264.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0289.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0300.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0312.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0338.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0347.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0372.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0382.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0388.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0400.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0416.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0417.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0418.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0427.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0444.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0456.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0489.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0500.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0520.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0526.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0543.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0554.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0563.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0566.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0609.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0612.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0614.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0626.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0629.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0634.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0666.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0669.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0670.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0677.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0704.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/cards/v0708.alignment.json",
+      "verdict": "PASS",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 5,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/01_confusion.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/02_regression.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.alignment.json",
+      "verdict": "NOT APPLICABLE",
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "comparisons": 0,
+        "exemptions": 0
+      }
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,56 @@
+{
+  "file": "qa/chinese_pilot_media.pdf",
+  "sha256": "5214ac510dbec8d9d6757be801782c5071b8eb9bf047637552fd718569c0f32f",
+  "source_sha256": "0340a42ad7b9c553a56573f23a1cde9d04883091b6b8469ed278784bf7fafebd",
+  "collision": {
+    "pdf": "qa\\chinese_pilot_media.pdf",
+    "auditable": true,
+    "verdict": "PASS",
+    "page_count": 1,
+    "visible_text_box_count": 30,
+    "text_trace_count": 78,
+    "stroke_path_count": 0,
+    "filled_region_count": 1,
+    "image_region_count": 3,
+    "summary": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "thresholds": {
+      "text_inset_pt": 0.6,
+      "min_overlap_ratio": 0.05,
+      "clipping_tolerance_pt": 0.5
+    },
+    "findings": []
+  },
+  "text_audit": {
+    "auditable": true,
+    "minimum_required_pt": 5.0,
+    "minimum_found_pt": 7.5,
+    "text_run_count": 78,
+    "below_minimum_count": 0,
+    "below_minimum": [],
+    "warnings": []
+  },
+  "chinese_glyph_audit": {
+    "pages": [
+      {
+        "page": 1,
+        "minimum_font_pt": 7.5,
+        "cjk_characters": 371,
+        "font_names": [
+          "NotoSansCJKsc-Bold",
+          "NotoSansCJKsc-Regular"
+        ],
+        "missing_or_replacement_characters": []
+      }
+    ],
+    "cjk_count": 371,
+    "replacement_or_null": [],
+    "notdef_glyphs": [],
+    "cjk_not_SC_font": [],
+    "result": "PASS"
+  }
+}

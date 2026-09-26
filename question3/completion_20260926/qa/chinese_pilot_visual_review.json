@@ -1,0 +1,12 @@
+{
+  "result": "FAIL",
+  "timestamp_utc": "2026-09-26T12:42:56.563264+00:00",
+  "pdf": "qa/chinese_pilot_cards.pdf",
+  "sha256": "71b3a9c0b080822a787fbabc18f3f2c4fb94fb180508c85af6fe43e0d26fc274",
+  "pages_visually_reviewed": [
+    1,
+    2
+  ],
+  "finding": "Most Chinese and Latin characters missing or rendered as unrelated fragments in actual PyMuPDF rasterization, despite correct extracted Unicode and passing collision audit. Noto CFF outlines embedded with current Type42 pipeline are incompatible. Must switch to verified true TTF Droid fallback and rerender.",
+  "resolution_status": "Font fallback verified on an independent memory-only PDF; case pilot and full bundle revalidation pending."
+}

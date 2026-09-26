@@ -1,0 +1,76 @@
+{
+  "file": "qa/chinese_pilot_cards.pdf",
+  "sha256": "71b3a9c0b080822a787fbabc18f3f2c4fb94fb180508c85af6fe43e0d26fc274",
+  "source_sha256": "0340a42ad7b9c553a56573f23a1cde9d04883091b6b8469ed278784bf7fafebd",
+  "collision": {
+    "pdf": "qa\\chinese_pilot_cards.pdf",
+    "auditable": true,
+    "verdict": "PASS",
+    "page_count": 3,
+    "visible_text_box_count": 328,
+    "text_trace_count": 344,
+    "stroke_path_count": 247,
+    "filled_region_count": 262,
+    "image_region_count": 0,
+    "summary": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "thresholds": {
+      "text_inset_pt": 0.6,
+      "min_overlap_ratio": 0.05,
+      "clipping_tolerance_pt": 0.5
+    },
+    "findings": []
+  },
+  "text_audit": {
+    "auditable": true,
+    "minimum_required_pt": 5.0,
+    "minimum_found_pt": 7.0,
+    "text_run_count": 344,
+    "below_minimum_count": 0,
+    "below_minimum": [],
+    "warnings": []
+  },
+  "chinese_glyph_audit": {
+    "pages": [
+      {
+        "page": 1,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 371,
+        "font_names": [
+          "NotoSansCJKsc-Bold",
+          "NotoSansCJKsc-Regular"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 2,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 407,
+        "font_names": [
+          "NotoSansCJKsc-Bold",
+          "NotoSansCJKsc-Regular"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 3,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 444,
+        "font_names": [
+          "NotoSansCJKsc-Bold",
+          "NotoSansCJKsc-Regular"
+        ],
+        "missing_or_replacement_characters": []
+      }
+    ],
+    "cjk_count": 1222,
+    "replacement_or_null": [],
+    "notdef_glyphs": [],
+    "cjk_not_SC_font": [],
+    "result": "PASS"
+  }
+}

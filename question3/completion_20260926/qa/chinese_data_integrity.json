@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-26T12:52:16.629291+00:00",
+  "scope": "Independent field-by-field comparison of Chinese CSV display exports against saved numeric JSON/CSV and reviewed translation catalogs; no model rerun and no numeric originals modified.",
+  "source_sha256": "fa91e0c3fa971b0406935f6cbd226aaaf8b87ed0ef2d1924663852628a92f0c9",
+  "source_sha256_matches_announced_final": true,
+  "csv_count": 12,
+  "table_checks": {
+    "验证集基础指标.csv": {
+      "rows": 6,
+      "expected_rows": 6,
+      "compared_fields": 18,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "验证集全量预测.csv": {
+      "rows": 728,
+      "expected_rows": 728,
+      "compared_fields": 8008,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "验证集模态贡献.csv": {
+      "rows": 8736,
+      "expected_rows": 8736,
+      "compared_fields": 69888,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "诊断样本名单.csv": {
+      "rows": 60,
+      "expected_rows": 60,
+      "compared_fields": 540,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "模态替换结果.csv": {
+      "rows": 6,
+      "expected_rows": 6,
+      "compared_fields": 48,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "局部干预对照.csv": {
+      "rows": 480,
+      "expected_rows": 480,
+      "compared_fields": 4800,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "分组模态作用程度.csv": {
+      "rows": 24,
+      "expected_rows": 24,
+      "compared_fields": 264,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "诊断样本中文释义.csv": {
+      "rows": 60,
+      "expected_rows": 60,
+      "compared_fields": 540,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "错误类别与真实类别对比归因.csv": {
+      "rows": 534,
+      "expected_rows": 534,
+      "compared_fields": 6408,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "逐例错误分析.csv": {
+      "rows": 60,
+      "expected_rows": 60,
+      "compared_fields": 360,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "附件四全量预测与解释.csv": {
+      "rows": 20,
+      "expected_rows": 20,
+      "compared_fields": 480,
+      "mismatches": [],
+      "status": "PASS"
+    },
+    "附件四关键证据定位.csv": {
+      "rows": 360,
+      "expected_rows": 360,
+      "compared_fields": 7200,
+      "mismatches": [],
+      "status": "PASS"
+    }
+  },
+  "usage_instructions_json_present": true,
+  "class_labels_verified": {
+    "0": "负向",
+    "1": "中性",
+    "2": "正向"
+  },
+  "task_labels_verified": {
+    "classification": "情感极性",
+    "regression": "情感强度"
+  },
+  "numeric_comparison": "CSV numbers parsed to float and compared exactly with source values; source integer, JSON-list and raw-text fields retained.",
+  "narrative_check_scope": "Case narrative wording is intentionally localized, so it is not compared byte-for-byte. Numeric/class fields, recovery-word lists and occurrence of recovery words in notes were checked.",
+  "translation_audit": "localization/translation_audit.json",
+  "data_integrity": {
+    "baseline": "localization/data_hashes_before.json",
+    "files_checked": 229,
+    "changed_files": [],
+    "missing_files": [],
+    "unchanged": true
+  },
+  "errors": [],
+  "source_identity_note": "Final source hash updated to the corrected frozen identity announced after initial audit; all 12 table checks and 229 original-file hash comparisons had already passed."
+}

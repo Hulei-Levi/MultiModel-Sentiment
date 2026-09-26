@@ -1,0 +1,3091 @@
+{
+  "schema": "q3_completion_delivery_v1",
+  "display_language": "zh-CN",
+  "created_utc": "2026-09-26T12:47:22.406194+00:00",
+  "script": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/explain_this_work.py",
+  "script_sha256": "fa91e0c3fa971b0406935f6cbd226aaaf8b87ed0ef2d1924663852628a92f0c9",
+  "checkpoint": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/results/second_question/this_work/20260925_150303_247629/best.pt",
+  "checkpoint_sha256": "8564933b9c62fa1951a0aba0d1aa4c1c708e9180990852e1ecc202641da58f92",
+  "validation_count": 728,
+  "validation_detail_count": 60,
+  "attachment4_count": 20,
+  "validation_metrics": {
+    "sample_count": 728,
+    "accuracy": 0.6332417582417582,
+    "macro_f1": 0.6000143236762909,
+    "weighted_f1": 0.6275220058599074,
+    "per_class_f1": [
+      0.6387434554973822,
+      0.4367816091954023,
+      0.7245179063360881
+    ],
+    "confusion_matrix": [
+      [
+        122,
+        40,
+        44
+      ],
+      [
+        27,
+        76,
+        81
+      ],
+      [
+        27,
+        48,
+        263
+      ]
+    ],
+    "cross_entropy": 0.8450465619663343,
+    "mae": 0.5842021746857726,
+    "rmse": 0.8123047983182432,
+    "pearson": 0.6416062462643414
+  },
+  "all_validation_integrations_converged": true,
+  "validation_integration_edges": 1440,
+  "max_validation_integral_error": 0.0024868923260052966,
+  "attachment4_media_errors": [],
+  "raw_feature_time_metadata_recovered": false,
+  "entry_point": "结果索引.html",
+  "figures": {
+    "validation": 69,
+    "attachment4": 40
+  },
+  "reproduce_command": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/.venv-align/bin/python -B /data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/explain_this_work.py --complete-q3 --device cuda:1 --output-dir /data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/completion_20260926",
+  "limitations": [
+    "验证集参与模型选择，结果不代表独立测试集泛化性能。",
+    "验证集缺少原始音视频，相关证据仅定位到缓存槽位。",
+    "附件四语音时段与画面采用事后词语时间对应，原缓存特征提取窗口仍未恢复。",
+    "保留并标注文本截断、原始特征全零及低置信度定位。"
+  ],
+  "files": [
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "bytes": 3667436
+    },
+    {
+      "file": "attachment4/attachment4_key_evidence.csv",
+      "bytes": 79098
+    },
+    {
+      "file": "attachment4/attachment4_media_evidence.json",
+      "bytes": 2527637
+    },
+    {
+      "file": "attachment4/attachment4_predictions_and_explanations.csv",
+      "bytes": 12961
+    },
+    {
+      "file": "attachment4/cards/01_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/01_analysis.figure.json",
+      "bytes": 3154
+    },
+    {
+      "file": "attachment4/cards/01_analysis.png",
+      "bytes": 652957
+    },
+    {
+      "file": "attachment4/cards/01_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/01_media.figure.json",
+      "bytes": 2658
+    },
+    {
+      "file": "attachment4/cards/01_media.png",
+      "bytes": 2384562
+    },
+    {
+      "file": "attachment4/cards/02_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/02_analysis.figure.json",
+      "bytes": 2989
+    },
+    {
+      "file": "attachment4/cards/02_analysis.png",
+      "bytes": 606200
+    },
+    {
+      "file": "attachment4/cards/02_media.alignment.json",
+      "bytes": 2045
+    },
+    {
+      "file": "attachment4/cards/02_media.figure.json",
+      "bytes": 2676
+    },
+    {
+      "file": "attachment4/cards/02_media.png",
+      "bytes": 1266760
+    },
+    {
+      "file": "attachment4/cards/03_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/03_analysis.figure.json",
+      "bytes": 3126
+    },
+    {
+      "file": "attachment4/cards/03_analysis.png",
+      "bytes": 675693
+    },
+    {
+      "file": "attachment4/cards/03_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/03_media.figure.json",
+      "bytes": 2585
+    },
+    {
+      "file": "attachment4/cards/03_media.png",
+      "bytes": 1610890
+    },
+    {
+      "file": "attachment4/cards/04_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/04_analysis.figure.json",
+      "bytes": 3181
+    },
+    {
+      "file": "attachment4/cards/04_analysis.png",
+      "bytes": 666715
+    },
+    {
+      "file": "attachment4/cards/04_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/04_media.figure.json",
+      "bytes": 2617
+    },
+    {
+      "file": "attachment4/cards/04_media.png",
+      "bytes": 2266734
+    },
+    {
+      "file": "attachment4/cards/05_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/05_analysis.figure.json",
+      "bytes": 2982
+    },
+    {
+      "file": "attachment4/cards/05_analysis.png",
+      "bytes": 622234
+    },
+    {
+      "file": "attachment4/cards/05_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/05_media.figure.json",
+      "bytes": 2639
+    },
+    {
+      "file": "attachment4/cards/05_media.png",
+      "bytes": 2553893
+    },
+    {
+      "file": "attachment4/cards/06_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/06_analysis.figure.json",
+      "bytes": 3138
+    },
+    {
+      "file": "attachment4/cards/06_analysis.png",
+      "bytes": 686943
+    },
+    {
+      "file": "attachment4/cards/06_media.alignment.json",
+      "bytes": 2045
+    },
+    {
+      "file": "attachment4/cards/06_media.figure.json",
+      "bytes": 2642
+    },
+    {
+      "file": "attachment4/cards/06_media.png",
+      "bytes": 3347083
+    },
+    {
+      "file": "attachment4/cards/07_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/07_analysis.figure.json",
+      "bytes": 3515
+    },
+    {
+      "file": "attachment4/cards/07_analysis.png",
+      "bytes": 761256
+    },
+    {
+      "file": "attachment4/cards/07_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/07_media.figure.json",
+      "bytes": 2419
+    },
+    {
+      "file": "attachment4/cards/07_media.png",
+      "bytes": 1962429
+    },
+    {
+      "file": "attachment4/cards/08_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/08_analysis.figure.json",
+      "bytes": 2969
+    },
+    {
+      "file": "attachment4/cards/08_analysis.png",
+      "bytes": 602581
+    },
+    {
+      "file": "attachment4/cards/08_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/08_media.figure.json",
+      "bytes": 2644
+    },
+    {
+      "file": "attachment4/cards/08_media.png",
+      "bytes": 2228204
+    },
+    {
+      "file": "attachment4/cards/09_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/09_analysis.figure.json",
+      "bytes": 2993
+    },
+    {
+      "file": "attachment4/cards/09_analysis.png",
+      "bytes": 613703
+    },
+    {
+      "file": "attachment4/cards/09_media.alignment.json",
+      "bytes": 2045
+    },
+    {
+      "file": "attachment4/cards/09_media.figure.json",
+      "bytes": 2526
+    },
+    {
+      "file": "attachment4/cards/09_media.png",
+      "bytes": 2239115
+    },
+    {
+      "file": "attachment4/cards/10_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/10_analysis.figure.json",
+      "bytes": 3102
+    },
+    {
+      "file": "attachment4/cards/10_analysis.png",
+      "bytes": 642360
+    },
+    {
+      "file": "attachment4/cards/10_media.alignment.json",
+      "bytes": 2045
+    },
+    {
+      "file": "attachment4/cards/10_media.figure.json",
+      "bytes": 2432
+    },
+    {
+      "file": "attachment4/cards/10_media.png",
+      "bytes": 1812463
+    },
+    {
+      "file": "attachment4/cards/11_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/11_analysis.figure.json",
+      "bytes": 3011
+    },
+    {
+      "file": "attachment4/cards/11_analysis.png",
+      "bytes": 614642
+    },
+    {
+      "file": "attachment4/cards/11_media.alignment.json",
+      "bytes": 2045
+    },
+    {
+      "file": "attachment4/cards/11_media.figure.json",
+      "bytes": 2288
+    },
+    {
+      "file": "attachment4/cards/11_media.png",
+      "bytes": 1255189
+    },
+    {
+      "file": "attachment4/cards/12_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/12_analysis.figure.json",
+      "bytes": 3176
+    },
+    {
+      "file": "attachment4/cards/12_analysis.png",
+      "bytes": 666666
+    },
+    {
+      "file": "attachment4/cards/12_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/12_media.figure.json",
+      "bytes": 2619
+    },
+    {
+      "file": "attachment4/cards/12_media.png",
+      "bytes": 2964889
+    },
+    {
+      "file": "attachment4/cards/13_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/13_analysis.figure.json",
+      "bytes": 3094
+    },
+    {
+      "file": "attachment4/cards/13_analysis.png",
+      "bytes": 682106
+    },
+    {
+      "file": "attachment4/cards/13_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/13_media.figure.json",
+      "bytes": 2266
+    },
+    {
+      "file": "attachment4/cards/13_media.png",
+      "bytes": 519882
+    },
+    {
+      "file": "attachment4/cards/14_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/14_analysis.figure.json",
+      "bytes": 3155
+    },
+    {
+      "file": "attachment4/cards/14_analysis.png",
+      "bytes": 715544
+    },
+    {
+      "file": "attachment4/cards/14_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/14_media.figure.json",
+      "bytes": 2662
+    },
+    {
+      "file": "attachment4/cards/14_media.png",
+      "bytes": 2136728
+    },
+    {
+      "file": "attachment4/cards/15_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/15_analysis.figure.json",
+      "bytes": 3112
+    },
+    {
+      "file": "attachment4/cards/15_analysis.png",
+      "bytes": 636492
+    },
+    {
+      "file": "attachment4/cards/15_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/15_media.figure.json",
+      "bytes": 2045
+    },
+    {
+      "file": "attachment4/cards/15_media.png",
+      "bytes": 478539
+    },
+    {
+      "file": "attachment4/cards/16_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/16_analysis.figure.json",
+      "bytes": 2926
+    },
+    {
+      "file": "attachment4/cards/16_analysis.png",
+      "bytes": 591181
+    },
+    {
+      "file": "attachment4/cards/16_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/16_media.figure.json",
+      "bytes": 2019
+    },
+    {
+      "file": "attachment4/cards/16_media.png",
+      "bytes": 476441
+    },
+    {
+      "file": "attachment4/cards/17_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/17_analysis.figure.json",
+      "bytes": 3075
+    },
+    {
+      "file": "attachment4/cards/17_analysis.png",
+      "bytes": 643291
+    },
+    {
+      "file": "attachment4/cards/17_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/17_media.figure.json",
+      "bytes": 2656
+    },
+    {
+      "file": "attachment4/cards/17_media.png",
+      "bytes": 2703226
+    },
+    {
+      "file": "attachment4/cards/18_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/18_analysis.figure.json",
+      "bytes": 3361
+    },
+    {
+      "file": "attachment4/cards/18_analysis.png",
+      "bytes": 729531
+    },
+    {
+      "file": "attachment4/cards/18_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/18_media.figure.json",
+      "bytes": 2457
+    },
+    {
+      "file": "attachment4/cards/18_media.png",
+      "bytes": 2135989
+    },
+    {
+      "file": "attachment4/cards/19_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/19_analysis.figure.json",
+      "bytes": 3348
+    },
+    {
+      "file": "attachment4/cards/19_analysis.png",
+      "bytes": 731281
+    },
+    {
+      "file": "attachment4/cards/19_media.alignment.json",
+      "bytes": 2048
+    },
+    {
+      "file": "attachment4/cards/19_media.figure.json",
+      "bytes": 2726
+    },
+    {
+      "file": "attachment4/cards/19_media.png",
+      "bytes": 1353384
+    },
+    {
+      "file": "attachment4/cards/20_analysis.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "attachment4/cards/20_analysis.figure.json",
+      "bytes": 3234
+    },
+    {
+      "file": "attachment4/cards/20_analysis.png",
+      "bytes": 698284
+    },
+    {
+      "file": "attachment4/cards/20_media.alignment.json",
+      "bytes": 1995
+    },
+    {
+      "file": "attachment4/cards/20_media.figure.json",
+      "bytes": 2611
+    },
+    {
+      "file": "attachment4/cards/20_media.png",
+      "bytes": 2462764
+    },
+    {
+      "file": "attachment4/figure_manifest.json",
+      "bytes": 120146
+    },
+    {
+      "file": "attachment4/qa/media_integrity.json",
+      "bytes": 24960
+    },
+    {
+      "file": "attachment4/samples/01/alignment.json",
+      "bytes": 24301
+    },
+    {
+      "file": "attachment4/samples/01/audio_clips/word000_520355_940641.wav",
+      "bytes": 13526
+    },
+    {
+      "file": "attachment4/samples/01/audio_clips/word001_1000682_1140778.wav",
+      "bytes": 4560
+    },
+    {
+      "file": "attachment4/samples/01/audio_clips/word019_7244938_7625197.wav",
+      "bytes": 12246
+    },
+    {
+      "file": "attachment4/samples/01/evidence.json",
+      "bytes": 96170
+    },
+    {
+      "file": "attachment4/samples/01/keyframes/frame000061.png",
+      "bytes": 845379
+    },
+    {
+      "file": "attachment4/samples/01/keyframes/frame000206.png",
+      "bytes": 860300
+    },
+    {
+      "file": "attachment4/samples/01/keyframes/frame000223.png",
+      "bytes": 866560
+    },
+    {
+      "file": "attachment4/samples/01/keyframes/frame000239.png",
+      "bytes": 868161
+    },
+    {
+      "file": "attachment4/samples/02/alignment.json",
+      "bytes": 12459
+    },
+    {
+      "file": "attachment4/samples/02/audio_clips/word002_741867_781968.wav",
+      "bytes": 1360
+    },
+    {
+      "file": "attachment4/samples/02/audio_clips/word006_1243128_1423582.wav",
+      "bytes": 5852
+    },
+    {
+      "file": "attachment4/samples/02/audio_clips/word011_2245651_2446155.wav",
+      "bytes": 6494
+    },
+    {
+      "file": "attachment4/samples/02/evidence.json",
+      "bytes": 77349
+    },
+    {
+      "file": "attachment4/samples/02/keyframes/frame000015.png",
+      "bytes": 100430
+    },
+    {
+      "file": "attachment4/samples/02/keyframes/frame000040.png",
+      "bytes": 101816
+    },
+    {
+      "file": "attachment4/samples/02/keyframes/frame000070.png",
+      "bytes": 104430
+    },
+    {
+      "file": "attachment4/samples/03/alignment.json",
+      "bytes": 27052
+    },
+    {
+      "file": "attachment4/samples/03/audio_clips/word000_501229_721770.wav",
+      "bytes": 7134
+    },
+    {
+      "file": "attachment4/samples/03/audio_clips/word011_3007374_3689046.wav",
+      "bytes": 21892
+    },
+    {
+      "file": "attachment4/samples/03/audio_clips/word013_4531111_4751652.wav",
+      "bytes": 7134
+    },
+    {
+      "file": "attachment4/samples/03/evidence.json",
+      "bytes": 121008
+    },
+    {
+      "file": "attachment4/samples/03/keyframes/frame000139.png",
+      "bytes": 487390
+    },
+    {
+      "file": "attachment4/samples/03/keyframes/frame000169.png",
+      "bytes": 493500
+    },
+    {
+      "file": "attachment4/samples/03/keyframes/frame000180.png",
+      "bytes": 497407
+    },
+    {
+      "file": "attachment4/samples/03/keyframes/frame000256.png",
+      "bytes": 479007
+    },
+    {
+      "file": "attachment4/samples/04/alignment.json",
+      "bytes": 20588
+    },
+    {
+      "file": "attachment4/samples/04/audio_clips/word005_1181294_1241360.wav",
+      "bytes": 2000
+    },
+    {
+      "file": "attachment4/samples/04/audio_clips/word006_1281404_1441579.wav",
+      "bytes": 5204
+    },
+    {
+      "file": "attachment4/samples/04/audio_clips/word014_3403728_3684035.wav",
+      "bytes": 9048
+    },
+    {
+      "file": "attachment4/samples/04/audio_clips/word019_6026601_6246842.wav",
+      "bytes": 7124
+    },
+    {
+      "file": "attachment4/samples/04/evidence.json",
+      "bytes": 97694
+    },
+    {
+      "file": "attachment4/samples/04/keyframes/frame000092.png",
+      "bytes": 831711
+    },
+    {
+      "file": "attachment4/samples/04/keyframes/frame000099.png",
+      "bytes": 840563
+    },
+    {
+      "file": "attachment4/samples/04/keyframes/frame000106.png",
+      "bytes": 854312
+    },
+    {
+      "file": "attachment4/samples/05/alignment.json",
+      "bytes": 14683
+    },
+    {
+      "file": "attachment4/samples/05/audio_clips/word000_1262940_1483453.wav",
+      "bytes": 7134
+    },
+    {
+      "file": "attachment4/samples/05/audio_clips/word006_3628447_4029380.wav",
+      "bytes": 12908
+    },
+    {
+      "file": "attachment4/samples/05/audio_clips/word010_4991620_5472740.wav",
+      "bytes": 15474
+    },
+    {
+      "file": "attachment4/samples/05/evidence.json",
+      "bytes": 66819
+    },
+    {
+      "file": "attachment4/samples/05/keyframes/frame000041.png",
+      "bytes": 990753
+    },
+    {
+      "file": "attachment4/samples/05/keyframes/frame000065.png",
+      "bytes": 1015726
+    },
+    {
+      "file": "attachment4/samples/05/keyframes/frame000114.png",
+      "bytes": 1040594
+    },
+    {
+      "file": "attachment4/samples/06/alignment.json",
+      "bytes": 28627
+    },
+    {
+      "file": "attachment4/samples/06/audio_clips/word001_621376_761686.wav",
+      "bytes": 4692
+    },
+    {
+      "file": "attachment4/samples/06/audio_clips/word008_1844083_2084615.wav",
+      "bytes": 7900
+    },
+    {
+      "file": "attachment4/samples/06/audio_clips/word016_3968787_4409764.wav",
+      "bytes": 14312
+    },
+    {
+      "file": "attachment4/samples/06/audio_clips/word018_4850740_5131361.wav",
+      "bytes": 9182
+    },
+    {
+      "file": "attachment4/samples/06/evidence.json",
+      "bytes": 132592
+    },
+    {
+      "file": "attachment4/samples/06/keyframes/frame000017.png",
+      "bytes": 356092
+    },
+    {
+      "file": "attachment4/samples/06/keyframes/frame000020.png",
+      "bytes": 357834
+    },
+    {
+      "file": "attachment4/samples/06/keyframes/frame000225.png",
+      "bytes": 367669
+    },
+    {
+      "file": "attachment4/samples/07/alignment.json",
+      "bytes": 58420
+    },
+    {
+      "file": "attachment4/samples/07/audio_clips/word001_760199_960251.wav",
+      "bytes": 6480
+    },
+    {
+      "file": "attachment4/samples/07/audio_clips/word029_12383239_12823354.wav",
+      "bytes": 14162
+    },
+    {
+      "file": "attachment4/samples/07/evidence.json",
+      "bytes": 186494
+    },
+    {
+      "file": "attachment4/samples/07/keyframes/frame000025.png",
+      "bytes": 1106237
+    },
+    {
+      "file": "attachment4/samples/07/keyframes/frame000378.png",
+      "bytes": 1093308
+    },
+    {
+      "file": "attachment4/samples/08/alignment.json",
+      "bytes": 12998
+    },
+    {
+      "file": "attachment4/samples/08/audio_clips/word000_641102_781343.wav",
+      "bytes": 4564
+    },
+    {
+      "file": "attachment4/samples/08/audio_clips/word001_861481_1061825.wav",
+      "bytes": 6488
+    },
+    {
+      "file": "attachment4/samples/08/audio_clips/word002_1141963_1202066.wav",
+      "bytes": 2002
+    },
+    {
+      "file": "attachment4/samples/08/evidence.json",
+      "bytes": 58929
+    },
+    {
+      "file": "attachment4/samples/08/keyframes/frame000021.png",
+      "bytes": 825845
+    },
+    {
+      "file": "attachment4/samples/08/keyframes/frame000039.png",
+      "bytes": 841675
+    },
+    {
+      "file": "attachment4/samples/08/keyframes/frame000120.png",
+      "bytes": 839647
+    },
+    {
+      "file": "attachment4/samples/09/alignment.json",
+      "bytes": 14973
+    },
+    {
+      "file": "attachment4/samples/09/audio_clips/word003_1366693_1467185.wav",
+      "bytes": 3406
+    },
+    {
+      "file": "attachment4/samples/09/audio_clips/word004_1487284_1607874.wav",
+      "bytes": 4048
+    },
+    {
+      "file": "attachment4/samples/09/audio_clips/word005_1648071_1748564.wav",
+      "bytes": 3406
+    },
+    {
+      "file": "attachment4/samples/09/evidence.json",
+      "bytes": 73575
+    },
+    {
+      "file": "attachment4/samples/09/keyframes/frame000088.png",
+      "bytes": 232311
+    },
+    {
+      "file": "attachment4/samples/09/keyframes/frame000093.png",
+      "bytes": 224844
+    },
+    {
+      "file": "attachment4/samples/09/keyframes/frame000102.png",
+      "bytes": 226044
+    },
+    {
+      "file": "attachment4/samples/10/alignment.json",
+      "bytes": 27115
+    },
+    {
+      "file": "attachment4/samples/10/audio_clips/word008_2744369_2804465.wav",
+      "bytes": 2096
+    },
+    {
+      "file": "attachment4/samples/10/audio_clips/word012_3906219_4186665.wav",
+      "bytes": 9148
+    },
+    {
+      "file": "attachment4/samples/10/evidence.json",
+      "bytes": 113391
+    },
+    {
+      "file": "attachment4/samples/10/keyframes/frame000121.png",
+      "bytes": 263107
+    },
+    {
+      "file": "attachment4/samples/10/keyframes/frame000204.png",
+      "bytes": 269265
+    },
+    {
+      "file": "attachment4/samples/11/alignment.json",
+      "bytes": 15779
+    },
+    {
+      "file": "attachment4/samples/11/audio_clips/word003_923045_1344436.wav",
+      "bytes": 13650
+    },
+    {
+      "file": "attachment4/samples/11/audio_clips/word004_3230659_3290857.wav",
+      "bytes": 2092
+    },
+    {
+      "file": "attachment4/samples/11/evidence.json",
+      "bytes": 66875
+    },
+    {
+      "file": "attachment4/samples/11/keyframes/frame000024.png",
+      "bytes": 280824
+    },
+    {
+      "file": "attachment4/samples/12/alignment.json",
+      "bytes": 36561
+    },
+    {
+      "file": "attachment4/samples/12/audio_clips/word026_9270486_9410644.wav",
+      "bytes": 4562
+    },
+    {
+      "file": "attachment4/samples/12/audio_clips/word027_9490735_9771052.wav",
+      "bytes": 9048
+    },
+    {
+      "file": "attachment4/samples/12/audio_clips/word028_9951256_10311664.wav",
+      "bytes": 11612
+    },
+    {
+      "file": "attachment4/samples/12/evidence.json",
+      "bytes": 150117
+    },
+    {
+      "file": "attachment4/samples/12/keyframes/frame000018.png",
+      "bytes": 1335367
+    },
+    {
+      "file": "attachment4/samples/12/keyframes/frame000142.png",
+      "bytes": 1321337
+    },
+    {
+      "file": "attachment4/samples/12/keyframes/frame000303.png",
+      "bytes": 1285811
+    },
+    {
+      "file": "attachment4/samples/12/keyframes/frame000364.png",
+      "bytes": 1312761
+    },
+    {
+      "file": "attachment4/samples/13/alignment.json",
+      "bytes": 26700
+    },
+    {
+      "file": "attachment4/samples/13/audio_clips/word003_962688_1083024.wav",
+      "bytes": 3928
+    },
+    {
+      "file": "attachment4/samples/13/audio_clips/word007_1624536_1664648.wav",
+      "bytes": 1360
+    },
+    {
+      "file": "attachment4/samples/13/audio_clips/word019_6337697_6458033.wav",
+      "bytes": 3930
+    },
+    {
+      "file": "attachment4/samples/13/evidence.json",
+      "bytes": 111410
+    },
+    {
+      "file": "attachment4/samples/14/alignment.json",
+      "bytes": 27994
+    },
+    {
+      "file": "attachment4/samples/14/audio_clips/word006_1580986_1961223.wav",
+      "bytes": 12246
+    },
+    {
+      "file": "attachment4/samples/14/audio_clips/word008_2141335_2461534.wav",
+      "bytes": 10326
+    },
+    {
+      "file": "attachment4/samples/14/audio_clips/word022_8385227_8765464.wav",
+      "bytes": 12244
+    },
+    {
+      "file": "attachment4/samples/14/evidence.json",
+      "bytes": 124266
+    },
+    {
+      "file": "attachment4/samples/14/keyframes/frame000257.png",
+      "bytes": 791845
+    },
+    {
+      "file": "attachment4/samples/14/keyframes/frame000266.png",
+      "bytes": 778756
+    },
+    {
+      "file": "attachment4/samples/14/keyframes/frame000280.png",
+      "bytes": 789039
+    },
+    {
+      "file": "attachment4/samples/15/alignment.json",
+      "bytes": 21335
+    },
+    {
+      "file": "attachment4/samples/15/evidence.json",
+      "bytes": 84082
+    },
+    {
+      "file": "attachment4/samples/16/alignment.json",
+      "bytes": 9843
+    },
+    {
+      "file": "attachment4/samples/16/evidence.json",
+      "bytes": 51468
+    },
+    {
+      "file": "attachment4/samples/17/alignment.json",
+      "bytes": 25385
+    },
+    {
+      "file": "attachment4/samples/17/audio_clips/word000_621519_1002450.wav",
+      "bytes": 12268
+    },
+    {
+      "file": "attachment4/samples/17/audio_clips/word001_1082646_1303185.wav",
+      "bytes": 7136
+    },
+    {
+      "file": "attachment4/samples/17/audio_clips/word004_2225439_2746714.wav",
+      "bytes": 16758
+    },
+    {
+      "file": "attachment4/samples/17/audio_clips/word006_2967253_3087547.wav",
+      "bytes": 3928
+    },
+    {
+      "file": "attachment4/samples/17/audio_clips/word007_3127645_3829360.wav",
+      "bytes": 22534
+    },
+    {
+      "file": "attachment4/samples/17/audio_clips/word009_4811761_5112496.wav",
+      "bytes": 9702
+    },
+    {
+      "file": "attachment4/samples/17/evidence.json",
+      "bytes": 99991
+    },
+    {
+      "file": "attachment4/samples/17/keyframes/frame000104.png",
+      "bytes": 1118079
+    },
+    {
+      "file": "attachment4/samples/17/keyframes/frame000238.png",
+      "bytes": 1097055
+    },
+    {
+      "file": "attachment4/samples/17/keyframes/frame000244.png",
+      "bytes": 1102182
+    },
+    {
+      "file": "attachment4/samples/17/keyframes/frame000248.png",
+      "bytes": 1105238
+    },
+    {
+      "file": "attachment4/samples/18/alignment.json",
+      "bytes": 49959
+    },
+    {
+      "file": "attachment4/samples/18/audio_clips/word015_7826956_8167258.wav",
+      "bytes": 10968
+    },
+    {
+      "file": "attachment4/samples/18/audio_clips/word036_14813165_15213520.wav",
+      "bytes": 12888
+    },
+    {
+      "file": "attachment4/samples/18/evidence.json",
+      "bytes": 175982
+    },
+    {
+      "file": "attachment4/samples/18/keyframes/frame000239.png",
+      "bytes": 1218475
+    },
+    {
+      "file": "attachment4/samples/18/keyframes/frame000450.png",
+      "bytes": 1219513
+    },
+    {
+      "file": "attachment4/samples/19/alignment.json",
+      "bytes": 37353
+    },
+    {
+      "file": "attachment4/samples/19/audio_clips/word003_1801431_2221765.wav",
+      "bytes": 13528
+    },
+    {
+      "file": "attachment4/samples/19/audio_clips/word014_6385072_6745359.wav",
+      "bytes": 11608
+    },
+    {
+      "file": "attachment4/samples/19/audio_clips/word025_9987934_10708507.wav",
+      "bytes": 23136
+    },
+    {
+      "file": "attachment4/samples/19/evidence.json",
+      "bytes": 144159
+    },
+    {
+      "file": "attachment4/samples/19/keyframes/frame000060.png",
+      "bytes": 350031
+    },
+    {
+      "file": "attachment4/samples/19/keyframes/frame000196.png",
+      "bytes": 333509
+    },
+    {
+      "file": "attachment4/samples/19/keyframes/frame000243.png",
+      "bytes": 338229
+    },
+    {
+      "file": "attachment4/samples/20/alignment.json",
+      "bytes": 33805
+    },
+    {
+      "file": "attachment4/samples/20/audio_clips/word000_560512_640585.wav",
+      "bytes": 2640
+    },
+    {
+      "file": "attachment4/samples/20/audio_clips/word016_4704297_4884462.wav",
+      "bytes": 5842
+    },
+    {
+      "file": "attachment4/samples/20/audio_clips/word023_7086474_7306675.wav",
+      "bytes": 7124
+    },
+    {
+      "file": "attachment4/samples/20/evidence.json",
+      "bytes": 150571
+    },
+    {
+      "file": "attachment4/samples/20/keyframes/frame000084.png",
+      "bytes": 237167
+    },
+    {
+      "file": "attachment4/samples/20/keyframes/frame000092.png",
+      "bytes": 237884
+    },
+    {
+      "file": "attachment4/samples/20/keyframes/frame000109.png",
+      "bytes": 240097
+    },
+    {
+      "file": "attachment4/samples/20/keyframes/frame000143.png",
+      "bytes": 243762
+    },
+    {
+      "file": "details.log",
+      "bytes": 101180
+    },
+    {
+      "file": "figure_contract.json",
+      "bytes": 1274
+    },
+    {
+      "file": "figures.log",
+      "bytes": 201
+    },
+    {
+      "file": "figures_zh.log",
+      "bytes": 201
+    },
+    {
+      "file": "localization/attachment4_zh.json",
+      "bytes": 22646
+    },
+    {
+      "file": "localization/data_hashes_before.json",
+      "bytes": 27622
+    },
+    {
+      "file": "localization/fonts/DroidSansFallbackFull.ttf",
+      "bytes": 4033420
+    },
+    {
+      "file": "localization/fonts/NotoSansCJKsc-Bold.otf",
+      "bytes": 17002224
+    },
+    {
+      "file": "localization/fonts/NotoSansCJKsc-Regular.otf",
+      "bytes": 16437340
+    },
+    {
+      "file": "localization/fonts/字体许可.txt",
+      "bytes": 1250
+    },
+    {
+      "file": "localization/translation_audit.json",
+      "bytes": 2976
+    },
+    {
+      "file": "localization/validation_zh.json",
+      "bytes": 34790
+    },
+    {
+      "file": "localization/validation_zh_first40.json",
+      "bytes": 22186
+    },
+    {
+      "file": "localization/validation_zh_tail.json",
+      "bytes": 12607
+    },
+    {
+      "file": "media.log",
+      "bytes": 1411
+    },
+    {
+      "file": "phase_details_0_complete.json",
+      "bytes": 373
+    },
+    {
+      "file": "phase_details_0_started.json",
+      "bytes": 319
+    },
+    {
+      "file": "phase_figures_0_complete.json",
+      "bytes": 373
+    },
+    {
+      "file": "phase_figures_0_started.json",
+      "bytes": 319
+    },
+    {
+      "file": "phase_media_0_complete.json",
+      "bytes": 371
+    },
+    {
+      "file": "phase_media_0_started.json",
+      "bytes": 317
+    },
+    {
+      "file": "phase_prepare_0_complete.json",
+      "bytes": 373
+    },
+    {
+      "file": "phase_prepare_0_started.json",
+      "bytes": 319
+    },
+    {
+      "file": "qa/acceptance_summary.json",
+      "bytes": 1500
+    },
+    {
+      "file": "qa/attachment4__attachment4_explanation_cards.pdf.audit.json",
+      "bytes": 11135
+    },
+    {
+      "file": "qa/chinese_acceptance_summary.json",
+      "bytes": 1837
+    },
+    {
+      "file": "qa/chinese_attachment4__attachment4_explanation_cards.pdf.audit.json",
+      "bytes": 11836
+    },
+    {
+      "file": "qa/chinese_data_integrity.json",
+      "bytes": 3523
+    },
+    {
+      "file": "qa/chinese_final_hash_recheck.json",
+      "bytes": 10495
+    },
+    {
+      "file": "qa/chinese_font_fallback_probe.json",
+      "bytes": 954
+    },
+    {
+      "file": "qa/chinese_font_probe.json",
+      "bytes": 2230
+    },
+    {
+      "file": "qa/chinese_interface_audit.json",
+      "bytes": 844
+    },
+    {
+      "file": "qa/chinese_panel_alignment_manifest_audit.json",
+      "bytes": 35284
+    },
+    {
+      "file": "qa/chinese_pilot/v0050.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "qa/chinese_pilot/v0050.figure.json",
+      "bytes": 569
+    },
+    {
+      "file": "qa/chinese_pilot/v0050.png",
+      "bytes": 699728
+    },
+    {
+      "file": "qa/chinese_pilot/v0138.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "qa/chinese_pilot/v0138.figure.json",
+      "bytes": 569
+    },
+    {
+      "file": "qa/chinese_pilot/v0138.png",
+      "bytes": 802587
+    },
+    {
+      "file": "qa/chinese_pilot/v0670.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "qa/chinese_pilot/v0670.figure.json",
+      "bytes": 569
+    },
+    {
+      "file": "qa/chinese_pilot/v0670.png",
+      "bytes": 859837
+    },
+    {
+      "file": "qa/chinese_pilot_cards.pdf",
+      "bytes": 130639
+    },
+    {
+      "file": "qa/chinese_pilot_cards_ttf.pdf",
+      "bytes": 80427
+    },
+    {
+      "file": "qa/chinese_pilot_media.pdf",
+      "bytes": 290260
+    },
+    {
+      "file": "qa/chinese_pilot_media_ttf.pdf",
+      "bytes": 249768
+    },
+    {
+      "file": "qa/chinese_pilot_qa__chinese_pilot_cards.pdf.audit.json",
+      "bytes": 1899
+    },
+    {
+      "file": "qa/chinese_pilot_qa__chinese_pilot_media.pdf.audit.json",
+      "bytes": 1395
+    },
+    {
+      "file": "qa/chinese_pilot_source_preflight.json",
+      "bytes": 4220
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0050.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0050.figure.json",
+      "bytes": 600
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0050.png",
+      "bytes": 675395
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0138.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0138.figure.json",
+      "bytes": 600
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0138.png",
+      "bytes": 753305
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0670.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0670.figure.json",
+      "bytes": 600
+    },
+    {
+      "file": "qa/chinese_pilot_ttf/v0670.png",
+      "bytes": 812660
+    },
+    {
+      "file": "qa/chinese_pilot_ttf_qa__chinese_pilot_cards_ttf.pdf.audit.json",
+      "bytes": 1962
+    },
+    {
+      "file": "qa/chinese_pilot_ttf_qa__chinese_pilot_media_ttf.pdf.audit.json",
+      "bytes": 1424
+    },
+    {
+      "file": "qa/chinese_pilot_ttf_source_preflight.json",
+      "bytes": 4220
+    },
+    {
+      "file": "qa/chinese_pilot_ttf_visual_review.json",
+      "bytes": 1260
+    },
+    {
+      "file": "qa/chinese_pilot_visual_review.json",
+      "bytes": 703
+    },
+    {
+      "file": "qa/chinese_png_export_audit.json",
+      "bytes": 27823
+    },
+    {
+      "file": "qa/chinese_rendered_qa_summary.json",
+      "bytes": 7628
+    },
+    {
+      "file": "qa/chinese_source_preflight.json",
+      "bytes": 5446
+    },
+    {
+      "file": "qa/chinese_validation__figures__01_confusion.pdf.audit.json",
+      "bytes": 1404
+    },
+    {
+      "file": "qa/chinese_validation__figures__02_regression.pdf.audit.json",
+      "bytes": 1408
+    },
+    {
+      "file": "qa/chinese_validation__figures__03_classification_modality_groups.pdf.audit.json",
+      "bytes": 1448
+    },
+    {
+      "file": "qa/chinese_validation__figures__03_regression_modality_groups.pdf.audit.json",
+      "bytes": 1440
+    },
+    {
+      "file": "qa/chinese_validation__figures__04_modality_replacement_errors.pdf.audit.json",
+      "bytes": 1442
+    },
+    {
+      "file": "qa/chinese_validation__figures__05_classification_occlusion.pdf.audit.json",
+      "bytes": 1436
+    },
+    {
+      "file": "qa/chinese_validation__figures__05_regression_occlusion.pdf.audit.json",
+      "bytes": 1428
+    },
+    {
+      "file": "qa/chinese_validation__figures__06_reference_sensitivity.pdf.audit.json",
+      "bytes": 1431
+    },
+    {
+      "file": "qa/chinese_validation__figures__07_wrong_vs_true_contrast.pdf.audit.json",
+      "bytes": 1432
+    },
+    {
+      "file": "qa/chinese_validation__validation_explanation_cards.pdf.audit.json",
+      "bytes": 17151
+    },
+    {
+      "file": "qa/chinese_visual_review.json",
+      "bytes": 6781
+    },
+    {
+      "file": "qa/delivery_integrity.json",
+      "bytes": 494
+    },
+    {
+      "file": "qa/independent_validation_audit.json",
+      "bytes": 4379
+    },
+    {
+      "file": "qa/independent_wrong_vs_true_audit.json",
+      "bytes": 2260
+    },
+    {
+      "file": "qa/panel_alignment_manifest_audit.json",
+      "bytes": 23210
+    },
+    {
+      "file": "qa/png_export_audit.json",
+      "bytes": 19011
+    },
+    {
+      "file": "qa/rendered_qa_round1_summary.json",
+      "bytes": 5736
+    },
+    {
+      "file": "qa/rendered_qa_summary.json",
+      "bytes": 5950
+    },
+    {
+      "file": "qa/selected_card_pdf_export.json",
+      "bytes": 1412
+    },
+    {
+      "file": "qa/selected_card_pdf_qa.json",
+      "bytes": 5577
+    },
+    {
+      "file": "qa/source_preflight.json",
+      "bytes": 5783
+    },
+    {
+      "file": "qa/validation__figures__01_confusion.pdf.audit.json",
+      "bytes": 1235
+    },
+    {
+      "file": "qa/validation__figures__02_regression.pdf.audit.json",
+      "bytes": 1238
+    },
+    {
+      "file": "qa/validation__figures__03_classification_modality_groups.pdf.audit.json",
+      "bytes": 1259
+    },
+    {
+      "file": "qa/validation__figures__03_regression_modality_groups.pdf.audit.json",
+      "bytes": 1255
+    },
+    {
+      "file": "qa/validation__figures__04_modality_replacement_errors.pdf.audit.json",
+      "bytes": 1242
+    },
+    {
+      "file": "qa/validation__figures__05_classification_occlusion.pdf.audit.json",
+      "bytes": 1240
+    },
+    {
+      "file": "qa/validation__figures__05_regression_occlusion.pdf.audit.json",
+      "bytes": 1236
+    },
+    {
+      "file": "qa/validation__figures__06_reference_sensitivity.pdf.audit.json",
+      "bytes": 1237
+    },
+    {
+      "file": "qa/validation__figures__07_wrong_vs_true_contrast.pdf.audit.json",
+      "bytes": 1250
+    },
+    {
+      "file": "qa/validation__validation_explanation_cards.pdf.audit.json",
+      "bytes": 16226
+    },
+    {
+      "file": "qa/visual_review.json",
+      "bytes": 7275
+    },
+    {
+      "file": "validation/all_predictions.csv",
+      "bytes": 229061
+    },
+    {
+      "file": "validation/analysis_summary.json",
+      "bytes": 239051
+    },
+    {
+      "file": "validation/cards/v0003.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0003.figure.json",
+      "bytes": 3213
+    },
+    {
+      "file": "validation/cards/v0003.png",
+      "bytes": 680902
+    },
+    {
+      "file": "validation/cards/v0014.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0014.figure.json",
+      "bytes": 3118
+    },
+    {
+      "file": "validation/cards/v0014.png",
+      "bytes": 657946
+    },
+    {
+      "file": "validation/cards/v0017.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0017.figure.json",
+      "bytes": 3088
+    },
+    {
+      "file": "validation/cards/v0017.png",
+      "bytes": 612802
+    },
+    {
+      "file": "validation/cards/v0048.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0048.figure.json",
+      "bytes": 3007
+    },
+    {
+      "file": "validation/cards/v0048.png",
+      "bytes": 620394
+    },
+    {
+      "file": "validation/cards/v0050.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0050.figure.json",
+      "bytes": 3157
+    },
+    {
+      "file": "validation/cards/v0050.pdf",
+      "bytes": 121595
+    },
+    {
+      "file": "validation/cards/v0050.png",
+      "bytes": 675565
+    },
+    {
+      "file": "validation/cards/v0062.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0062.figure.json",
+      "bytes": 2974
+    },
+    {
+      "file": "validation/cards/v0062.png",
+      "bytes": 607082
+    },
+    {
+      "file": "validation/cards/v0063.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0063.figure.json",
+      "bytes": 3061
+    },
+    {
+      "file": "validation/cards/v0063.pdf",
+      "bytes": 120803
+    },
+    {
+      "file": "validation/cards/v0063.png",
+      "bytes": 634570
+    },
+    {
+      "file": "validation/cards/v0069.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0069.figure.json",
+      "bytes": 2988
+    },
+    {
+      "file": "validation/cards/v0069.png",
+      "bytes": 621797
+    },
+    {
+      "file": "validation/cards/v0072.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0072.figure.json",
+      "bytes": 3036
+    },
+    {
+      "file": "validation/cards/v0072.png",
+      "bytes": 624141
+    },
+    {
+      "file": "validation/cards/v0083.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0083.figure.json",
+      "bytes": 2947
+    },
+    {
+      "file": "validation/cards/v0083.png",
+      "bytes": 592519
+    },
+    {
+      "file": "validation/cards/v0128.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0128.figure.json",
+      "bytes": 3023
+    },
+    {
+      "file": "validation/cards/v0128.png",
+      "bytes": 630434
+    },
+    {
+      "file": "validation/cards/v0138.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0138.figure.json",
+      "bytes": 3388
+    },
+    {
+      "file": "validation/cards/v0138.png",
+      "bytes": 753614
+    },
+    {
+      "file": "validation/cards/v0143.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0143.figure.json",
+      "bytes": 3203
+    },
+    {
+      "file": "validation/cards/v0143.png",
+      "bytes": 688322
+    },
+    {
+      "file": "validation/cards/v0144.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0144.figure.json",
+      "bytes": 3161
+    },
+    {
+      "file": "validation/cards/v0144.png",
+      "bytes": 650176
+    },
+    {
+      "file": "validation/cards/v0156.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0156.figure.json",
+      "bytes": 3168
+    },
+    {
+      "file": "validation/cards/v0156.png",
+      "bytes": 670600
+    },
+    {
+      "file": "validation/cards/v0161.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0161.figure.json",
+      "bytes": 3080
+    },
+    {
+      "file": "validation/cards/v0161.png",
+      "bytes": 663552
+    },
+    {
+      "file": "validation/cards/v0182.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0182.figure.json",
+      "bytes": 3172
+    },
+    {
+      "file": "validation/cards/v0182.png",
+      "bytes": 695810
+    },
+    {
+      "file": "validation/cards/v0189.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0189.figure.json",
+      "bytes": 3152
+    },
+    {
+      "file": "validation/cards/v0189.png",
+      "bytes": 664976
+    },
+    {
+      "file": "validation/cards/v0207.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0207.figure.json",
+      "bytes": 3198
+    },
+    {
+      "file": "validation/cards/v0207.png",
+      "bytes": 656335
+    },
+    {
+      "file": "validation/cards/v0218.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0218.figure.json",
+      "bytes": 2976
+    },
+    {
+      "file": "validation/cards/v0218.png",
+      "bytes": 618478
+    },
+    {
+      "file": "validation/cards/v0230.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0230.figure.json",
+      "bytes": 2852
+    },
+    {
+      "file": "validation/cards/v0230.png",
+      "bytes": 572911
+    },
+    {
+      "file": "validation/cards/v0243.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0243.figure.json",
+      "bytes": 3102
+    },
+    {
+      "file": "validation/cards/v0243.png",
+      "bytes": 650435
+    },
+    {
+      "file": "validation/cards/v0249.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0249.figure.json",
+      "bytes": 3027
+    },
+    {
+      "file": "validation/cards/v0249.png",
+      "bytes": 638017
+    },
+    {
+      "file": "validation/cards/v0257.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0257.figure.json",
+      "bytes": 3024
+    },
+    {
+      "file": "validation/cards/v0257.png",
+      "bytes": 655981
+    },
+    {
+      "file": "validation/cards/v0264.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0264.figure.json",
+      "bytes": 3189
+    },
+    {
+      "file": "validation/cards/v0264.png",
+      "bytes": 645897
+    },
+    {
+      "file": "validation/cards/v0289.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0289.figure.json",
+      "bytes": 3077
+    },
+    {
+      "file": "validation/cards/v0289.png",
+      "bytes": 680530
+    },
+    {
+      "file": "validation/cards/v0300.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0300.figure.json",
+      "bytes": 3222
+    },
+    {
+      "file": "validation/cards/v0300.png",
+      "bytes": 678076
+    },
+    {
+      "file": "validation/cards/v0312.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0312.figure.json",
+      "bytes": 3021
+    },
+    {
+      "file": "validation/cards/v0312.png",
+      "bytes": 636305
+    },
+    {
+      "file": "validation/cards/v0338.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0338.figure.json",
+      "bytes": 3029
+    },
+    {
+      "file": "validation/cards/v0338.png",
+      "bytes": 626470
+    },
+    {
+      "file": "validation/cards/v0347.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0347.figure.json",
+      "bytes": 3064
+    },
+    {
+      "file": "validation/cards/v0347.png",
+      "bytes": 653861
+    },
+    {
+      "file": "validation/cards/v0372.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0372.figure.json",
+      "bytes": 3093
+    },
+    {
+      "file": "validation/cards/v0372.png",
+      "bytes": 643214
+    },
+    {
+      "file": "validation/cards/v0382.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0382.figure.json",
+      "bytes": 3194
+    },
+    {
+      "file": "validation/cards/v0382.png",
+      "bytes": 692712
+    },
+    {
+      "file": "validation/cards/v0388.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0388.figure.json",
+      "bytes": 3004
+    },
+    {
+      "file": "validation/cards/v0388.png",
+      "bytes": 627381
+    },
+    {
+      "file": "validation/cards/v0400.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0400.figure.json",
+      "bytes": 3120
+    },
+    {
+      "file": "validation/cards/v0400.png",
+      "bytes": 652682
+    },
+    {
+      "file": "validation/cards/v0416.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0416.figure.json",
+      "bytes": 2936
+    },
+    {
+      "file": "validation/cards/v0416.png",
+      "bytes": 617360
+    },
+    {
+      "file": "validation/cards/v0417.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0417.figure.json",
+      "bytes": 3101
+    },
+    {
+      "file": "validation/cards/v0417.png",
+      "bytes": 661728
+    },
+    {
+      "file": "validation/cards/v0418.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0418.figure.json",
+      "bytes": 3076
+    },
+    {
+      "file": "validation/cards/v0418.png",
+      "bytes": 646154
+    },
+    {
+      "file": "validation/cards/v0427.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0427.figure.json",
+      "bytes": 3169
+    },
+    {
+      "file": "validation/cards/v0427.png",
+      "bytes": 664774
+    },
+    {
+      "file": "validation/cards/v0444.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0444.figure.json",
+      "bytes": 2976
+    },
+    {
+      "file": "validation/cards/v0444.png",
+      "bytes": 624968
+    },
+    {
+      "file": "validation/cards/v0456.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0456.figure.json",
+      "bytes": 3144
+    },
+    {
+      "file": "validation/cards/v0456.png",
+      "bytes": 687056
+    },
+    {
+      "file": "validation/cards/v0489.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0489.figure.json",
+      "bytes": 3300
+    },
+    {
+      "file": "validation/cards/v0489.png",
+      "bytes": 690493
+    },
+    {
+      "file": "validation/cards/v0500.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0500.figure.json",
+      "bytes": 3173
+    },
+    {
+      "file": "validation/cards/v0500.png",
+      "bytes": 667657
+    },
+    {
+      "file": "validation/cards/v0520.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0520.figure.json",
+      "bytes": 3210
+    },
+    {
+      "file": "validation/cards/v0520.png",
+      "bytes": 696219
+    },
+    {
+      "file": "validation/cards/v0526.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0526.figure.json",
+      "bytes": 3082
+    },
+    {
+      "file": "validation/cards/v0526.png",
+      "bytes": 640447
+    },
+    {
+      "file": "validation/cards/v0543.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0543.figure.json",
+      "bytes": 3086
+    },
+    {
+      "file": "validation/cards/v0543.png",
+      "bytes": 642596
+    },
+    {
+      "file": "validation/cards/v0554.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0554.figure.json",
+      "bytes": 3080
+    },
+    {
+      "file": "validation/cards/v0554.png",
+      "bytes": 643280
+    },
+    {
+      "file": "validation/cards/v0563.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0563.figure.json",
+      "bytes": 3335
+    },
+    {
+      "file": "validation/cards/v0563.png",
+      "bytes": 754192
+    },
+    {
+      "file": "validation/cards/v0566.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0566.figure.json",
+      "bytes": 3159
+    },
+    {
+      "file": "validation/cards/v0566.png",
+      "bytes": 660296
+    },
+    {
+      "file": "validation/cards/v0609.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0609.figure.json",
+      "bytes": 3340
+    },
+    {
+      "file": "validation/cards/v0609.png",
+      "bytes": 720913
+    },
+    {
+      "file": "validation/cards/v0612.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0612.figure.json",
+      "bytes": 3120
+    },
+    {
+      "file": "validation/cards/v0612.png",
+      "bytes": 684603
+    },
+    {
+      "file": "validation/cards/v0614.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0614.figure.json",
+      "bytes": 2970
+    },
+    {
+      "file": "validation/cards/v0614.pdf",
+      "bytes": 120172
+    },
+    {
+      "file": "validation/cards/v0614.png",
+      "bytes": 607752
+    },
+    {
+      "file": "validation/cards/v0626.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0626.figure.json",
+      "bytes": 3065
+    },
+    {
+      "file": "validation/cards/v0626.png",
+      "bytes": 646362
+    },
+    {
+      "file": "validation/cards/v0629.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0629.figure.json",
+      "bytes": 3094
+    },
+    {
+      "file": "validation/cards/v0629.png",
+      "bytes": 649074
+    },
+    {
+      "file": "validation/cards/v0634.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0634.figure.json",
+      "bytes": 3255
+    },
+    {
+      "file": "validation/cards/v0634.png",
+      "bytes": 723046
+    },
+    {
+      "file": "validation/cards/v0666.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0666.figure.json",
+      "bytes": 3007
+    },
+    {
+      "file": "validation/cards/v0666.png",
+      "bytes": 608875
+    },
+    {
+      "file": "validation/cards/v0669.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0669.figure.json",
+      "bytes": 3071
+    },
+    {
+      "file": "validation/cards/v0669.png",
+      "bytes": 634956
+    },
+    {
+      "file": "validation/cards/v0670.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0670.figure.json",
+      "bytes": 3495
+    },
+    {
+      "file": "validation/cards/v0670.png",
+      "bytes": 812774
+    },
+    {
+      "file": "validation/cards/v0677.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0677.figure.json",
+      "bytes": 3194
+    },
+    {
+      "file": "validation/cards/v0677.png",
+      "bytes": 675541
+    },
+    {
+      "file": "validation/cards/v0704.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0704.figure.json",
+      "bytes": 3080
+    },
+    {
+      "file": "validation/cards/v0704.png",
+      "bytes": 653571
+    },
+    {
+      "file": "validation/cards/v0708.alignment.json",
+      "bytes": 3790
+    },
+    {
+      "file": "validation/cards/v0708.figure.json",
+      "bytes": 3146
+    },
+    {
+      "file": "validation/cards/v0708.png",
+      "bytes": 640613
+    },
+    {
+      "file": "validation/coalition_performance.csv",
+      "bytes": 4657
+    },
+    {
+      "file": "validation/cohort.json",
+      "bytes": 20595510
+    },
+    {
+      "file": "validation/details/v0003/analysis.json",
+      "bytes": 685602
+    },
+    {
+      "file": "validation/details/v0003/attributions.npz",
+      "bytes": 948688
+    },
+    {
+      "file": "validation/details/v0014/analysis.json",
+      "bytes": 668837
+    },
+    {
+      "file": "validation/details/v0014/attributions.npz",
+      "bytes": 840657
+    },
+    {
+      "file": "validation/details/v0017/analysis.json",
+      "bytes": 663058
+    },
+    {
+      "file": "validation/details/v0017/attributions.npz",
+      "bytes": 786469
+    },
+    {
+      "file": "validation/details/v0048/analysis.json",
+      "bytes": 625953
+    },
+    {
+      "file": "validation/details/v0048/attributions.npz",
+      "bytes": 490081
+    },
+    {
+      "file": "validation/details/v0050/analysis.json",
+      "bytes": 688263
+    },
+    {
+      "file": "validation/details/v0050/attributions.npz",
+      "bytes": 974193
+    },
+    {
+      "file": "validation/details/v0062/analysis.json",
+      "bytes": 614695
+    },
+    {
+      "file": "validation/details/v0062/attributions.npz",
+      "bytes": 409299
+    },
+    {
+      "file": "validation/details/v0063/analysis.json",
+      "bytes": 654327
+    },
+    {
+      "file": "validation/details/v0063/attributions.npz",
+      "bytes": 705950
+    },
+    {
+      "file": "validation/details/v0069/analysis.json",
+      "bytes": 607400
+    },
+    {
+      "file": "validation/details/v0069/attributions.npz",
+      "bytes": 409217
+    },
+    {
+      "file": "validation/details/v0072/analysis.json",
+      "bytes": 636544
+    },
+    {
+      "file": "validation/details/v0072/attributions.npz",
+      "bytes": 517364
+    },
+    {
+      "file": "validation/details/v0083/analysis.json",
+      "bytes": 596311
+    },
+    {
+      "file": "validation/details/v0083/attributions.npz",
+      "bytes": 301522
+    },
+    {
+      "file": "validation/details/v0128/analysis.json",
+      "bytes": 629829
+    },
+    {
+      "file": "validation/details/v0128/attributions.npz",
+      "bytes": 516751
+    },
+    {
+      "file": "validation/details/v0138/analysis.json",
+      "bytes": 740048
+    },
+    {
+      "file": "validation/details/v0138/attributions.npz",
+      "bytes": 1351571
+    },
+    {
+      "file": "validation/details/v0143/analysis.json",
+      "bytes": 719756
+    },
+    {
+      "file": "validation/details/v0143/attributions.npz",
+      "bytes": 1216847
+    },
+    {
+      "file": "validation/details/v0144/analysis.json",
+      "bytes": 673376
+    },
+    {
+      "file": "validation/details/v0144/attributions.npz",
+      "bytes": 866889
+    },
+    {
+      "file": "validation/details/v0156/analysis.json",
+      "bytes": 637475
+    },
+    {
+      "file": "validation/details/v0156/attributions.npz",
+      "bytes": 598398
+    },
+    {
+      "file": "validation/details/v0161/analysis.json",
+      "bytes": 664650
+    },
+    {
+      "file": "validation/details/v0161/attributions.npz",
+      "bytes": 733657
+    },
+    {
+      "file": "validation/details/v0182/analysis.json",
+      "bytes": 675519
+    },
+    {
+      "file": "validation/details/v0182/attributions.npz",
+      "bytes": 868569
+    },
+    {
+      "file": "validation/details/v0189/analysis.json",
+      "bytes": 729478
+    },
+    {
+      "file": "validation/details/v0189/attributions.npz",
+      "bytes": 1274462
+    },
+    {
+      "file": "validation/details/v0207/analysis.json",
+      "bytes": 661061
+    },
+    {
+      "file": "validation/details/v0207/attributions.npz",
+      "bytes": 786820
+    },
+    {
+      "file": "validation/details/v0218/analysis.json",
+      "bytes": 614905
+    },
+    {
+      "file": "validation/details/v0218/attributions.npz",
+      "bytes": 409073
+    },
+    {
+      "file": "validation/details/v0230/analysis.json",
+      "bytes": 535525
+    },
+    {
+      "file": "validation/details/v0230/attributions.npz",
+      "bytes": 140247
+    },
+    {
+      "file": "validation/details/v0243/analysis.json",
+      "bytes": 616941
+    },
+    {
+      "file": "validation/details/v0243/attributions.npz",
+      "bytes": 436751
+    },
+    {
+      "file": "validation/details/v0249/analysis.json",
+      "bytes": 641532
+    },
+    {
+      "file": "validation/details/v0249/attributions.npz",
+      "bytes": 624035
+    },
+    {
+      "file": "validation/details/v0257/analysis.json",
+      "bytes": 665942
+    },
+    {
+      "file": "validation/details/v0257/attributions.npz",
+      "bytes": 760466
+    },
+    {
+      "file": "validation/details/v0264/analysis.json",
+      "bytes": 680679
+    },
+    {
+      "file": "validation/details/v0264/attributions.npz",
+      "bytes": 922315
+    },
+    {
+      "file": "validation/details/v0289/analysis.json",
+      "bytes": 660258
+    },
+    {
+      "file": "validation/details/v0289/attributions.npz",
+      "bytes": 760025
+    },
+    {
+      "file": "validation/details/v0300/analysis.json",
+      "bytes": 693310
+    },
+    {
+      "file": "validation/details/v0300/attributions.npz",
+      "bytes": 1030357
+    },
+    {
+      "file": "validation/details/v0312/analysis.json",
+      "bytes": 639774
+    },
+    {
+      "file": "validation/details/v0312/attributions.npz",
+      "bytes": 544540
+    },
+    {
+      "file": "validation/details/v0338/analysis.json",
+      "bytes": 625634
+    },
+    {
+      "file": "validation/details/v0338/attributions.npz",
+      "bytes": 463770
+    },
+    {
+      "file": "validation/details/v0347/analysis.json",
+      "bytes": 669007
+    },
+    {
+      "file": "validation/details/v0347/attributions.npz",
+      "bytes": 788317
+    },
+    {
+      "file": "validation/details/v0372/analysis.json",
+      "bytes": 657777
+    },
+    {
+      "file": "validation/details/v0372/attributions.npz",
+      "bytes": 759991
+    },
+    {
+      "file": "validation/details/v0382/analysis.json",
+      "bytes": 699792
+    },
+    {
+      "file": "validation/details/v0382/attributions.npz",
+      "bytes": 1083261
+    },
+    {
+      "file": "validation/details/v0388/analysis.json",
+      "bytes": 625363
+    },
+    {
+      "file": "validation/details/v0388/attributions.npz",
+      "bytes": 490349
+    },
+    {
+      "file": "validation/details/v0400/analysis.json",
+      "bytes": 621462
+    },
+    {
+      "file": "validation/details/v0400/attributions.npz",
+      "bytes": 463494
+    },
+    {
+      "file": "validation/details/v0416/analysis.json",
+      "bytes": 612779
+    },
+    {
+      "file": "validation/details/v0416/attributions.npz",
+      "bytes": 382771
+    },
+    {
+      "file": "validation/details/v0417/analysis.json",
+      "bytes": 663030
+    },
+    {
+      "file": "validation/details/v0417/attributions.npz",
+      "bytes": 707746
+    },
+    {
+      "file": "validation/details/v0418/analysis.json",
+      "bytes": 626699
+    },
+    {
+      "file": "validation/details/v0418/attributions.npz",
+      "bytes": 464009
+    },
+    {
+      "file": "validation/details/v0427/analysis.json",
+      "bytes": 651014
+    },
+    {
+      "file": "validation/details/v0427/attributions.npz",
+      "bytes": 652372
+    },
+    {
+      "file": "validation/details/v0444/analysis.json",
+      "bytes": 623699
+    },
+    {
+      "file": "validation/details/v0444/attributions.npz",
+      "bytes": 463436
+    },
+    {
+      "file": "validation/details/v0456/analysis.json",
+      "bytes": 671029
+    },
+    {
+      "file": "validation/details/v0456/attributions.npz",
+      "bytes": 816165
+    },
+    {
+      "file": "validation/details/v0489/analysis.json",
+      "bytes": 681362
+    },
+    {
+      "file": "validation/details/v0489/attributions.npz",
+      "bytes": 922127
+    },
+    {
+      "file": "validation/details/v0500/analysis.json",
+      "bytes": 663156
+    },
+    {
+      "file": "validation/details/v0500/attributions.npz",
+      "bytes": 759857
+    },
+    {
+      "file": "validation/details/v0520/analysis.json",
+      "bytes": 691964
+    },
+    {
+      "file": "validation/details/v0520/attributions.npz",
+      "bytes": 948515
+    },
+    {
+      "file": "validation/details/v0526/analysis.json",
+      "bytes": 620811
+    },
+    {
+      "file": "validation/details/v0526/attributions.npz",
+      "bytes": 436115
+    },
+    {
+      "file": "validation/details/v0543/analysis.json",
+      "bytes": 626055
+    },
+    {
+      "file": "validation/details/v0543/attributions.npz",
+      "bytes": 490440
+    },
+    {
+      "file": "validation/details/v0554/analysis.json",
+      "bytes": 643484
+    },
+    {
+      "file": "validation/details/v0554/attributions.npz",
+      "bytes": 651684
+    },
+    {
+      "file": "validation/details/v0563/analysis.json",
+      "bytes": 705819
+    },
+    {
+      "file": "validation/details/v0563/attributions.npz",
+      "bytes": 1083487
+    },
+    {
+      "file": "validation/details/v0566/analysis.json",
+      "bytes": 671429
+    },
+    {
+      "file": "validation/details/v0566/attributions.npz",
+      "bytes": 787537
+    },
+    {
+      "file": "validation/details/v0609/analysis.json",
+      "bytes": 720976
+    },
+    {
+      "file": "validation/details/v0609/attributions.npz",
+      "bytes": 1164494
+    },
+    {
+      "file": "validation/details/v0612/analysis.json",
+      "bytes": 650011
+    },
+    {
+      "file": "validation/details/v0612/attributions.npz",
+      "bytes": 679233
+    },
+    {
+      "file": "validation/details/v0614/analysis.json",
+      "bytes": 618121
+    },
+    {
+      "file": "validation/details/v0614/attributions.npz",
+      "bytes": 409543
+    },
+    {
+      "file": "validation/details/v0626/analysis.json",
+      "bytes": 654596
+    },
+    {
+      "file": "validation/details/v0626/attributions.npz",
+      "bytes": 679822
+    },
+    {
+      "file": "validation/details/v0629/analysis.json",
+      "bytes": 650311
+    },
+    {
+      "file": "validation/details/v0629/attributions.npz",
+      "bytes": 625345
+    },
+    {
+      "file": "validation/details/v0634/analysis.json",
+      "bytes": 716050
+    },
+    {
+      "file": "validation/details/v0634/attributions.npz",
+      "bytes": 1163870
+    },
+    {
+      "file": "validation/details/v0666/analysis.json",
+      "bytes": 589501
+    },
+    {
+      "file": "validation/details/v0666/attributions.npz",
+      "bytes": 220540
+    },
+    {
+      "file": "validation/details/v0669/analysis.json",
+      "bytes": 616946
+    },
+    {
+      "file": "validation/details/v0669/attributions.npz",
+      "bytes": 409425
+    },
+    {
+      "file": "validation/details/v0670/analysis.json",
+      "bytes": 746055
+    },
+    {
+      "file": "validation/details/v0670/attributions.npz",
+      "bytes": 1346176
+    },
+    {
+      "file": "validation/details/v0677/analysis.json",
+      "bytes": 644534
+    },
+    {
+      "file": "validation/details/v0677/attributions.npz",
+      "bytes": 624703
+    },
+    {
+      "file": "validation/details/v0704/analysis.json",
+      "bytes": 655961
+    },
+    {
+      "file": "validation/details/v0704/attributions.npz",
+      "bytes": 705946
+    },
+    {
+      "file": "validation/details/v0708/analysis.json",
+      "bytes": 634027
+    },
+    {
+      "file": "validation/details/v0708/attributions.npz",
+      "bytes": 544778
+    },
+    {
+      "file": "validation/diagnostic_case_error_analysis.csv",
+      "bytes": 181296
+    },
+    {
+      "file": "validation/diagnostic_case_error_analysis.json",
+      "bytes": 244303
+    },
+    {
+      "file": "validation/diagnostic_occlusion.csv",
+      "bytes": 64662
+    },
+    {
+      "file": "validation/error_attribution_conclusions.json",
+      "bytes": 3337
+    },
+    {
+      "file": "validation/error_attribution_conclusions.txt",
+      "bytes": 2902
+    },
+    {
+      "file": "validation/figure_manifest.json",
+      "bytes": 211529
+    },
+    {
+      "file": "validation/figures/01_confusion.alignment.json",
+      "bytes": 909
+    },
+    {
+      "file": "validation/figures/01_confusion.figure.json",
+      "bytes": 924
+    },
+    {
+      "file": "validation/figures/01_confusion.pdf",
+      "bytes": 13807
+    },
+    {
+      "file": "validation/figures/01_confusion.png",
+      "bytes": 110751
+    },
+    {
+      "file": "validation/figures/01_confusion.svg",
+      "bytes": 9776
+    },
+    {
+      "file": "validation/figures/02_regression.alignment.json",
+      "bytes": 909
+    },
+    {
+      "file": "validation/figures/02_regression.figure.json",
+      "bytes": 882
+    },
+    {
+      "file": "validation/figures/02_regression.pdf",
+      "bytes": 19418
+    },
+    {
+      "file": "validation/figures/02_regression.png",
+      "bytes": 151709
+    },
+    {
+      "file": "validation/figures/02_regression.svg",
+      "bytes": 19924
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.alignment.json",
+      "bytes": 898
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.figure.json",
+      "bytes": 1135
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.pdf",
+      "bytes": 21482
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.png",
+      "bytes": 146423
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.svg",
+      "bytes": 20351
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.alignment.json",
+      "bytes": 898
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.figure.json",
+      "bytes": 1131
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.pdf",
+      "bytes": 21415
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.png",
+      "bytes": 146516
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.svg",
+      "bytes": 20300
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.alignment.json",
+      "bytes": 909
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.figure.json",
+      "bytes": 992
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.pdf",
+      "bytes": 17099
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.png",
+      "bytes": 104991
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.svg",
+      "bytes": 8043
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.alignment.json",
+      "bytes": 896
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.figure.json",
+      "bytes": 1048
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.pdf",
+      "bytes": 16441
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.png",
+      "bytes": 133040
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.svg",
+      "bytes": 16369
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.alignment.json",
+      "bytes": 896
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.figure.json",
+      "bytes": 1066
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.pdf",
+      "bytes": 16822
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.png",
+      "bytes": 134147
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.svg",
+      "bytes": 17186
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.alignment.json",
+      "bytes": 908
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.figure.json",
+      "bytes": 1006
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.pdf",
+      "bytes": 22629
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.png",
+      "bytes": 131272
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.svg",
+      "bytes": 48668
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.alignment.json",
+      "bytes": 922
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.figure.json",
+      "bytes": 981
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.pdf",
+      "bytes": 18286
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.png",
+      "bytes": 97314
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.svg",
+      "bytes": 13302
+    },
+    {
+      "file": "validation/group_modality_shares.csv",
+      "bytes": 4065
+    },
+    {
+      "file": "validation/metrics.json",
+      "bytes": 26125
+    },
+    {
+      "file": "validation/modality_contributions.csv",
+      "bytes": 859630
+    },
+    {
+      "file": "validation/modality_replacement_errors.csv",
+      "bytes": 12169
+    },
+    {
+      "file": "validation/selected_samples.csv",
+      "bytes": 4382
+    },
+    {
+      "file": "validation/validation_explanation_cards.pdf",
+      "bytes": 498008
+    },
+    {
+      "file": "validation/wrong_vs_true_modality_contributions.csv",
+      "bytes": 132782
+    },
+    {
+      "file": "中文表格/分组模态作用程度.csv",
+      "bytes": 4230
+    },
+    {
+      "file": "中文表格/局部干预对照.csv",
+      "bytes": 65808
+    },
+    {
+      "file": "中文表格/模态替换结果.csv",
+      "bytes": 656
+    },
+    {
+      "file": "中文表格/结果使用说明.json",
+      "bytes": 762
+    },
+    {
+      "file": "中文表格/诊断样本中文释义.csv",
+      "bytes": 23750
+    },
+    {
+      "file": "中文表格/诊断样本名单.csv",
+      "bytes": 4157
+    },
+    {
+      "file": "中文表格/逐例错误分析.csv",
+      "bytes": 30395
+    },
+    {
+      "file": "中文表格/错误类别与真实类别对比归因.csv",
+      "bytes": 136053
+    },
+    {
+      "file": "中文表格/附件四全量预测与解释.csv",
+      "bytes": 16113
+    },
+    {
+      "file": "中文表格/附件四关键证据定位.csv",
+      "bytes": 82708
+    },
+    {
+      "file": "中文表格/验证集全量预测.csv",
+      "bytes": 155340
+    },
+    {
+      "file": "中文表格/验证集基础指标.csv",
+      "bytes": 270
+    },
+    {
+      "file": "中文表格/验证集模态贡献.csv",
+      "bytes": 778204
+    },
+    {
+      "file": "结果索引.html",
+      "bytes": 35735
+    }
+  ],
+  "figure_render_script_sha256": "287a86c0976dd4a862e3536d40a235e123cb35d8c9d13973e0d8befefb009034",
+  "finalized_utc": "2026-09-26T12:55:16.856669+00:00",
+  "quality_assurance": {
+    "status": "PASS",
+    "acceptance_summary": "qa/chinese_acceptance_summary.json",
+    "rendering": "qa/chinese_rendered_qa_summary.json",
+    "visual_review": "qa/chinese_visual_review.json",
+    "data_integrity": "qa/chinese_data_integrity.json",
+    "interface_and_links": "qa/chinese_interface_audit.json",
+    "translation": "localization/translation_audit.json",
+    "final_image_hashes": "qa/chinese_final_hash_recheck.json"
+  },
+  "chinese_delivery": {
+    "summary_figures": 9,
+    "validation_cards": 60,
+    "attachment4_analysis_and_media_cards": 40,
+    "pdf_files": 11,
+    "pdf_pages": 109,
+    "chinese_csv_tables": 12,
+    "entry_point": "结果索引.html"
+  },
+  "rerender_command": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/.venv-align/bin/python -B /data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/explain_this_work.py --complete-q3 --completion-stage figures --device cuda:1 --output-dir /data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/completion_20260926",
+  "selected_validation_card_pdfs": {
+    "files": [
+      "validation/cards/v0050.pdf",
+      "validation/cards/v0063.pdf",
+      "validation/cards/v0614.pdf"
+    ],
+    "export_record": "qa/selected_card_pdf_export.json",
+    "quality_assurance": "qa/selected_card_pdf_qa.json",
+    "format": "vector PDF extracted from original explanation book"
+  }
+}

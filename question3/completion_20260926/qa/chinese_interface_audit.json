@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "display_language": "zh-CN",
+  "figure_metadata_count": 109,
+  "checked_obsolete_english_ui_terms": [
+    "Classification",
+    "Regression",
+    "Train-mean",
+    "Ground truth",
+    "Predicted",
+    "Original",
+    "Audio evidence",
+    "Reference sensitivity",
+    "Modality",
+    "Evidence",
+    "Source",
+    "Wrong vs",
+    "high-ranked",
+    "Mean absolute error"
+  ],
+  "obsolete_ui_residuals": [],
+  "result_index_links": 152,
+  "missing_links": [],
+  "english_retention_policy": "仅保留方法专有名词、分图编号、样本编号及原始输入证据；样本证据同时提供中文释义。",
+  "notes": "此检查核对旧英文界面文字及链接，不把原始英文语句视作未翻译的图表界面。",
+  "script_sha256": "fa91e0c3fa971b0406935f6cbd226aaaf8b87ed0ef2d1924663852628a92f0c9"
+}

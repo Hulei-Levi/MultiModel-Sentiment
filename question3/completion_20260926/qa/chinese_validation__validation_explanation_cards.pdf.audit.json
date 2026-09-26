@@ -1,0 +1,706 @@
+{
+  "file": "validation/validation_explanation_cards.pdf",
+  "sha256": "2b5ebabcac6229c6af7edb2c69d236787f49b7e8e29d419abe7cbee0ea13d52d",
+  "source_sha256": "6d55791c31c6be33d2f70d4708e0a3c4da606b4f4a607c90854c9f36556b258f",
+  "collision": {
+    "pdf": "validation\\validation_explanation_cards.pdf",
+    "auditable": true,
+    "verdict": "PASS",
+    "page_count": 60,
+    "visible_text_box_count": 6377,
+    "text_trace_count": 8850,
+    "stroke_path_count": 4892,
+    "filled_region_count": 5188,
+    "image_region_count": 0,
+    "summary": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "thresholds": {
+      "text_inset_pt": 0.6,
+      "min_overlap_ratio": 0.05,
+      "clipping_tolerance_pt": 0.5
+    },
+    "findings": []
+  },
+  "text_audit": {
+    "auditable": true,
+    "minimum_required_pt": 5.0,
+    "minimum_found_pt": 7.0,
+    "text_run_count": 8850,
+    "below_minimum_count": 0,
+    "below_minimum": [],
+    "warnings": []
+  },
+  "chinese_glyph_audit": {
+    "pages": [
+      {
+        "page": 1,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 371,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 2,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 366,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 3,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 356,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 4,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 355,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 5,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 371,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 6,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 346,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 7,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 358,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 8,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 351,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 9,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 357,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 10,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 335,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 11,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 366,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 12,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 407,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 13,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 380,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 14,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 379,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 15,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 369,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 16,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 359,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 17,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 393,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 18,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 375,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 19,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 378,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 20,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 346,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 21,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 337,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 22,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 354,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 23,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 350,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 24,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 352,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 25,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 378,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 26,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 340,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 27,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 383,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 28,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 354,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 29,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 361,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 30,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 356,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 31,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 369,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 32,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 385,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 33,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 358,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 34,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 365,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 35,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 347,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 36,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 356,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 37,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 363,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 38,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 373,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 39,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 345,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 40,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 375,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 41,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 377,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 42,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 381,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 43,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 386,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 44,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 379,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 45,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 359,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 46,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 360,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 47,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 404,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 48,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 375,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 49,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 402,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 50,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 366,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 51,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 347,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 52,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 355,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 53,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 373,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 54,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 396,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 55,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 371,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 56,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 370,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 57,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 444,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 58,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 382,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 59,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 358,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      },
+      {
+        "page": 60,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 373,
+        "font_names": [
+          "DejaVuSans",
+          "DejaVuSans-Bold",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      }
+    ],
+    "cjk_count": 22077,
+    "replacement_or_null": [],
+    "notdef_glyphs": [],
+    "cjk_unexpected_font": [],
+    "result": "PASS"
+  }
+}

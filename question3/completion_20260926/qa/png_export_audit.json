@@ -1,0 +1,1206 @@
+{
+  "count": 109,
+  "verdict": "PASS",
+  "issues": [],
+  "files": [
+    {
+      "file": "attachment4/cards/01_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/01_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/02_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/02_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/03_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/03_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/04_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/04_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/05_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/05_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/06_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/06_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/07_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/07_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/08_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/08_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/09_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/09_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/10_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/10_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/11_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/11_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/12_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/12_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/13_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/13_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/14_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/14_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/15_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/15_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/16_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/16_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/17_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/17_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/18_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/18_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/19_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/19_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/20_analysis.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "attachment4/cards/20_media.png",
+      "size_px": [
+        4208,
+        2977
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0003.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0014.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0017.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0048.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0050.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0062.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0063.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0069.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0072.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0083.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0128.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0138.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0143.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0144.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0156.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0161.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0182.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0189.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0207.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0218.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0230.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0243.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0249.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0257.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0264.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0289.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0300.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0312.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0338.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0347.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0372.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0382.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0388.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0400.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0416.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0417.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0418.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0427.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0444.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0456.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0489.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0500.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0520.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0526.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0543.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0554.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0563.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0566.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0609.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0612.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0614.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0626.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0629.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0634.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0666.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0669.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0670.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0677.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0704.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/cards/v0708.png",
+      "size_px": [
+        2977,
+        4208
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/01_confusion.png",
+      "size_px": [
+        1476,
+        1368
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/02_regression.png",
+      "size_px": [
+        1476,
+        1368
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.png",
+      "size_px": [
+        2484,
+        1296
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.png",
+      "size_px": [
+        2484,
+        1296
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.png",
+      "size_px": [
+        1980,
+        1332
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.png",
+      "size_px": [
+        1620,
+        1404
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.png",
+      "size_px": [
+        1620,
+        1404
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.png",
+      "size_px": [
+        1980,
+        1368
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.png",
+      "size_px": [
+        1836,
+        1368
+      ],
+      "dpi": [
+        359.9942,
+        359.9942
+      ]
+    }
+  ]
+}

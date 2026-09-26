@@ -1,0 +1,49 @@
+{
+  "pdf": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/completion_20260926/validation/figures/03_regression_modality_groups.pdf",
+  "auditable": true,
+  "verdict": "PASS",
+  "page_count": 1,
+  "visible_text_box_count": 21,
+  "text_trace_count": 25,
+  "stroke_path_count": 83,
+  "filled_region_count": 20,
+  "image_region_count": 0,
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "contained_fill_overlays": 0,
+    "contained_image_overlays": 0
+  },
+  "thresholds": {
+    "text_inset_pt": 0.6,
+    "min_overlap_ratio": 0.05,
+    "clipping_tolerance_pt": 0.5
+  },
+  "findings": [],
+  "sha256": "ec06cc6856dcd0251d48e0a2a20c514c471ab7aa2295fd45e29af210628e341f",
+  "font_audit": {
+    "auditable": true,
+    "minimum_required_pt": 5.0,
+    "minimum_found_pt": 7.0,
+    "text_run_count": 25,
+    "below_minimum_count": 0,
+    "below_minimum": [],
+    "warnings": [],
+    "pages": [
+      {
+        "page": 1,
+        "minimum_font_pt": 7.0,
+        "text_trace_count": 25,
+        "below_minimum": [],
+        "page_size_pt": [
+          0.0,
+          0.0,
+          496.79998779296875,
+          259.20001220703125
+        ]
+      }
+    ],
+    "page_glyph_floor_pass": true
+  },
+  "manual_warn_review_status": "not_required"
+}

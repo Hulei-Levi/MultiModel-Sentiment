@@ -1,0 +1,177 @@
+{
+  "result": "PASS",
+  "pdf_pages_visually_reviewed": 21,
+  "png_files_visually_reviewed": 4,
+  "pdf_page_samples": [
+    {
+      "file": "validation/figures/01_confusion.pdf",
+      "page": 1,
+      "sha256": "3c4437243f0592f9a9c9776ccb4d0ae3fa3ddcc46308bf0bb6370e3da1a2be08"
+    },
+    {
+      "file": "validation/figures/02_regression.pdf",
+      "page": 1,
+      "sha256": "f9c1ef0a4c2f1981c572f1c7a99ff9b066f4e9e8ccc723f4a7c501c4f574dbcd"
+    },
+    {
+      "file": "validation/figures/03_classification_modality_groups.pdf",
+      "page": 1,
+      "sha256": "239f6e5b3cbdb3e640c4d3939b748c2f49931dffcfaeede8919169a99187d926"
+    },
+    {
+      "file": "validation/figures/03_regression_modality_groups.pdf",
+      "page": 1,
+      "sha256": "ad0967bf73c2301a5a93977ca1fd661f9bf8ca28b58088b6226b8ddbcad3eb69"
+    },
+    {
+      "file": "validation/figures/04_modality_replacement_errors.pdf",
+      "page": 1,
+      "sha256": "21130d81bca6bb05168fa7fb71c0d2d79e69bcb4d9bb1addf7c3f2e2944f50a7"
+    },
+    {
+      "file": "validation/figures/05_classification_occlusion.pdf",
+      "page": 1,
+      "sha256": "fe5917c3789f3e16a8f7e0e7b6bbc059240e6a87095a88c0f7562a0f0459dfa5"
+    },
+    {
+      "file": "validation/figures/05_regression_occlusion.pdf",
+      "page": 1,
+      "sha256": "486a69a7fbeda9e853d4bf95dd46c880b04bec31dcde743c0276e426547de390"
+    },
+    {
+      "file": "validation/figures/06_reference_sensitivity.pdf",
+      "page": 1,
+      "sha256": "b350ef32a0771df18556245b11abb450f86a49feb5b7ffb96a655d123e492b20"
+    },
+    {
+      "file": "validation/figures/07_wrong_vs_true_contrast.pdf",
+      "page": 1,
+      "sha256": "0db5bbc4b281ea2177fa087db03097df18722f8d409412149853d85d65da6032"
+    },
+    {
+      "file": "validation/validation_explanation_cards.pdf",
+      "page": 1,
+      "sha256": "2b5ebabcac6229c6af7edb2c69d236787f49b7e8e29d419abe7cbee0ea13d52d"
+    },
+    {
+      "file": "validation/validation_explanation_cards.pdf",
+      "page": 18,
+      "sha256": "2b5ebabcac6229c6af7edb2c69d236787f49b7e8e29d419abe7cbee0ea13d52d"
+    },
+    {
+      "file": "validation/validation_explanation_cards.pdf",
+      "page": 57,
+      "sha256": "2b5ebabcac6229c6af7edb2c69d236787f49b7e8e29d419abe7cbee0ea13d52d"
+    },
+    {
+      "file": "validation/validation_explanation_cards.pdf",
+      "page": 60,
+      "sha256": "2b5ebabcac6229c6af7edb2c69d236787f49b7e8e29d419abe7cbee0ea13d52d"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 13,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 14,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 25,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 26,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 30,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 32,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 35,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    },
+    {
+      "file": "attachment4/attachment4_explanation_cards.pdf",
+      "page": 36,
+      "sha256": "314b6001eebfa2fe433918255cb73668b2c15673753320acca29996871c630cb"
+    }
+  ],
+  "png_samples": [
+    {
+      "file": "validation/cards/v0189.png",
+      "page": 1,
+      "sha256": "410934d218dc10748230982b77a4977bbd5dfb3d71bf1154df641420220911f5"
+    },
+    {
+      "file": "validation/cards/v0670.png",
+      "page": 1,
+      "sha256": "138e9be1e5582f5320e138c43c7cbe60575bcefb4bdee63630be87468427f659"
+    },
+    {
+      "file": "attachment4/cards/13_analysis.png",
+      "page": 1,
+      "sha256": "f1a6424b168f4cb026dd1ebe6f818967bef2d389685b1e41ba6cfab011ce57f6"
+    },
+    {
+      "file": "attachment4/cards/18_media.png",
+      "page": 1,
+      "sha256": "ab533a730119e79ca0f5b6189a3063f1fc1cfa85a74efdecab3cdc398d68a5c8"
+    }
+  ],
+  "scope": "全部109页完成机器检查；实际目视抽查21个PDF页面（9张单图、4张验证卡、8张附件卡）及4张导出的PNG，不将抽查表述为逐页人工审核。",
+  "observations": [
+    "采用 DejaVu Sans 与 Droid Sans Fallback TrueType 回退栈后，中英文、数字、负号均实际可见；专名 Shapley、WhisperX 和原始英文文本保留。",
+    "分析卡a-b模态占比、c-d位置曲线、e-f中英双语关键词的标签、轴标题、脚注和长段落均留有清晰间隔。",
+    "04图外置图例及两行底注、05两图底部图例均清楚；图07带符号的Shapley得分差与零参考线可辨。",
+    "样本07和18媒体图允许部分定位待复核，13视觉原输入全零、15和16定位不可靠时保留空缺说明，未用图像填补不可支持的定位。",
+    "附件视频画面中的英文是原视频内容，保持原样；QA拼图只缩放展示，不改变交付原图。",
+    "所有目视抽查的PDF/PNG未见缺字、乱码、重叠、越界或数据遮挡。"
+  ],
+  "panel_review": [
+    {
+      "template": "9张汇总单图",
+      "panels": "各自单面板",
+      "result": "PASS",
+      "detail": "中文标题、标签、图例和统计定义可读，保留正负方向；散点与箱线图显示实际分布。"
+    },
+    {
+      "template": "分析卡",
+      "panels": "a,b",
+      "result": "PASS",
+      "detail": "两任务模态绝对Shapley份额及主要参考模态标注明确。"
+    },
+    {
+      "template": "分析卡",
+      "panels": "c,d",
+      "result": "PASS",
+      "detail": "归因绝对量占比、编码位置及线型颜色说明一致。"
+    },
+    {
+      "template": "分析卡",
+      "panels": "e,f",
+      "result": "PASS",
+      "detail": "中文释义及英文原词均完整可读，长词未裁切。"
+    },
+    {
+      "template": "媒体卡",
+      "panels": "a,b,c及两列语音清单",
+      "result": "PASS",
+      "detail": "时间、帧号、待复核/不可定位状态与限制说明清楚。"
+    }
+  ],
+  "prior_font_failure": "旧CFF试样因实际PDF渲染失败被拦截，详见chinese_pilot_visual_review.json；最终文件使用验证通过的TrueType字体。",
+  "timestamp_utc": "2026-09-26T12:54:30.021063+00:00"
+}

@@ -1,0 +1,5703 @@
+{
+  "schema_version": 2,
+  "sample_id": "19",
+  "source_video": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/datasets/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/对齐版本/videos/19.mp4",
+  "source_sha256": "26148d75d5b4c1ff6f69a36485cc02a771a74203d2c07d9d08f018bf88658217",
+  "raw_text": "People are surprisingly forgiving brands when they own up to mistakes, and unfortunately some haters out there love to point fingers and jump all over imperfections, but for the most part, people understand",
+  "prediction": {
+    "logits": [
+      -0.5956778526306152,
+      -1.6992777585983276,
+      0.9475621581077576
+    ],
+    "probabilities": [
+      0.16635051648184482,
+      0.05517429647574746,
+      0.7784751870424077
+    ],
+    "class_index": 2,
+    "runnerup_index": 0,
+    "class_value": 2.0,
+    "regression": 0.6791881322860718,
+    "margin": 1.5432400703430176
+  },
+  "modality_phi": [
+    [
+      -1.0904087622960408,
+      -0.08014293511708577,
+      0.18770996729532877
+    ],
+    [
+      0.10725374023119608,
+      -0.042943229277928666,
+      0.18405122558275858
+    ]
+  ],
+  "modality_shares": [
+    [
+      0.8027972743603068,
+      0.05900404701055013,
+      0.13819867862914312
+    ],
+    [
+      0.3208805366973261,
+      0.1284770715549377,
+      0.5506423917477362
+    ]
+  ],
+  "dominant_modalities": {
+    "classification": "text",
+    "regression": "vision"
+  },
+  "data_quality": {
+    "input_truncated": false,
+    "full_content_token_count": 39,
+    "visible_content_token_count": 39,
+    "visible_content_token_fraction": 1.0,
+    "raw_zero_content_slots": {
+      "text": [],
+      "audio": [],
+      "vision": []
+    },
+    "all_zero_content_modalities": [],
+    "notes": []
+  },
+  "alignment_file": "samples/19/alignment.json",
+  "alignment_error": null,
+  "acoustic_text_match_ratio": 0.9552,
+  "source_feature_provenance": {
+    "status": "checked",
+    "source_time_mapping_status": "unavailable",
+    "source_time_reason": "Supplied cached feature arrays contain no source intervals.",
+    "source_file": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/datasets/附件4-可解释专项视频样本与特征文件/附件4-可解释专项视频样本与特征文件/未对齐版本/19.pkl",
+    "source_sha256": "14041c0d6b2d351cd900603044f617d549e25821fa04b3f57d62c4a4e52fad4e",
+    "modalities": {
+      "audio": {
+        "1": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            239
+          ],
+          "unique_source_row": 239
+        },
+        "2": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            240
+          ],
+          "unique_source_row": 240
+        },
+        "3": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            241
+          ],
+          "unique_source_row": 241
+        },
+        "4": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            242
+          ],
+          "unique_source_row": 242
+        },
+        "5": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            242
+          ],
+          "unique_source_row": 242
+        },
+        "6": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            243
+          ],
+          "unique_source_row": 243
+        },
+        "7": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            244
+          ],
+          "unique_source_row": 244
+        },
+        "8": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            245
+          ],
+          "unique_source_row": 245
+        },
+        "9": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            246
+          ],
+          "unique_source_row": 246
+        },
+        "10": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            247
+          ],
+          "unique_source_row": 247
+        },
+        "11": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            248
+          ],
+          "unique_source_row": 248
+        },
+        "12": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            249
+          ],
+          "unique_source_row": 249
+        },
+        "13": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            249
+          ],
+          "unique_source_row": 249
+        },
+        "14": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            250
+          ],
+          "unique_source_row": 250
+        },
+        "15": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            251
+          ],
+          "unique_source_row": 251
+        },
+        "16": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            252
+          ],
+          "unique_source_row": 252
+        },
+        "17": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            253
+          ],
+          "unique_source_row": 253
+        },
+        "18": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            253
+          ],
+          "unique_source_row": 253
+        },
+        "19": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            254
+          ],
+          "unique_source_row": 254
+        },
+        "20": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            255
+          ],
+          "unique_source_row": 255
+        },
+        "21": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            256
+          ],
+          "unique_source_row": 256
+        },
+        "22": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            257
+          ],
+          "unique_source_row": 257
+        },
+        "23": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            258
+          ],
+          "unique_source_row": 258
+        },
+        "24": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            259
+          ],
+          "unique_source_row": 259
+        },
+        "25": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            260
+          ],
+          "unique_source_row": 260
+        },
+        "26": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            261
+          ],
+          "unique_source_row": 261
+        },
+        "27": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            262
+          ],
+          "unique_source_row": 262
+        },
+        "28": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            263
+          ],
+          "unique_source_row": 263
+        },
+        "29": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            264
+          ],
+          "unique_source_row": 264
+        },
+        "30": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            264
+          ],
+          "unique_source_row": 264
+        },
+        "31": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            264
+          ],
+          "unique_source_row": 264
+        },
+        "32": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            265
+          ],
+          "unique_source_row": 265
+        },
+        "33": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            266
+          ],
+          "unique_source_row": 266
+        },
+        "34": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            267
+          ],
+          "unique_source_row": 267
+        },
+        "35": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            268
+          ],
+          "unique_source_row": 268
+        },
+        "36": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            269
+          ],
+          "unique_source_row": 269
+        },
+        "37": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            269
+          ],
+          "unique_source_row": 269
+        },
+        "38": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            270
+          ],
+          "unique_source_row": 270
+        },
+        "39": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            271
+          ],
+          "unique_source_row": 271
+        }
+      },
+      "vision": {
+        "1": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            171
+          ],
+          "unique_source_row": 171
+        },
+        "2": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            172
+          ],
+          "unique_source_row": 172
+        },
+        "3": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            173
+          ],
+          "unique_source_row": 173
+        },
+        "4": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            174
+          ],
+          "unique_source_row": 174
+        },
+        "5": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            174
+          ],
+          "unique_source_row": 174
+        },
+        "6": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            175
+          ],
+          "unique_source_row": 175
+        },
+        "7": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            176
+          ],
+          "unique_source_row": 176
+        },
+        "8": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            177
+          ],
+          "unique_source_row": 177
+        },
+        "9": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            178
+          ],
+          "unique_source_row": 178
+        },
+        "10": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            179
+          ],
+          "unique_source_row": 179
+        },
+        "11": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            180
+          ],
+          "unique_source_row": 180
+        },
+        "12": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            181
+          ],
+          "unique_source_row": 181
+        },
+        "13": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            181
+          ],
+          "unique_source_row": 181
+        },
+        "14": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            182
+          ],
+          "unique_source_row": 182
+        },
+        "15": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            183
+          ],
+          "unique_source_row": 183
+        },
+        "16": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            184
+          ],
+          "unique_source_row": 184
+        },
+        "17": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            185
+          ],
+          "unique_source_row": 185
+        },
+        "18": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            185
+          ],
+          "unique_source_row": 185
+        },
+        "19": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            186
+          ],
+          "unique_source_row": 186
+        },
+        "20": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            187
+          ],
+          "unique_source_row": 187
+        },
+        "21": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            188
+          ],
+          "unique_source_row": 188
+        },
+        "22": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            189
+          ],
+          "unique_source_row": 189
+        },
+        "23": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            190
+          ],
+          "unique_source_row": 190
+        },
+        "24": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            191
+          ],
+          "unique_source_row": 191
+        },
+        "25": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            192
+          ],
+          "unique_source_row": 192
+        },
+        "26": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            193
+          ],
+          "unique_source_row": 193
+        },
+        "27": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            194
+          ],
+          "unique_source_row": 194
+        },
+        "28": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            195
+          ],
+          "unique_source_row": 195
+        },
+        "29": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            196
+          ],
+          "unique_source_row": 196
+        },
+        "30": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            196
+          ],
+          "unique_source_row": 196
+        },
+        "31": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            196
+          ],
+          "unique_source_row": 196
+        },
+        "32": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            197
+          ],
+          "unique_source_row": 197
+        },
+        "33": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            198
+          ],
+          "unique_source_row": 198
+        },
+        "34": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            199
+          ],
+          "unique_source_row": 199
+        },
+        "35": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            200
+          ],
+          "unique_source_row": 200
+        },
+        "36": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            201
+          ],
+          "unique_source_row": 201
+        },
+        "37": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            201
+          ],
+          "unique_source_row": 201
+        },
+        "38": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            202
+          ],
+          "unique_source_row": 202
+        },
+        "39": {
+          "status": "exact_array_equality",
+          "matching_source_rows": [
+            203
+          ],
+          "unique_source_row": 203
+        }
+      }
+    }
+  },
+  "interpretation": {
+    "text": "Exact raw-character locations of saved model-visible BERT content slots.",
+    "audio_vision": "Post-hoc lexical time anchors obtained by q1 WhisperX/CTC alignment; temporal correspondence only.",
+    "limitation": "Cached 74-D audio / 35-D visual features have no source intervals. Exact matched source row indices do not establish source time. Media exports are auditable contextual anchors, not certified source windows of attributed feature values.",
+    "truncation": "Only saved content slots receive attribution. Unencoded suffix and special tokens are excluded.",
+    "raw_zero": "Raw-zero modality inputs retain numerical model attribution but are not observed media evidence.",
+    "review_policy": "No interpolated times; low score, partial alignment, unusual normalization, transcript mismatch and long intervals require review."
+  },
+  "words": [
+    {
+      "word_index": 0,
+      "word": "People",
+      "raw_char_span": [
+        0,
+        6
+      ],
+      "alignment_text": "people",
+      "alignment_char_span": [
+        0,
+        6
+      ],
+      "start_s": 0.520413,
+      "end_s": 0.720572,
+      "score": 0.9992,
+      "char_coverage": 1.0,
+      "frame_start": 15,
+      "frame_end_exclusive": 22,
+      "frame_indices": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        1
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          0,
+          6
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.6473701541320727,
+          "audio": 0.13347234179525605,
+          "vision": 0.13416000033295267
+        },
+        "regression": {
+          "text": 0.19568626633892303,
+          "audio": 0.04656845311811012,
+          "vision": 0.04878431104154811
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.023271864606600613,
+          "audio": 0.002637433084229321,
+          "vision": 0.005266639274047761
+        },
+        "regression": {
+          "text": -0.001109722319295532,
+          "audio": 0.000865327032558094,
+          "vision": 0.0057608154796817326
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 1,
+      "word": "are",
+      "raw_char_span": [
+        7,
+        10
+      ],
+      "alignment_text": "are",
+      "alignment_char_span": [
+        7,
+        10
+      ],
+      "start_s": 0.760604,
+      "end_s": 0.840668,
+      "score": 0.9555,
+      "char_coverage": 1.0,
+      "frame_start": 22,
+      "frame_end_exclusive": 26,
+      "frame_indices": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        2
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          7,
+          10
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 2.421476245995188,
+          "audio": 0.14604907830146566,
+          "vision": 0.13413571108083844
+        },
+        "regression": {
+          "text": 0.8362197319400966,
+          "audio": 0.05156836670381552,
+          "vision": 0.04968909460049675
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.2532355438369513,
+          "audio": 0.002206872247183172,
+          "vision": 0.0011985759425587853
+        },
+        "regression": {
+          "text": 0.08510036456129451,
+          "audio": 0.0013723201396908299,
+          "vision": 0.003110865328661564
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 2,
+      "word": "surprisingly",
+      "raw_char_span": [
+        11,
+        23
+      ],
+      "alignment_text": "surprisingly",
+      "alignment_char_span": [
+        11,
+        23
+      ],
+      "start_s": 0.960763,
+      "end_s": 1.701352,
+      "score": 0.9969,
+      "char_coverage": 1.0,
+      "frame_start": 28,
+      "frame_end_exclusive": 52,
+      "frame_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        3
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          11,
+          23
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 6.593402323955388,
+          "audio": 0.1189907739308788,
+          "vision": 0.1387772374166051
+        },
+        "regression": {
+          "text": 2.3610586585680613,
+          "audio": 0.0432757664669605,
+          "vision": 0.05307841578433629
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 1.4340219866741506,
+          "audio": -0.00039926797251322037,
+          "vision": 0.01241605568625192
+        },
+        "regression": {
+          "text": 0.4839289740950019,
+          "audio": -0.00048621671299311586,
+          "vision": 0.007240902317103684
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 3,
+      "word": "forgiving",
+      "raw_char_span": [
+        24,
+        33
+      ],
+      "alignment_text": "forgiving",
+      "alignment_char_span": [
+        24,
+        33
+      ],
+      "start_s": 1.801431,
+      "end_s": 2.221765,
+      "score": 0.9963,
+      "char_coverage": 1.0,
+      "frame_start": 54,
+      "frame_end_exclusive": 67,
+      "frame_indices": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        4,
+        5
+      ],
+      "slot_weights": [
+        1.0,
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          24,
+          27
+        ],
+        [
+          27,
+          33
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 10.71449522009133,
+          "audio": 0.209868332168834,
+          "vision": 0.3166808561358847
+        },
+        "regression": {
+          "text": 3.0572769881580077,
+          "audio": 0.07365217063678053,
+          "vision": 0.12106111125246435
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -1.5372082001766683,
+          "audio": -0.01160801692398336,
+          "vision": 0.028829509019893472
+        },
+        "regression": {
+          "text": -0.3276762193294843,
+          "audio": -0.003876958031695051,
+          "vision": 0.019413612798909748
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 4,
+      "word": "brands",
+      "raw_char_span": [
+        34,
+        40
+      ],
+      "alignment_text": "brands",
+      "alignment_char_span": [
+        34,
+        40
+      ],
+      "start_s": 2.361876,
+      "end_s": 2.742178,
+      "score": 0.9545,
+      "char_coverage": 1.0,
+      "frame_start": 70,
+      "frame_end_exclusive": 83,
+      "frame_indices": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        6
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          34,
+          40
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.3669503634429128,
+          "audio": 0.09601563586104064,
+          "vision": 0.15506957661294526
+        },
+        "regression": {
+          "text": 0.3791969102422259,
+          "audio": 0.034062704619647964,
+          "vision": 0.057787366132127656
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.11239421235203456,
+          "audio": -0.003087942218438513,
+          "vision": 0.005436177120468247
+        },
+        "regression": {
+          "text": -0.02336218720191447,
+          "audio": -0.0003950354034947406,
+          "vision": 0.005548280475902671
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 5,
+      "word": "when",
+      "raw_char_span": [
+        41,
+        45
+      ],
+      "alignment_text": "when",
+      "alignment_char_span": [
+        41,
+        45
+      ],
+      "start_s": 2.822242,
+      "end_s": 2.942337,
+      "score": 0.9886,
+      "char_coverage": 1.0,
+      "frame_start": 84,
+      "frame_end_exclusive": 89,
+      "frame_indices": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        7
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          41,
+          45
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.9569387667808075,
+          "audio": 0.13038782909480773,
+          "vision": 0.14488164941876888
+        },
+        "regression": {
+          "text": 0.2739864739886392,
+          "audio": 0.04737816041497796,
+          "vision": 0.05400219781587838
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.06100169122117028,
+          "audio": 0.0027464451227100163,
+          "vision": 0.00440929629805848
+        },
+        "regression": {
+          "text": -0.02293368312844301,
+          "audio": 0.0022326786608493692,
+          "vision": 0.004573757775424586
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 6,
+      "word": "they",
+      "raw_char_span": [
+        46,
+        50
+      ],
+      "alignment_text": "they",
+      "alignment_char_span": [
+        46,
+        50
+      ],
+      "start_s": 2.982369,
+      "end_s": 3.102465,
+      "score": 0.9876,
+      "char_coverage": 1.0,
+      "frame_start": 89,
+      "frame_end_exclusive": 94,
+      "frame_indices": [
+        89,
+        90,
+        91,
+        92,
+        93
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        8
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          46,
+          50
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8023994439024658,
+          "audio": 0.16157043608113744,
+          "vision": 0.1599337192399494
+        },
+        "regression": {
+          "text": 0.20879678202524893,
+          "audio": 0.05773854670271528,
+          "vision": 0.060898466131664185
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.07821774297148248,
+          "audio": 0.0022379992650758103,
+          "vision": 0.017115607573249498
+        },
+        "regression": {
+          "text": -0.01581429715546312,
+          "audio": 0.0015344460605064307,
+          "vision": 0.008575118286141357
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 7,
+      "word": "own",
+      "raw_char_span": [
+        51,
+        54
+      ],
+      "alignment_text": "own",
+      "alignment_char_span": [
+        51,
+        54
+      ],
+      "start_s": 3.302624,
+      "end_s": 3.422719,
+      "score": 0.998,
+      "char_coverage": 1.0,
+      "frame_start": 99,
+      "frame_end_exclusive": 103,
+      "frame_indices": [
+        99,
+        100,
+        101,
+        102
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        9
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          51,
+          54
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.025375424012657,
+          "audio": 0.1255445268049737,
+          "vision": 0.16278250343877876
+        },
+        "regression": {
+          "text": 0.25616199649256577,
+          "audio": 0.046352382427046215,
+          "vision": 0.059940456714441766
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.10881957307165328,
+          "audio": 0.0005461140869534695,
+          "vision": 0.017143220104241488
+        },
+        "regression": {
+          "text": -0.022536004343246346,
+          "audio": 0.0009297281312513721,
+          "vision": 0.008212422048919149
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 8,
+      "word": "up",
+      "raw_char_span": [
+        55,
+        57
+      ],
+      "alignment_text": "up",
+      "alignment_char_span": [
+        55,
+        57
+      ],
+      "start_s": 3.602862,
+      "end_s": 3.682926,
+      "score": 0.9077,
+      "char_coverage": 1.0,
+      "frame_start": 108,
+      "frame_end_exclusive": 111,
+      "frame_indices": [
+        108,
+        109,
+        110
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        10
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          55,
+          57
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.4320741627826403,
+          "audio": 0.12741222171635852,
+          "vision": 0.17624120649977754
+        },
+        "regression": {
+          "text": 0.34416109891516944,
+          "audio": 0.04352618781376994,
+          "vision": 0.06269490185933843
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.15155578475565765,
+          "audio": -0.0021735382222244208,
+          "vision": 0.006939588392435165
+        },
+        "regression": {
+          "text": -0.02852284983603487,
+          "audio": -0.0003016571044973013,
+          "vision": 0.004171370439985647
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 9,
+      "word": "to",
+      "raw_char_span": [
+        58,
+        60
+      ],
+      "alignment_text": "to",
+      "alignment_char_span": [
+        58,
+        60
+      ],
+      "start_s": 3.762989,
+      "end_s": 3.843053,
+      "score": 0.999,
+      "char_coverage": 1.0,
+      "frame_start": 112,
+      "frame_end_exclusive": 116,
+      "frame_indices": [
+        112,
+        113,
+        114,
+        115
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        11
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          58,
+          60
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.6309915747598978,
+          "audio": 0.10751813454351625,
+          "vision": 0.17834681755576762
+        },
+        "regression": {
+          "text": 0.4054432212452081,
+          "audio": 0.0375878606544255,
+          "vision": 0.06386335682645194
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.22267306426312977,
+          "audio": 0.00374724595515686,
+          "vision": 0.012505285943844114
+        },
+        "regression": {
+          "text": -0.051419897373849485,
+          "audio": 0.0016347522995317197,
+          "vision": 0.006460042525890401
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 10,
+      "word": "mistakes",
+      "raw_char_span": [
+        61,
+        69
+      ],
+      "alignment_text": "mistakes",
+      "alignment_char_span": [
+        61,
+        69
+      ],
+      "start_s": 3.903101,
+      "end_s": 4.403498,
+      "score": 0.9979,
+      "char_coverage": 1.0,
+      "frame_start": 117,
+      "frame_end_exclusive": 133,
+      "frame_indices": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        12
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          61,
+          69
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.43742515254732,
+          "audio": 0.1396631417848824,
+          "vision": 0.1773671794755585
+        },
+        "regression": {
+          "text": 0.34133053744941905,
+          "audio": 0.04557123125720152,
+          "vision": 0.065235261464638
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.1954448359821403,
+          "audio": 0.011792459218969526,
+          "vision": 0.021854427236034164
+        },
+        "regression": {
+          "text": -0.03599678860353382,
+          "audio": 0.003928161793392688,
+          "vision": 0.010078629815170702
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 11,
+      "word": "and",
+      "raw_char_span": [
+        71,
+        74
+      ],
+      "alignment_text": "and",
+      "alignment_char_span": [
+        70,
+        73
+      ],
+      "start_s": 5.204134,
+      "end_s": 5.264182,
+      "score": 0.9927,
+      "char_coverage": 1.0,
+      "frame_start": 156,
+      "frame_end_exclusive": 158,
+      "frame_indices": [
+        156,
+        157
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        14
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          71,
+          74
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8824212783568965,
+          "audio": 0.15331333827233964,
+          "vision": 0.16841396291632002
+        },
+        "regression": {
+          "text": 0.257957064061751,
+          "audio": 0.050052836282574176,
+          "vision": 0.06032971357101652
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.02856879380153137,
+          "audio": 0.010708551735080877,
+          "vision": 0.012013280241938857
+        },
+        "regression": {
+          "text": -0.0014127958859022102,
+          "audio": 0.003234399303048857,
+          "vision": 0.006022278536215892
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 12,
+      "word": "unfortunately",
+      "raw_char_span": [
+        75,
+        88
+      ],
+      "alignment_text": "unfortunately",
+      "alignment_char_span": [
+        74,
+        87
+      ],
+      "start_s": 5.344245,
+      "end_s": 6.064818,
+      "score": 0.9717,
+      "char_coverage": 1.0,
+      "frame_start": 160,
+      "frame_end_exclusive": 182,
+      "frame_indices": [
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        15
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          75,
+          88
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.5328262224020415,
+          "audio": 0.13304872026059394,
+          "vision": 0.1581494527833581
+        },
+        "regression": {
+          "text": 0.5173405544523069,
+          "audio": 0.04082464890523323,
+          "vision": 0.05850982767984853
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.024144044928651374,
+          "audio": -0.0047166632415381144,
+          "vision": 0.009778992174202075
+        },
+        "regression": {
+          "text": 0.03217058138509667,
+          "audio": -0.002067161515196618,
+          "vision": 0.005760188670589896
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 13,
+      "word": "some",
+      "raw_char_span": [
+        89,
+        93
+      ],
+      "alignment_text": "some",
+      "alignment_char_span": [
+        88,
+        92
+      ],
+      "start_s": 6.144882,
+      "end_s": 6.305009,
+      "score": 0.9653,
+      "char_coverage": 1.0,
+      "frame_start": 184,
+      "frame_end_exclusive": 190,
+      "frame_indices": [
+        184,
+        185,
+        186,
+        187,
+        188,
+        189
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        16
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          89,
+          93
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2560257707481575,
+          "audio": 0.13463960014666562,
+          "vision": 0.15908491946910713
+        },
+        "regression": {
+          "text": 0.44073132402892734,
+          "audio": 0.04224911048414697,
+          "vision": 0.058906555627122166
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.05161160957170473,
+          "audio": -0.002547612253832294,
+          "vision": 0.014044563950203771
+        },
+        "regression": {
+          "text": 0.02771798453136475,
+          "audio": -0.0010258486038333028,
+          "vision": 0.007750853483431934
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 14,
+      "word": "haters",
+      "raw_char_span": [
+        94,
+        100
+      ],
+      "alignment_text": "haters",
+      "alignment_char_span": [
+        93,
+        99
+      ],
+      "start_s": 6.385072,
+      "end_s": 6.745359,
+      "score": 0.9906,
+      "char_coverage": 1.0,
+      "frame_start": 191,
+      "frame_end_exclusive": 203,
+      "frame_indices": [
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        17,
+        18
+      ],
+      "slot_weights": [
+        1.0,
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          94,
+          98
+        ],
+        [
+          98,
+          100
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 3.6164631569582344,
+          "audio": 0.23409867681048907,
+          "vision": 0.31103467891510794
+        },
+        "regression": {
+          "text": 0.9086408915634222,
+          "audio": 0.07302477489583817,
+          "vision": 0.12024218602858433
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.3305695583074212,
+          "audio": -0.007048238931701843,
+          "vision": 0.04422798382620381
+        },
+        "regression": {
+          "text": -0.035880380749362076,
+          "audio": -0.0027530443971434,
+          "vision": 0.02181247307264595
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 15,
+      "word": "out",
+      "raw_char_span": [
+        101,
+        104
+      ],
+      "alignment_text": "out",
+      "alignment_char_span": [
+        100,
+        103
+      ],
+      "start_s": 6.825422,
+      "end_s": 6.925502,
+      "score": 0.9706,
+      "char_coverage": 1.0,
+      "frame_start": 204,
+      "frame_end_exclusive": 208,
+      "frame_indices": [
+        204,
+        205,
+        206,
+        207
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        19
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          101,
+          104
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8715129836682128,
+          "audio": 0.11524187259867998,
+          "vision": 0.1665509630444776
+        },
+        "regression": {
+          "text": 0.2620847300943446,
+          "audio": 0.03579544720753277,
+          "vision": 0.0638138252126691
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.02421664734519488,
+          "audio": -0.005004841787958368,
+          "vision": 0.014704365374900248
+        },
+        "regression": {
+          "text": 0.010284573241117288,
+          "audio": -0.0014110500743396302,
+          "vision": 0.009850528274848194
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 16,
+      "word": "there",
+      "raw_char_span": [
+        105,
+        110
+      ],
+      "alignment_text": "there",
+      "alignment_char_span": [
+        104,
+        109
+      ],
+      "start_s": 6.985549,
+      "end_s": 7.145677,
+      "score": 0.8667,
+      "char_coverage": 1.0,
+      "frame_start": 209,
+      "frame_end_exclusive": 215,
+      "frame_indices": [
+        209,
+        210,
+        211,
+        212,
+        213,
+        214
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        20
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          105,
+          110
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8548797768442531,
+          "audio": 0.12021906334904606,
+          "vision": 0.23531920019386116
+        },
+        "regression": {
+          "text": 0.25806383557192525,
+          "audio": 0.04325668432170719,
+          "vision": 0.09124476490988168
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.02805732847970715,
+          "audio": -0.0017794546549506013,
+          "vision": 0.030084268813984252
+        },
+        "regression": {
+          "text": 0.011653938785544904,
+          "audio": 0.0003216661515449491,
+          "vision": 0.01850785119233884
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 17,
+      "word": "love",
+      "raw_char_span": [
+        111,
+        115
+      ],
+      "alignment_text": "love",
+      "alignment_char_span": [
+        110,
+        114
+      ],
+      "start_s": 7.606042,
+      "end_s": 7.826217,
+      "score": 0.9864,
+      "char_coverage": 1.0,
+      "frame_start": 228,
+      "frame_end_exclusive": 235,
+      "frame_indices": [
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        21
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          111,
+          115
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.1898972082641321,
+          "audio": 0.11874532726651947,
+          "vision": 0.2589148922648526
+        },
+        "regression": {
+          "text": 0.3628459093736278,
+          "audio": 0.03761909115382062,
+          "vision": 0.10100981860202027
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.07634807958793183,
+          "audio": 0.003900356618294827,
+          "vision": 0.0350090581551697
+        },
+        "regression": {
+          "text": 0.024004032545048834,
+          "audio": 0.001725842690751643,
+          "vision": 0.020782898195227873
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 18,
+      "word": "to",
+      "raw_char_span": [
+        116,
+        118
+      ],
+      "alignment_text": "to",
+      "alignment_char_span": [
+        115,
+        117
+      ],
+      "start_s": 8.066408,
+      "end_s": 8.146472,
+      "score": 0.9998,
+      "char_coverage": 1.0,
+      "frame_start": 241,
+      "frame_end_exclusive": 245,
+      "frame_indices": [
+        241,
+        242,
+        243,
+        244
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        22
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          116,
+          118
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.6548951340406101,
+          "audio": 0.11692322215726558,
+          "vision": 0.2844489390342167
+        },
+        "regression": {
+          "text": 0.17906762774553578,
+          "audio": 0.03617645642363908,
+          "vision": 0.11021820016581484
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.020872901973898034,
+          "audio": 0.0025670375883900735,
+          "vision": 0.03855620254875144
+        },
+        "regression": {
+          "text": -0.004309953381274816,
+          "audio": 0.0004454772133068586,
+          "vision": 0.022673342894706308
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 19,
+      "word": "point",
+      "raw_char_span": [
+        119,
+        124
+      ],
+      "alignment_text": "point",
+      "alignment_char_span": [
+        118,
+        123
+      ],
+      "start_s": 8.206519,
+      "end_s": 8.406678,
+      "score": 0.9996,
+      "char_coverage": 1.0,
+      "frame_start": 246,
+      "frame_end_exclusive": 253,
+      "frame_indices": [
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        23
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          119,
+          124
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.771908313245594,
+          "audio": 0.10241854267261673,
+          "vision": 0.24666137263169194
+        },
+        "regression": {
+          "text": 0.2023707252839801,
+          "audio": 0.030329299651265802,
+          "vision": 0.09700768831941557
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.04633421357720248,
+          "audio": -0.0030508123228916158,
+          "vision": 0.03640242731367724
+        },
+        "regression": {
+          "text": -0.007769953038498759,
+          "audio": -0.001959698848802865,
+          "vision": 0.020821668881427502
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 20,
+      "word": "fingers",
+      "raw_char_span": [
+        125,
+        132
+      ],
+      "alignment_text": "fingers",
+      "alignment_char_span": [
+        124,
+        131
+      ],
+      "start_s": 8.506758,
+      "end_s": 8.88706,
+      "score": 0.985,
+      "char_coverage": 1.0,
+      "frame_start": 255,
+      "frame_end_exclusive": 267,
+      "frame_indices": [
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        24
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          125,
+          132
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.5226530330868806,
+          "audio": 0.11178355532775029,
+          "vision": 0.17720532294183644
+        },
+        "regression": {
+          "text": 0.13152777165176474,
+          "audio": 0.037542053952618545,
+          "vision": 0.07124908434446896
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.00842470072350333,
+          "audio": -0.005418172627928547,
+          "vision": 0.0232826434771007
+        },
+        "regression": {
+          "text": 0.001355683075751072,
+          "audio": -0.0028113673550277138,
+          "vision": 0.012340426036260605
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 21,
+      "word": "and",
+      "raw_char_span": [
+        133,
+        136
+      ],
+      "alignment_text": "and",
+      "alignment_char_span": [
+        132,
+        135
+      ],
+      "start_s": 9.007155,
+      "end_s": 9.087219,
+      "score": 0.9995,
+      "char_coverage": 1.0,
+      "frame_start": 270,
+      "frame_end_exclusive": 273,
+      "frame_indices": [
+        270,
+        271,
+        272
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        25
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          133,
+          136
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.6579515595501357,
+          "audio": 0.07840119523326605,
+          "vision": 0.1385382414208059
+        },
+        "regression": {
+          "text": 0.17333248880256263,
+          "audio": 0.028552783742818146,
+          "vision": 0.054503582342235124
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.01761008493334792,
+          "audio": 0.0005916219916882918,
+          "vision": 0.01628172061982659
+        },
+        "regression": {
+          "text": -0.0015507501286102809,
+          "audio": -0.0010311230210017252,
+          "vision": 0.008846016069461119
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 22,
+      "word": "jump",
+      "raw_char_span": [
+        137,
+        141
+      ],
+      "alignment_text": "jump",
+      "alignment_char_span": [
+        136,
+        140
+      ],
+      "start_s": 9.167283,
+      "end_s": 9.32741,
+      "score": 0.9999,
+      "char_coverage": 1.0,
+      "frame_start": 275,
+      "frame_end_exclusive": 280,
+      "frame_indices": [
+        275,
+        276,
+        277,
+        278,
+        279
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        26
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          137,
+          141
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8621118558398192,
+          "audio": 0.10042185770101016,
+          "vision": 0.14021782175423572
+        },
+        "regression": {
+          "text": 0.2280901541027925,
+          "audio": 0.034641655830038004,
+          "vision": 0.05556549594167787
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.07383746141299513,
+          "audio": -0.001005853785776961,
+          "vision": 0.011285606971168826
+        },
+        "regression": {
+          "text": -0.01880077123829016,
+          "audio": -0.0016428864333012459,
+          "vision": 0.00683990929084899
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 23,
+      "word": "all",
+      "raw_char_span": [
+        142,
+        145
+      ],
+      "alignment_text": "all",
+      "alignment_char_span": [
+        141,
+        144
+      ],
+      "start_s": 9.527569,
+      "end_s": 9.647664,
+      "score": 0.9998,
+      "char_coverage": 1.0,
+      "frame_start": 285,
+      "frame_end_exclusive": 290,
+      "frame_indices": [
+        285,
+        286,
+        287,
+        288,
+        289
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        27
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          142,
+          145
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.5779076062158729,
+          "audio": 0.09285518921036362,
+          "vision": 0.14411878106780845
+        },
+        "regression": {
+          "text": 0.14819191637187978,
+          "audio": 0.03268666815636029,
+          "vision": 0.05740583350240296
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.00651988101249518,
+          "audio": -0.0023544874634034434,
+          "vision": 0.010468090995996089
+        },
+        "regression": {
+          "text": -0.00045858920586203133,
+          "audio": -0.001730727436099629,
+          "vision": 0.0068283520437828985
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 24,
+      "word": "over",
+      "raw_char_span": [
+        146,
+        150
+      ],
+      "alignment_text": "over",
+      "alignment_char_span": [
+        145,
+        149
+      ],
+      "start_s": 9.747744,
+      "end_s": 9.907871,
+      "score": 0.978,
+      "char_coverage": 1.0,
+      "frame_start": 292,
+      "frame_end_exclusive": 298,
+      "frame_indices": [
+        292,
+        293,
+        294,
+        295,
+        296,
+        297
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        28
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          146,
+          150
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8316846432997176,
+          "audio": 0.07896039888062326,
+          "vision": 0.13756368185933582
+        },
+        "regression": {
+          "text": 0.22097090136686254,
+          "audio": 0.02495788048412889,
+          "vision": 0.05565356035171714
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.06408235991730808,
+          "audio": -0.0009387203345489795,
+          "vision": 0.00943695973894066
+        },
+        "regression": {
+          "text": -0.01586663736296542,
+          "audio": -0.0013326484704430513,
+          "vision": 0.0061267251459873814
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 25,
+      "word": "imperfections",
+      "raw_char_span": [
+        151,
+        164
+      ],
+      "alignment_text": "imperfections",
+      "alignment_char_span": [
+        150,
+        163
+      ],
+      "start_s": 9.987934,
+      "end_s": 10.708507,
+      "score": 0.9817,
+      "char_coverage": 1.0,
+      "frame_start": 299,
+      "frame_end_exclusive": 322,
+      "frame_indices": [
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        29,
+        30
+      ],
+      "slot_weights": [
+        1.0,
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          151,
+          160
+        ],
+        [
+          160,
+          164
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 2.286696195035164,
+          "audio": 0.18530691480923916,
+          "vision": 0.24723475232822617
+        },
+        "regression": {
+          "text": 0.5571935005372355,
+          "audio": 0.06448227807519752,
+          "vision": 0.10285080935444382
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.24152545835791805,
+          "audio": -0.009103470488087967,
+          "vision": 0.018752839502990802
+        },
+        "regression": {
+          "text": -0.0396950307995891,
+          "audio": -0.0032385963667233867,
+          "vision": 0.010953737183580583
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 26,
+      "word": "but",
+      "raw_char_span": [
+        166,
+        169
+      ],
+      "alignment_text": "but",
+      "alignment_char_span": [
+        164,
+        167
+      ],
+      "start_s": 11.208904,
+      "end_s": 11.308984,
+      "score": 0.9878,
+      "char_coverage": 1.0,
+      "frame_start": 336,
+      "frame_end_exclusive": 340,
+      "frame_indices": [
+        336,
+        337,
+        338,
+        339
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        32
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          166,
+          169
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2351908580512765,
+          "audio": 0.10538375018618854,
+          "vision": 0.11909950982604353
+        },
+        "regression": {
+          "text": 0.3630562508593118,
+          "audio": 0.038084597048210454,
+          "vision": 0.05059688205215951
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.01972833980529797,
+          "audio": -0.005644910953987028,
+          "vision": 0.011657117148770817
+        },
+        "regression": {
+          "text": 0.00657026225756029,
+          "audio": -0.0020704368254602775,
+          "vision": 0.006142117351520258
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 27,
+      "word": "for",
+      "raw_char_span": [
+        170,
+        173
+      ],
+      "alignment_text": "for",
+      "alignment_char_span": [
+        168,
+        171
+      ],
+      "start_s": 11.349016,
+      "end_s": 11.429079,
+      "score": 0.9996,
+      "char_coverage": 1.0,
+      "frame_start": 340,
+      "frame_end_exclusive": 343,
+      "frame_indices": [
+        340,
+        341,
+        342
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        33
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          170,
+          173
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.5373135882519584,
+          "audio": 0.08846980198999319,
+          "vision": 0.11499307847398388
+        },
+        "regression": {
+          "text": 0.46481282922148004,
+          "audio": 0.03206661267540772,
+          "vision": 0.049285393233350565
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.12494432124117096,
+          "audio": -0.009557124824895069,
+          "vision": 0.010117870481464864
+        },
+        "regression": {
+          "text": 0.039066935424854954,
+          "audio": -0.004693695718563023,
+          "vision": 0.0051936996664581426
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 28,
+      "word": "the",
+      "raw_char_span": [
+        174,
+        177
+      ],
+      "alignment_text": "the",
+      "alignment_char_span": [
+        172,
+        175
+      ],
+      "start_s": 11.489127,
+      "end_s": 11.549175,
+      "score": 0.994,
+      "char_coverage": 1.0,
+      "frame_start": 344,
+      "frame_end_exclusive": 347,
+      "frame_indices": [
+        344,
+        345,
+        346
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        34
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          174,
+          177
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.0955391878618377,
+          "audio": 0.08642532873580919,
+          "vision": 0.10998682908011133
+        },
+        "regression": {
+          "text": 0.34356652050986547,
+          "audio": 0.032930385188267186,
+          "vision": 0.045957402668717874
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.06687380058678077,
+          "audio": -0.00881155159758612,
+          "vision": 0.007392539580878319
+        },
+        "regression": {
+          "text": 0.019583223658120263,
+          "audio": -0.004943637118863062,
+          "vision": 0.0032114922922363343
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 29,
+      "word": "most",
+      "raw_char_span": [
+        178,
+        182
+      ],
+      "alignment_text": "most",
+      "alignment_char_span": [
+        176,
+        180
+      ],
+      "start_s": 11.589207,
+      "end_s": 11.76935,
+      "score": 0.9525,
+      "char_coverage": 1.0,
+      "frame_start": 347,
+      "frame_end_exclusive": 354,
+      "frame_indices": [
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        35
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          178,
+          182
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.54087832109638,
+          "audio": 0.0877689560226827,
+          "vision": 0.11995617242531428
+        },
+        "regression": {
+          "text": 0.5156519350877226,
+          "audio": 0.03457486758828774,
+          "vision": 0.046849150764782334
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.10528029036943193,
+          "audio": -0.007488692062868752,
+          "vision": 0.0018593074487288522
+        },
+        "regression": {
+          "text": 0.03930015472631914,
+          "audio": -0.0041983419277984105,
+          "vision": 0.0005006430793662534
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 30,
+      "word": "part",
+      "raw_char_span": [
+        183,
+        187
+      ],
+      "alignment_text": "part",
+      "alignment_char_span": [
+        181,
+        185
+      ],
+      "start_s": 11.829397,
+      "end_s": 12.00954,
+      "score": 0.9886,
+      "char_coverage": 1.0,
+      "frame_start": 354,
+      "frame_end_exclusive": 361,
+      "frame_indices": [
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        36
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          183,
+          187
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.426823696409135,
+          "audio": 0.09498697070713315,
+          "vision": 0.12268950041863533
+        },
+        "regression": {
+          "text": 0.5087847560093738,
+          "audio": 0.03474606019326896,
+          "vision": 0.046934813027477824
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.11004380955898199,
+          "audio": -0.008490383170922345,
+          "vision": -0.0018057260835313673
+        },
+        "regression": {
+          "text": 0.041809892437907274,
+          "audio": -0.004085128671317775,
+          "vision": -0.0008371633929189473
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 31,
+      "word": "people",
+      "raw_char_span": [
+        189,
+        195
+      ],
+      "alignment_text": "people",
+      "alignment_char_span": [
+        186,
+        192
+      ],
+      "start_s": 12.10962,
+      "end_s": 12.349811,
+      "score": 0.9827,
+      "char_coverage": 1.0,
+      "frame_start": 363,
+      "frame_end_exclusive": 371,
+      "frame_indices": [
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        38
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          189,
+          195
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 1.0532189137704038,
+          "audio": 0.10859566034768255,
+          "vision": 0.14628595580589726
+        },
+        "regression": {
+          "text": 0.320674339598573,
+          "audio": 0.038013836197227036,
+          "vision": 0.05594019159887766
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.07999724049939108,
+          "audio": -0.008244303629714473,
+          "vision": 0.004341580283656949
+        },
+        "regression": {
+          "text": 0.029384042103148378,
+          "audio": -0.003325502666268248,
+          "vision": 0.003499337068961586
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    },
+    {
+      "word_index": 32,
+      "word": "understand",
+      "raw_char_span": [
+        196,
+        206
+      ],
+      "alignment_text": "understand",
+      "alignment_char_span": [
+        193,
+        203
+      ],
+      "start_s": 12.44989,
+      "end_s": 13.070383,
+      "score": 0.9129,
+      "char_coverage": 1.0,
+      "frame_start": 373,
+      "frame_end_exclusive": 393,
+      "frame_indices": [
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392
+      ],
+      "status": "aligned",
+      "time_source": "ctc_characters",
+      "flags": [],
+      "token_slots": [
+        39
+      ],
+      "slot_weights": [
+        1.0
+      ],
+      "represented": true,
+      "full_word_represented": true,
+      "model_visible_char_spans": [
+        [
+          196,
+          206
+        ]
+      ],
+      "attribution_mass": {
+        "classification": {
+          "text": 2.6797481129228062,
+          "audio": 0.11265397943276269,
+          "vision": 0.14155856141839
+        },
+        "regression": {
+          "text": 0.792017640738117,
+          "audio": 0.03902416115488156,
+          "vision": 0.05241091214253814
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.010697640155057489,
+          "audio": 0.001803325158419898,
+          "vision": -0.003267103757473817
+        },
+        "regression": {
+          "text": -0.07035384112207213,
+          "audio": 0.0008166512595768444,
+          "vision": -0.0002923660466875844
+        }
+      },
+      "model_evidence_status": "represented",
+      "evidence_status_by_modality": {
+        "text": "raw_text_located",
+        "audio": "lexical_temporal_anchor_available",
+        "vision": "lexical_temporal_anchor_available"
+      }
+    }
+  ],
+  "content_slot_mapping": [
+    {
+      "slot": 1,
+      "token": "people",
+      "raw_char_span": [
+        0,
+        6
+      ],
+      "raw_fragment": "People",
+      "word_links": [
+        {
+          "word_index": 0,
+          "weight": 1.0,
+          "start_s": 0.520413,
+          "end_s": 0.720572,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9992
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.6473701541320727,
+          "audio": 0.13347234179525605,
+          "vision": 0.13416000033295267
+        },
+        "regression": {
+          "text": 0.19568626633892303,
+          "audio": 0.04656845311811012,
+          "vision": 0.04878431104154811
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.023271864606600613,
+          "audio": 0.002637433084229321,
+          "vision": 0.005266639274047761
+        },
+        "regression": {
+          "text": -0.001109722319295532,
+          "audio": 0.000865327032558094,
+          "vision": 0.0057608154796817326
+        }
+      }
+    },
+    {
+      "slot": 2,
+      "token": "are",
+      "raw_char_span": [
+        7,
+        10
+      ],
+      "raw_fragment": "are",
+      "word_links": [
+        {
+          "word_index": 1,
+          "weight": 1.0,
+          "start_s": 0.760604,
+          "end_s": 0.840668,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9555
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 2.421476245995188,
+          "audio": 0.14604907830146566,
+          "vision": 0.13413571108083844
+        },
+        "regression": {
+          "text": 0.8362197319400966,
+          "audio": 0.05156836670381552,
+          "vision": 0.04968909460049675
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.2532355438369513,
+          "audio": 0.002206872247183172,
+          "vision": 0.0011985759425587853
+        },
+        "regression": {
+          "text": 0.08510036456129451,
+          "audio": 0.0013723201396908299,
+          "vision": 0.003110865328661564
+        }
+      }
+    },
+    {
+      "slot": 3,
+      "token": "surprisingly",
+      "raw_char_span": [
+        11,
+        23
+      ],
+      "raw_fragment": "surprisingly",
+      "word_links": [
+        {
+          "word_index": 2,
+          "weight": 1.0,
+          "start_s": 0.960763,
+          "end_s": 1.701352,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9969
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 6.593402323955388,
+          "audio": 0.1189907739308788,
+          "vision": 0.1387772374166051
+        },
+        "regression": {
+          "text": 2.3610586585680613,
+          "audio": 0.0432757664669605,
+          "vision": 0.05307841578433629
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 1.4340219866741506,
+          "audio": -0.00039926797251322037,
+          "vision": 0.01241605568625192
+        },
+        "regression": {
+          "text": 0.4839289740950019,
+          "audio": -0.00048621671299311586,
+          "vision": 0.007240902317103684
+        }
+      }
+    },
+    {
+      "slot": 4,
+      "token": "for",
+      "raw_char_span": [
+        24,
+        27
+      ],
+      "raw_fragment": "for",
+      "word_links": [
+        {
+          "word_index": 3,
+          "weight": 1.0,
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 5.147943197503783,
+          "audio": 0.10327618627868967,
+          "vision": 0.15647263314921053
+        },
+        "regression": {
+          "text": 1.4859735055665833,
+          "audio": 0.036585426555302454,
+          "vision": 0.05991044342393623
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.6405497387852983,
+          "audio": -0.006179730518386324,
+          "vision": 0.014797992739469537
+        },
+        "regression": {
+          "text": -0.12476088481261349,
+          "audio": -0.002057135453822928,
+          "vision": 0.009826705762056354
+        }
+      }
+    },
+    {
+      "slot": 5,
+      "token": "##giving",
+      "raw_char_span": [
+        27,
+        33
+      ],
+      "raw_fragment": "giving",
+      "word_links": [
+        {
+          "word_index": 3,
+          "weight": 1.0,
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 5.566552022587546,
+          "audio": 0.1065921458901443,
+          "vision": 0.16020822298667414
+        },
+        "regression": {
+          "text": 1.5713034825914247,
+          "audio": 0.03706674408147808,
+          "vision": 0.061150667828528134
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.8966584613913698,
+          "audio": -0.005428286405597037,
+          "vision": 0.014031516280423937
+        },
+        "regression": {
+          "text": -0.20291533451687083,
+          "audio": -0.0018198225778721232,
+          "vision": 0.009586907036853394
+        }
+      }
+    },
+    {
+      "slot": 6,
+      "token": "brands",
+      "raw_char_span": [
+        34,
+        40
+      ],
+      "raw_fragment": "brands",
+      "word_links": [
+        {
+          "word_index": 4,
+          "weight": 1.0,
+          "start_s": 2.361876,
+          "end_s": 2.742178,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9545
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.3669503634429128,
+          "audio": 0.09601563586104064,
+          "vision": 0.15506957661294526
+        },
+        "regression": {
+          "text": 0.3791969102422259,
+          "audio": 0.034062704619647964,
+          "vision": 0.057787366132127656
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.11239421235203456,
+          "audio": -0.003087942218438513,
+          "vision": 0.005436177120468247
+        },
+        "regression": {
+          "text": -0.02336218720191447,
+          "audio": -0.0003950354034947406,
+          "vision": 0.005548280475902671
+        }
+      }
+    },
+    {
+      "slot": 7,
+      "token": "when",
+      "raw_char_span": [
+        41,
+        45
+      ],
+      "raw_fragment": "when",
+      "word_links": [
+        {
+          "word_index": 5,
+          "weight": 1.0,
+          "start_s": 2.822242,
+          "end_s": 2.942337,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9886
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.9569387667808075,
+          "audio": 0.13038782909480773,
+          "vision": 0.14488164941876888
+        },
+        "regression": {
+          "text": 0.2739864739886392,
+          "audio": 0.04737816041497796,
+          "vision": 0.05400219781587838
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.06100169122117028,
+          "audio": 0.0027464451227100163,
+          "vision": 0.00440929629805848
+        },
+        "regression": {
+          "text": -0.02293368312844301,
+          "audio": 0.0022326786608493692,
+          "vision": 0.004573757775424586
+        }
+      }
+    },
+    {
+      "slot": 8,
+      "token": "they",
+      "raw_char_span": [
+        46,
+        50
+      ],
+      "raw_fragment": "they",
+      "word_links": [
+        {
+          "word_index": 6,
+          "weight": 1.0,
+          "start_s": 2.982369,
+          "end_s": 3.102465,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9876
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8023994439024658,
+          "audio": 0.16157043608113744,
+          "vision": 0.1599337192399494
+        },
+        "regression": {
+          "text": 0.20879678202524893,
+          "audio": 0.05773854670271528,
+          "vision": 0.060898466131664185
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.07821774297148248,
+          "audio": 0.0022379992650758103,
+          "vision": 0.017115607573249498
+        },
+        "regression": {
+          "text": -0.01581429715546312,
+          "audio": 0.0015344460605064307,
+          "vision": 0.008575118286141357
+        }
+      }
+    },
+    {
+      "slot": 9,
+      "token": "own",
+      "raw_char_span": [
+        51,
+        54
+      ],
+      "raw_fragment": "own",
+      "word_links": [
+        {
+          "word_index": 7,
+          "weight": 1.0,
+          "start_s": 3.302624,
+          "end_s": 3.422719,
+          "alignment_status": "aligned",
+          "alignment_score": 0.998
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.025375424012657,
+          "audio": 0.1255445268049737,
+          "vision": 0.16278250343877876
+        },
+        "regression": {
+          "text": 0.25616199649256577,
+          "audio": 0.046352382427046215,
+          "vision": 0.059940456714441766
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.10881957307165328,
+          "audio": 0.0005461140869534695,
+          "vision": 0.017143220104241488
+        },
+        "regression": {
+          "text": -0.022536004343246346,
+          "audio": 0.0009297281312513721,
+          "vision": 0.008212422048919149
+        }
+      }
+    },
+    {
+      "slot": 10,
+      "token": "up",
+      "raw_char_span": [
+        55,
+        57
+      ],
+      "raw_fragment": "up",
+      "word_links": [
+        {
+          "word_index": 8,
+          "weight": 1.0,
+          "start_s": 3.602862,
+          "end_s": 3.682926,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9077
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.4320741627826403,
+          "audio": 0.12741222171635852,
+          "vision": 0.17624120649977754
+        },
+        "regression": {
+          "text": 0.34416109891516944,
+          "audio": 0.04352618781376994,
+          "vision": 0.06269490185933843
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.15155578475565765,
+          "audio": -0.0021735382222244208,
+          "vision": 0.006939588392435165
+        },
+        "regression": {
+          "text": -0.02852284983603487,
+          "audio": -0.0003016571044973013,
+          "vision": 0.004171370439985647
+        }
+      }
+    },
+    {
+      "slot": 11,
+      "token": "to",
+      "raw_char_span": [
+        58,
+        60
+      ],
+      "raw_fragment": "to",
+      "word_links": [
+        {
+          "word_index": 9,
+          "weight": 1.0,
+          "start_s": 3.762989,
+          "end_s": 3.843053,
+          "alignment_status": "aligned",
+          "alignment_score": 0.999
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.6309915747598978,
+          "audio": 0.10751813454351625,
+          "vision": 0.17834681755576762
+        },
+        "regression": {
+          "text": 0.4054432212452081,
+          "audio": 0.0375878606544255,
+          "vision": 0.06386335682645194
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.22267306426312977,
+          "audio": 0.00374724595515686,
+          "vision": 0.012505285943844114
+        },
+        "regression": {
+          "text": -0.051419897373849485,
+          "audio": 0.0016347522995317197,
+          "vision": 0.006460042525890401
+        }
+      }
+    },
+    {
+      "slot": 12,
+      "token": "mistakes",
+      "raw_char_span": [
+        61,
+        69
+      ],
+      "raw_fragment": "mistakes",
+      "word_links": [
+        {
+          "word_index": 10,
+          "weight": 1.0,
+          "start_s": 3.903101,
+          "end_s": 4.403498,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9979
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.43742515254732,
+          "audio": 0.1396631417848824,
+          "vision": 0.1773671794755585
+        },
+        "regression": {
+          "text": 0.34133053744941905,
+          "audio": 0.04557123125720152,
+          "vision": 0.065235261464638
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.1954448359821403,
+          "audio": 0.011792459218969526,
+          "vision": 0.021854427236034164
+        },
+        "regression": {
+          "text": -0.03599678860353382,
+          "audio": 0.003928161793392688,
+          "vision": 0.010078629815170702
+        }
+      }
+    },
+    {
+      "slot": 13,
+      "token": ",",
+      "raw_char_span": [
+        69,
+        70
+      ],
+      "raw_fragment": ",",
+      "word_links": [],
+      "time_mapping_status": "unavailable_nonlexical",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.522516800803974,
+          "audio": 0.13743955700430968,
+          "vision": 0.1779906641295603
+        },
+        "regression": {
+          "text": 0.13019479416668348,
+          "audio": 0.04533281518736742,
+          "vision": 0.06539680316906825
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.03185624188081144,
+          "audio": 0.011596670487338017,
+          "vision": 0.02208937810627387
+        },
+        "regression": {
+          "text": -0.002781266231323298,
+          "audio": 0.0038560838180401492,
+          "vision": 0.010166529838380723
+        }
+      }
+    },
+    {
+      "slot": 14,
+      "token": "and",
+      "raw_char_span": [
+        71,
+        74
+      ],
+      "raw_fragment": "and",
+      "word_links": [
+        {
+          "word_index": 11,
+          "weight": 1.0,
+          "start_s": 5.204134,
+          "end_s": 5.264182,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9927
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8824212783568965,
+          "audio": 0.15331333827233964,
+          "vision": 0.16841396291632002
+        },
+        "regression": {
+          "text": 0.257957064061751,
+          "audio": 0.050052836282574176,
+          "vision": 0.06032971357101652
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.02856879380153137,
+          "audio": 0.010708551735080877,
+          "vision": 0.012013280241938857
+        },
+        "regression": {
+          "text": -0.0014127958859022102,
+          "audio": 0.003234399303048857,
+          "vision": 0.006022278536215892
+        }
+      }
+    },
+    {
+      "slot": 15,
+      "token": "unfortunately",
+      "raw_char_span": [
+        75,
+        88
+      ],
+      "raw_fragment": "unfortunately",
+      "word_links": [
+        {
+          "word_index": 12,
+          "weight": 1.0,
+          "start_s": 5.344245,
+          "end_s": 6.064818,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9717
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.5328262224020415,
+          "audio": 0.13304872026059394,
+          "vision": 0.1581494527833581
+        },
+        "regression": {
+          "text": 0.5173405544523069,
+          "audio": 0.04082464890523323,
+          "vision": 0.05850982767984853
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.024144044928651374,
+          "audio": -0.0047166632415381144,
+          "vision": 0.009778992174202075
+        },
+        "regression": {
+          "text": 0.03217058138509667,
+          "audio": -0.002067161515196618,
+          "vision": 0.005760188670589896
+        }
+      }
+    },
+    {
+      "slot": 16,
+      "token": "some",
+      "raw_char_span": [
+        89,
+        93
+      ],
+      "raw_fragment": "some",
+      "word_links": [
+        {
+          "word_index": 13,
+          "weight": 1.0,
+          "start_s": 6.144882,
+          "end_s": 6.305009,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9653
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2560257707481575,
+          "audio": 0.13463960014666562,
+          "vision": 0.15908491946910713
+        },
+        "regression": {
+          "text": 0.44073132402892734,
+          "audio": 0.04224911048414697,
+          "vision": 0.058906555627122166
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.05161160957170473,
+          "audio": -0.002547612253832294,
+          "vision": 0.014044563950203771
+        },
+        "regression": {
+          "text": 0.02771798453136475,
+          "audio": -0.0010258486038333028,
+          "vision": 0.007750853483431934
+        }
+      }
+    },
+    {
+      "slot": 17,
+      "token": "hate",
+      "raw_char_span": [
+        94,
+        98
+      ],
+      "raw_fragment": "hate",
+      "word_links": [
+        {
+          "word_index": 14,
+          "weight": 1.0,
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 2.63893122917482,
+          "audio": 0.11581133870468094,
+          "vision": 0.15389234145301697
+        },
+        "regression": {
+          "text": 0.6370665403933158,
+          "audio": 0.03628382176415723,
+          "vision": 0.05957658648872941
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.2706789514983348,
+          "audio": -0.003735899242874697,
+          "vision": 0.02146780787482387
+        },
+        "regression": {
+          "text": -0.03522837965660391,
+          "audio": -0.0014796388883595887,
+          "vision": 0.010594901739160148
+        }
+      }
+    },
+    {
+      "slot": 18,
+      "token": "##rs",
+      "raw_char_span": [
+        98,
+        100
+      ],
+      "raw_fragment": "rs",
+      "word_links": [
+        {
+          "word_index": 14,
+          "weight": 1.0,
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.9775319277834146,
+          "audio": 0.11828733810580815,
+          "vision": 0.15714233746209097
+        },
+        "regression": {
+          "text": 0.2715743511701064,
+          "audio": 0.036740953131680944,
+          "vision": 0.06066559953985491
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.05989060680908635,
+          "audio": -0.0033123396888271464,
+          "vision": 0.022760175951379944
+        },
+        "regression": {
+          "text": -0.000652001092758172,
+          "audio": -0.0012734055087838111,
+          "vision": 0.011217571333485804
+        }
+      }
+    },
+    {
+      "slot": 19,
+      "token": "out",
+      "raw_char_span": [
+        101,
+        104
+      ],
+      "raw_fragment": "out",
+      "word_links": [
+        {
+          "word_index": 15,
+          "weight": 1.0,
+          "start_s": 6.825422,
+          "end_s": 6.925502,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9706
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8715129836682128,
+          "audio": 0.11524187259867998,
+          "vision": 0.1665509630444776
+        },
+        "regression": {
+          "text": 0.2620847300943446,
+          "audio": 0.03579544720753277,
+          "vision": 0.0638138252126691
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.02421664734519488,
+          "audio": -0.005004841787958368,
+          "vision": 0.014704365374900248
+        },
+        "regression": {
+          "text": 0.010284573241117288,
+          "audio": -0.0014110500743396302,
+          "vision": 0.009850528274848194
+        }
+      }
+    },
+    {
+      "slot": 20,
+      "token": "there",
+      "raw_char_span": [
+        105,
+        110
+      ],
+      "raw_fragment": "there",
+      "word_links": [
+        {
+          "word_index": 16,
+          "weight": 1.0,
+          "start_s": 6.985549,
+          "end_s": 7.145677,
+          "alignment_status": "aligned",
+          "alignment_score": 0.8667
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8548797768442531,
+          "audio": 0.12021906334904606,
+          "vision": 0.23531920019386116
+        },
+        "regression": {
+          "text": 0.25806383557192525,
+          "audio": 0.04325668432170719,
+          "vision": 0.09124476490988168
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.02805732847970715,
+          "audio": -0.0017794546549506013,
+          "vision": 0.030084268813984252
+        },
+        "regression": {
+          "text": 0.011653938785544904,
+          "audio": 0.0003216661515449491,
+          "vision": 0.01850785119233884
+        }
+      }
+    },
+    {
+      "slot": 21,
+      "token": "love",
+      "raw_char_span": [
+        111,
+        115
+      ],
+      "raw_fragment": "love",
+      "word_links": [
+        {
+          "word_index": 17,
+          "weight": 1.0,
+          "start_s": 7.606042,
+          "end_s": 7.826217,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9864
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.1898972082641321,
+          "audio": 0.11874532726651947,
+          "vision": 0.2589148922648526
+        },
+        "regression": {
+          "text": 0.3628459093736278,
+          "audio": 0.03761909115382062,
+          "vision": 0.10100981860202027
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.07634807958793183,
+          "audio": 0.003900356618294827,
+          "vision": 0.0350090581551697
+        },
+        "regression": {
+          "text": 0.024004032545048834,
+          "audio": 0.001725842690751643,
+          "vision": 0.020782898195227873
+        }
+      }
+    },
+    {
+      "slot": 22,
+      "token": "to",
+      "raw_char_span": [
+        116,
+        118
+      ],
+      "raw_fragment": "to",
+      "word_links": [
+        {
+          "word_index": 18,
+          "weight": 1.0,
+          "start_s": 8.066408,
+          "end_s": 8.146472,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9998
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.6548951340406101,
+          "audio": 0.11692322215726558,
+          "vision": 0.2844489390342167
+        },
+        "regression": {
+          "text": 0.17906762774553578,
+          "audio": 0.03617645642363908,
+          "vision": 0.11021820016581484
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.020872901973898034,
+          "audio": 0.0025670375883900735,
+          "vision": 0.03855620254875144
+        },
+        "regression": {
+          "text": -0.004309953381274816,
+          "audio": 0.0004454772133068586,
+          "vision": 0.022673342894706308
+        }
+      }
+    },
+    {
+      "slot": 23,
+      "token": "point",
+      "raw_char_span": [
+        119,
+        124
+      ],
+      "raw_fragment": "point",
+      "word_links": [
+        {
+          "word_index": 19,
+          "weight": 1.0,
+          "start_s": 8.206519,
+          "end_s": 8.406678,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9996
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.771908313245594,
+          "audio": 0.10241854267261673,
+          "vision": 0.24666137263169194
+        },
+        "regression": {
+          "text": 0.2023707252839801,
+          "audio": 0.030329299651265802,
+          "vision": 0.09700768831941557
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.04633421357720248,
+          "audio": -0.0030508123228916158,
+          "vision": 0.03640242731367724
+        },
+        "regression": {
+          "text": -0.007769953038498759,
+          "audio": -0.001959698848802865,
+          "vision": 0.020821668881427502
+        }
+      }
+    },
+    {
+      "slot": 24,
+      "token": "fingers",
+      "raw_char_span": [
+        125,
+        132
+      ],
+      "raw_fragment": "fingers",
+      "word_links": [
+        {
+          "word_index": 20,
+          "weight": 1.0,
+          "start_s": 8.506758,
+          "end_s": 8.88706,
+          "alignment_status": "aligned",
+          "alignment_score": 0.985
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.5226530330868806,
+          "audio": 0.11178355532775029,
+          "vision": 0.17720532294183644
+        },
+        "regression": {
+          "text": 0.13152777165176474,
+          "audio": 0.037542053952618545,
+          "vision": 0.07124908434446896
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.00842470072350333,
+          "audio": -0.005418172627928547,
+          "vision": 0.0232826434771007
+        },
+        "regression": {
+          "text": 0.001355683075751072,
+          "audio": -0.0028113673550277138,
+          "vision": 0.012340426036260605
+        }
+      }
+    },
+    {
+      "slot": 25,
+      "token": "and",
+      "raw_char_span": [
+        133,
+        136
+      ],
+      "raw_fragment": "and",
+      "word_links": [
+        {
+          "word_index": 21,
+          "weight": 1.0,
+          "start_s": 9.007155,
+          "end_s": 9.087219,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9995
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.6579515595501357,
+          "audio": 0.07840119523326605,
+          "vision": 0.1385382414208059
+        },
+        "regression": {
+          "text": 0.17333248880256263,
+          "audio": 0.028552783742818146,
+          "vision": 0.054503582342235124
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.01761008493334792,
+          "audio": 0.0005916219916882918,
+          "vision": 0.01628172061982659
+        },
+        "regression": {
+          "text": -0.0015507501286102809,
+          "audio": -0.0010311230210017252,
+          "vision": 0.008846016069461119
+        }
+      }
+    },
+    {
+      "slot": 26,
+      "token": "jump",
+      "raw_char_span": [
+        137,
+        141
+      ],
+      "raw_fragment": "jump",
+      "word_links": [
+        {
+          "word_index": 22,
+          "weight": 1.0,
+          "start_s": 9.167283,
+          "end_s": 9.32741,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9999
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8621118558398192,
+          "audio": 0.10042185770101016,
+          "vision": 0.14021782175423572
+        },
+        "regression": {
+          "text": 0.2280901541027925,
+          "audio": 0.034641655830038004,
+          "vision": 0.05556549594167787
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.07383746141299513,
+          "audio": -0.001005853785776961,
+          "vision": 0.011285606971168826
+        },
+        "regression": {
+          "text": -0.01880077123829016,
+          "audio": -0.0016428864333012459,
+          "vision": 0.00683990929084899
+        }
+      }
+    },
+    {
+      "slot": 27,
+      "token": "all",
+      "raw_char_span": [
+        142,
+        145
+      ],
+      "raw_fragment": "all",
+      "word_links": [
+        {
+          "word_index": 23,
+          "weight": 1.0,
+          "start_s": 9.527569,
+          "end_s": 9.647664,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9998
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.5779076062158729,
+          "audio": 0.09285518921036362,
+          "vision": 0.14411878106780845
+        },
+        "regression": {
+          "text": 0.14819191637187978,
+          "audio": 0.03268666815636029,
+          "vision": 0.05740583350240296
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.00651988101249518,
+          "audio": -0.0023544874634034434,
+          "vision": 0.010468090995996089
+        },
+        "regression": {
+          "text": -0.00045858920586203133,
+          "audio": -0.001730727436099629,
+          "vision": 0.0068283520437828985
+        }
+      }
+    },
+    {
+      "slot": 28,
+      "token": "over",
+      "raw_char_span": [
+        146,
+        150
+      ],
+      "raw_fragment": "over",
+      "word_links": [
+        {
+          "word_index": 24,
+          "weight": 1.0,
+          "start_s": 9.747744,
+          "end_s": 9.907871,
+          "alignment_status": "aligned",
+          "alignment_score": 0.978
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8316846432997176,
+          "audio": 0.07896039888062326,
+          "vision": 0.13756368185933582
+        },
+        "regression": {
+          "text": 0.22097090136686254,
+          "audio": 0.02495788048412889,
+          "vision": 0.05565356035171714
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.06408235991730808,
+          "audio": -0.0009387203345489795,
+          "vision": 0.00943695973894066
+        },
+        "regression": {
+          "text": -0.01586663736296542,
+          "audio": -0.0013326484704430513,
+          "vision": 0.0061267251459873814
+        }
+      }
+    },
+    {
+      "slot": 29,
+      "token": "imperfect",
+      "raw_char_span": [
+        151,
+        160
+      ],
+      "raw_fragment": "imperfect",
+      "word_links": [
+        {
+          "word_index": 25,
+          "weight": 1.0,
+          "start_s": 9.987934,
+          "end_s": 10.708507,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9817
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.483255719038644,
+          "audio": 0.09049380889917623,
+          "vision": 0.12430531182609372
+        },
+        "regression": {
+          "text": 0.3580082282340308,
+          "audio": 0.03182830652918424,
+          "vision": 0.05168439311338578
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.162907742241253,
+          "audio": -0.004285510766386363,
+          "vision": 0.009438120922764845
+        },
+        "regression": {
+          "text": -0.02733209367072175,
+          "audio": -0.0015094094286612807,
+          "vision": 0.005517330765785832
+        }
+      }
+    },
+    {
+      "slot": 30,
+      "token": "##ions",
+      "raw_char_span": [
+        160,
+        164
+      ],
+      "raw_fragment": "ions",
+      "word_links": [
+        {
+          "word_index": 25,
+          "weight": 1.0,
+          "start_s": 9.987934,
+          "end_s": 10.708507,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9817
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.8034404759965201,
+          "audio": 0.09481310591006295,
+          "vision": 0.12292944050213245
+        },
+        "regression": {
+          "text": 0.19918527230320476,
+          "audio": 0.03265397154601329,
+          "vision": 0.05116641624105805
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.07861771611666506,
+          "audio": -0.004817959721701603,
+          "vision": 0.009314718580225959
+        },
+        "regression": {
+          "text": -0.012362937128867352,
+          "audio": -0.0017291869380621063,
+          "vision": 0.00543640641779475
+        }
+      }
+    },
+    {
+      "slot": 31,
+      "token": ",",
+      "raw_char_span": [
+        164,
+        165
+      ],
+      "raw_fragment": ",",
+      "word_links": [],
+      "time_mapping_status": "unavailable_nonlexical",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.501727041562094,
+          "audio": 0.09661291996651392,
+          "vision": 0.12168298114350284
+        },
+        "regression": {
+          "text": 0.12910217166461202,
+          "audio": 0.033205668564977316,
+          "vision": 0.05080750934706094
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.02096393369598043,
+          "audio": -0.005082853064046447,
+          "vision": 0.009385532204520475
+        },
+        "regression": {
+          "text": -0.00022354257214814393,
+          "audio": -0.0018078518848977352,
+          "vision": 0.005444358104045296
+        }
+      }
+    },
+    {
+      "slot": 32,
+      "token": "but",
+      "raw_char_span": [
+        166,
+        169
+      ],
+      "raw_fragment": "but",
+      "word_links": [
+        {
+          "word_index": 26,
+          "weight": 1.0,
+          "start_s": 11.208904,
+          "end_s": 11.308984,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9878
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.2351908580512765,
+          "audio": 0.10538375018618854,
+          "vision": 0.11909950982604353
+        },
+        "regression": {
+          "text": 0.3630562508593118,
+          "audio": 0.038084597048210454,
+          "vision": 0.05059688205215951
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.01972833980529797,
+          "audio": -0.005644910953987028,
+          "vision": 0.011657117148770817
+        },
+        "regression": {
+          "text": 0.00657026225756029,
+          "audio": -0.0020704368254602775,
+          "vision": 0.006142117351520258
+        }
+      }
+    },
+    {
+      "slot": 33,
+      "token": "for",
+      "raw_char_span": [
+        170,
+        173
+      ],
+      "raw_fragment": "for",
+      "word_links": [
+        {
+          "word_index": 27,
+          "weight": 1.0,
+          "start_s": 11.349016,
+          "end_s": 11.429079,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9996
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.5373135882519584,
+          "audio": 0.08846980198999319,
+          "vision": 0.11499307847398388
+        },
+        "regression": {
+          "text": 0.46481282922148004,
+          "audio": 0.03206661267540772,
+          "vision": 0.049285393233350565
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.12494432124117096,
+          "audio": -0.009557124824895069,
+          "vision": 0.010117870481464864
+        },
+        "regression": {
+          "text": 0.039066935424854954,
+          "audio": -0.004693695718563023,
+          "vision": 0.0051936996664581426
+        }
+      }
+    },
+    {
+      "slot": 34,
+      "token": "the",
+      "raw_char_span": [
+        174,
+        177
+      ],
+      "raw_fragment": "the",
+      "word_links": [
+        {
+          "word_index": 28,
+          "weight": 1.0,
+          "start_s": 11.489127,
+          "end_s": 11.549175,
+          "alignment_status": "aligned",
+          "alignment_score": 0.994
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.0955391878618377,
+          "audio": 0.08642532873580919,
+          "vision": 0.10998682908011133
+        },
+        "regression": {
+          "text": 0.34356652050986547,
+          "audio": 0.032930385188267186,
+          "vision": 0.045957402668717874
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.06687380058678077,
+          "audio": -0.00881155159758612,
+          "vision": 0.007392539580878319
+        },
+        "regression": {
+          "text": 0.019583223658120263,
+          "audio": -0.004943637118863062,
+          "vision": 0.0032114922922363343
+        }
+      }
+    },
+    {
+      "slot": 35,
+      "token": "most",
+      "raw_char_span": [
+        178,
+        182
+      ],
+      "raw_fragment": "most",
+      "word_links": [
+        {
+          "word_index": 29,
+          "weight": 1.0,
+          "start_s": 11.589207,
+          "end_s": 11.76935,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9525
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.54087832109638,
+          "audio": 0.0877689560226827,
+          "vision": 0.11995617242531428
+        },
+        "regression": {
+          "text": 0.5156519350877226,
+          "audio": 0.03457486758828774,
+          "vision": 0.046849150764782334
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.10528029036943193,
+          "audio": -0.007488692062868752,
+          "vision": 0.0018593074487288522
+        },
+        "regression": {
+          "text": 0.03930015472631914,
+          "audio": -0.0041983419277984105,
+          "vision": 0.0005006430793662534
+        }
+      }
+    },
+    {
+      "slot": 36,
+      "token": "part",
+      "raw_char_span": [
+        183,
+        187
+      ],
+      "raw_fragment": "part",
+      "word_links": [
+        {
+          "word_index": 30,
+          "weight": 1.0,
+          "start_s": 11.829397,
+          "end_s": 12.00954,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9886
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.426823696409135,
+          "audio": 0.09498697070713315,
+          "vision": 0.12268950041863533
+        },
+        "regression": {
+          "text": 0.5087847560093738,
+          "audio": 0.03474606019326896,
+          "vision": 0.046934813027477824
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.11004380955898199,
+          "audio": -0.008490383170922345,
+          "vision": -0.0018057260835313673
+        },
+        "regression": {
+          "text": 0.041809892437907274,
+          "audio": -0.004085128671317775,
+          "vision": -0.0008371633929189473
+        }
+      }
+    },
+    {
+      "slot": 37,
+      "token": ",",
+      "raw_char_span": [
+        187,
+        188
+      ],
+      "raw_fragment": ",",
+      "word_links": [],
+      "time_mapping_status": "unavailable_nonlexical",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 0.5458250186198907,
+          "audio": 0.09864084289913011,
+          "vision": 0.12319292206502871
+        },
+        "regression": {
+          "text": 0.1547480782936586,
+          "audio": 0.0360621405705855,
+          "vision": 0.047107275573393094
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": -0.0235953323927484,
+          "audio": -0.008175091687251324,
+          "vision": -0.0022669103287391774
+        },
+        "regression": {
+          "text": -0.003163608316771902,
+          "audio": -0.003947002788086705,
+          "vision": -0.0009840024338659949
+        }
+      }
+    },
+    {
+      "slot": 38,
+      "token": "people",
+      "raw_char_span": [
+        189,
+        195
+      ],
+      "raw_fragment": "people",
+      "word_links": [
+        {
+          "word_index": 31,
+          "weight": 1.0,
+          "start_s": 12.10962,
+          "end_s": 12.349811,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9827
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 1.0532189137704038,
+          "audio": 0.10859566034768255,
+          "vision": 0.14628595580589726
+        },
+        "regression": {
+          "text": 0.320674339598573,
+          "audio": 0.038013836197227036,
+          "vision": 0.05594019159887766
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.07999724049939108,
+          "audio": -0.008244303629714473,
+          "vision": 0.004341580283656949
+        },
+        "regression": {
+          "text": 0.029384042103148378,
+          "audio": -0.003325502666268248,
+          "vision": 0.003499337068961586
+        }
+      }
+    },
+    {
+      "slot": 39,
+      "token": "understand",
+      "raw_char_span": [
+        196,
+        206
+      ],
+      "raw_fragment": "understand",
+      "word_links": [
+        {
+          "word_index": 32,
+          "weight": 1.0,
+          "start_s": 12.44989,
+          "end_s": 13.070383,
+          "alignment_status": "aligned",
+          "alignment_score": 0.9129
+        }
+      ],
+      "time_mapping_status": "lexical_anchor",
+      "source_feature_time_status": "unavailable",
+      "attribution_mass": {
+        "classification": {
+          "text": 2.6797481129228062,
+          "audio": 0.11265397943276269,
+          "vision": 0.14155856141839
+        },
+        "regression": {
+          "text": 0.792017640738117,
+          "audio": 0.03902416115488156,
+          "vision": 0.05241091214253814
+        }
+      },
+      "attribution_net": {
+        "classification": {
+          "text": 0.010697640155057489,
+          "audio": 0.001803325158419898,
+          "vision": -0.003267103757473817
+        },
+        "regression": {
+          "text": -0.07035384112207213,
+          "audio": 0.0008166512595768444,
+          "vision": -0.0002923660466875844
+        }
+      }
+    }
+  ],
+  "attribution_mapping_balance": {
+    "classification": {
+      "text": {
+        "content_mass": 58.53751510930816,
+        "lexically_mapped_mass": 56.9674462483222,
+        "unlocalized_mass": 1.5700688609859588,
+        "mapped_fraction": 0.9731784163018511
+      },
+      "audio": {
+        "content_mass": 4.389847694071825,
+        "lexically_mapped_mass": 4.057154374201872,
+        "unlocalized_mass": 0.3326933198699537,
+        "mapped_fraction": 0.9242130153355361
+      },
+      "vision": {
+        "content_mass": 6.149269614619536,
+        "lexically_mapped_mass": 5.726403047281444,
+        "unlocalized_mass": 0.42286656733809186,
+        "mapped_fraction": 0.9312330416716887
+      }
+    },
+    "regression": {
+      "text": {
+        "content_mass": 17.23033737652188,
+        "lexically_mapped_mass": 16.816292332396927,
+        "unlocalized_mass": 0.41404504412495413,
+        "mapped_fraction": 0.9759699978545322
+      },
+      "audio": {
+        "content_mass": 1.5035146447508514,
+        "lexically_mapped_mass": 1.3889140204279211,
+        "unlocalized_mass": 0.11460062432293022,
+        "mapped_fraction": 0.9237781788670766
+      },
+      "vision": {
+        "content_mass": 2.366832219154131,
+        "lexically_mapped_mass": 2.2035206310646087,
+        "unlocalized_mass": 0.16331158808952229,
+        "mapped_fraction": 0.9309999303001346
+      }
+    }
+  },
+  "top_evidence": {
+    "classification": {
+      "text": [
+        {
+          "rank": 1,
+          "word_index": 3,
+          "word": "forgiving",
+          "raw_char_span": [
+            24,
+            33
+          ],
+          "token_slots": [
+            4,
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              24,
+              27
+            ],
+            [
+              27,
+              33
+            ]
+          ],
+          "attribution_mass": 10.71449522009133,
+          "attribution_net": -1.5372082001766683,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963,
+          "alignment_flags": [],
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 2,
+          "word_index": 2,
+          "word": "surprisingly",
+          "raw_char_span": [
+            11,
+            23
+          ],
+          "token_slots": [
+            3
+          ],
+          "model_visible_char_spans": [
+            [
+              11,
+              23
+            ]
+          ],
+          "attribution_mass": 6.593402323955388,
+          "attribution_net": 1.4340219866741506,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9969,
+          "alignment_flags": [],
+          "start_s": 0.960763,
+          "end_s": 1.701352,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 3,
+          "word_index": 14,
+          "word": "haters",
+          "raw_char_span": [
+            94,
+            100
+          ],
+          "token_slots": [
+            17,
+            18
+          ],
+          "model_visible_char_spans": [
+            [
+              94,
+              98
+            ],
+            [
+              98,
+              100
+            ]
+          ],
+          "attribution_mass": 3.6164631569582344,
+          "attribution_net": -0.3305695583074212,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906,
+          "alignment_flags": [],
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        }
+      ],
+      "audio": [
+        {
+          "rank": 1,
+          "word_index": 14,
+          "word": "haters",
+          "raw_char_span": [
+            94,
+            100
+          ],
+          "token_slots": [
+            17,
+            18
+          ],
+          "model_visible_char_spans": [
+            [
+              94,
+              98
+            ],
+            [
+              98,
+              100
+            ]
+          ],
+          "attribution_mass": 0.23409867681048907,
+          "attribution_net": -0.007048238931701843,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906,
+          "alignment_flags": [],
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/audio_clips/word014_6385072_6745359.wav",
+            "kind": "audio_wav",
+            "start_s": 6.385072,
+            "end_s": 6.745359,
+            "duration_s": 0.3603125,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 3,
+          "word": "forgiving",
+          "raw_char_span": [
+            24,
+            33
+          ],
+          "token_slots": [
+            4,
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              24,
+              27
+            ],
+            [
+              27,
+              33
+            ]
+          ],
+          "attribution_mass": 0.209868332168834,
+          "attribution_net": -0.01160801692398336,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963,
+          "alignment_flags": [],
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/audio_clips/word003_1801431_2221765.wav",
+            "kind": "audio_wav",
+            "start_s": 1.801431,
+            "end_s": 2.221765,
+            "duration_s": 0.4203125,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 25,
+          "word": "imperfections",
+          "raw_char_span": [
+            151,
+            164
+          ],
+          "token_slots": [
+            29,
+            30
+          ],
+          "model_visible_char_spans": [
+            [
+              151,
+              160
+            ],
+            [
+              160,
+              164
+            ]
+          ],
+          "attribution_mass": 0.18530691480923916,
+          "attribution_net": -0.009103470488087967,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9817,
+          "alignment_flags": [],
+          "start_s": 9.987934,
+          "end_s": 10.708507,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/audio_clips/word025_9987934_10708507.wav",
+            "kind": "audio_wav",
+            "start_s": 9.987934,
+            "end_s": 10.708507,
+            "duration_s": 0.7205625,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        }
+      ],
+      "vision": [
+        {
+          "rank": 1,
+          "word_index": 3,
+          "word": "forgiving",
+          "raw_char_span": [
+            24,
+            33
+          ],
+          "token_slots": [
+            4,
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              24,
+              27
+            ],
+            [
+              27,
+              33
+            ]
+          ],
+          "attribution_mass": 0.3166808561358847,
+          "attribution_net": 0.028829509019893472,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963,
+          "alignment_flags": [],
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/keyframes/frame000060.png",
+            "kind": "video_png",
+            "decoded_frame_index": 60,
+            "frame_pts_s": 2.0,
+            "frame_end_s": 2.033333,
+            "overlapping_decoded_frame_indices": [
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 14,
+          "word": "haters",
+          "raw_char_span": [
+            94,
+            100
+          ],
+          "token_slots": [
+            17,
+            18
+          ],
+          "model_visible_char_spans": [
+            [
+              94,
+              98
+            ],
+            [
+              98,
+              100
+            ]
+          ],
+          "attribution_mass": 0.31103467891510794,
+          "attribution_net": 0.04422798382620381,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906,
+          "alignment_flags": [],
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/keyframes/frame000196.png",
+            "kind": "video_png",
+            "decoded_frame_index": 196,
+            "frame_pts_s": 6.533333,
+            "frame_end_s": 6.566667,
+            "overlapping_decoded_frame_indices": [
+              191,
+              192,
+              193,
+              194,
+              195,
+              196,
+              197,
+              198,
+              199,
+              200,
+              201,
+              202
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 18,
+          "word": "to",
+          "raw_char_span": [
+            116,
+            118
+          ],
+          "token_slots": [
+            22
+          ],
+          "model_visible_char_spans": [
+            [
+              116,
+              118
+            ]
+          ],
+          "attribution_mass": 0.2844489390342167,
+          "attribution_net": 0.03855620254875144,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9998,
+          "alignment_flags": [],
+          "start_s": 8.066408,
+          "end_s": 8.146472,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/keyframes/frame000243.png",
+            "kind": "video_png",
+            "decoded_frame_index": 243,
+            "frame_pts_s": 8.1,
+            "frame_end_s": 8.133333,
+            "overlapping_decoded_frame_indices": [
+              241,
+              242,
+              243,
+              244
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        }
+      ]
+    },
+    "regression": {
+      "text": [
+        {
+          "rank": 1,
+          "word_index": 3,
+          "word": "forgiving",
+          "raw_char_span": [
+            24,
+            33
+          ],
+          "token_slots": [
+            4,
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              24,
+              27
+            ],
+            [
+              27,
+              33
+            ]
+          ],
+          "attribution_mass": 3.0572769881580077,
+          "attribution_net": -0.3276762193294843,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963,
+          "alignment_flags": [],
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 2,
+          "word_index": 2,
+          "word": "surprisingly",
+          "raw_char_span": [
+            11,
+            23
+          ],
+          "token_slots": [
+            3
+          ],
+          "model_visible_char_spans": [
+            [
+              11,
+              23
+            ]
+          ],
+          "attribution_mass": 2.3610586585680613,
+          "attribution_net": 0.4839289740950019,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9969,
+          "alignment_flags": [],
+          "start_s": 0.960763,
+          "end_s": 1.701352,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        },
+        {
+          "rank": 3,
+          "word_index": 14,
+          "word": "haters",
+          "raw_char_span": [
+            94,
+            100
+          ],
+          "token_slots": [
+            17,
+            18
+          ],
+          "model_visible_char_spans": [
+            [
+              94,
+              98
+            ],
+            [
+              98,
+              100
+            ]
+          ],
+          "attribution_mass": 0.9086408915634222,
+          "attribution_net": -0.035880380749362076,
+          "evidence_status": "raw_text_located",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906,
+          "alignment_flags": [],
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "cached_feature_source_time_status": "not_applicable",
+          "asset": null
+        }
+      ],
+      "audio": [
+        {
+          "rank": 1,
+          "word_index": 3,
+          "word": "forgiving",
+          "raw_char_span": [
+            24,
+            33
+          ],
+          "token_slots": [
+            4,
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              24,
+              27
+            ],
+            [
+              27,
+              33
+            ]
+          ],
+          "attribution_mass": 0.07365217063678053,
+          "attribution_net": -0.003876958031695051,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963,
+          "alignment_flags": [],
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/audio_clips/word003_1801431_2221765.wav",
+            "kind": "audio_wav",
+            "start_s": 1.801431,
+            "end_s": 2.221765,
+            "duration_s": 0.4203125,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 14,
+          "word": "haters",
+          "raw_char_span": [
+            94,
+            100
+          ],
+          "token_slots": [
+            17,
+            18
+          ],
+          "model_visible_char_spans": [
+            [
+              94,
+              98
+            ],
+            [
+              98,
+              100
+            ]
+          ],
+          "attribution_mass": 0.07302477489583817,
+          "attribution_net": -0.0027530443971434,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906,
+          "alignment_flags": [],
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/audio_clips/word014_6385072_6745359.wav",
+            "kind": "audio_wav",
+            "start_s": 6.385072,
+            "end_s": 6.745359,
+            "duration_s": 0.3603125,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 25,
+          "word": "imperfections",
+          "raw_char_span": [
+            151,
+            164
+          ],
+          "token_slots": [
+            29,
+            30
+          ],
+          "model_visible_char_spans": [
+            [
+              151,
+              160
+            ],
+            [
+              160,
+              164
+            ]
+          ],
+          "attribution_mass": 0.06448227807519752,
+          "attribution_net": -0.0032385963667233867,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9817,
+          "alignment_flags": [],
+          "start_s": 9.987934,
+          "end_s": 10.708507,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/audio_clips/word025_9987934_10708507.wav",
+            "kind": "audio_wav",
+            "start_s": 9.987934,
+            "end_s": 10.708507,
+            "duration_s": 0.7205625,
+            "sample_rate": 16000,
+            "interpretation": "Source audio in a post-hoc lexical interval; not a recovered cached-feature window."
+          }
+        }
+      ],
+      "vision": [
+        {
+          "rank": 1,
+          "word_index": 3,
+          "word": "forgiving",
+          "raw_char_span": [
+            24,
+            33
+          ],
+          "token_slots": [
+            4,
+            5
+          ],
+          "model_visible_char_spans": [
+            [
+              24,
+              27
+            ],
+            [
+              27,
+              33
+            ]
+          ],
+          "attribution_mass": 0.12106111125246435,
+          "attribution_net": 0.019413612798909748,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9963,
+          "alignment_flags": [],
+          "start_s": 1.801431,
+          "end_s": 2.221765,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/keyframes/frame000060.png",
+            "kind": "video_png",
+            "decoded_frame_index": 60,
+            "frame_pts_s": 2.0,
+            "frame_end_s": 2.033333,
+            "overlapping_decoded_frame_indices": [
+              54,
+              55,
+              56,
+              57,
+              58,
+              59,
+              60,
+              61,
+              62,
+              63,
+              64,
+              65,
+              66
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 2,
+          "word_index": 14,
+          "word": "haters",
+          "raw_char_span": [
+            94,
+            100
+          ],
+          "token_slots": [
+            17,
+            18
+          ],
+          "model_visible_char_spans": [
+            [
+              94,
+              98
+            ],
+            [
+              98,
+              100
+            ]
+          ],
+          "attribution_mass": 0.12024218602858433,
+          "attribution_net": 0.02181247307264595,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9906,
+          "alignment_flags": [],
+          "start_s": 6.385072,
+          "end_s": 6.745359,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/keyframes/frame000196.png",
+            "kind": "video_png",
+            "decoded_frame_index": 196,
+            "frame_pts_s": 6.533333,
+            "frame_end_s": 6.566667,
+            "overlapping_decoded_frame_indices": [
+              191,
+              192,
+              193,
+              194,
+              195,
+              196,
+              197,
+              198,
+              199,
+              200,
+              201,
+              202
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        },
+        {
+          "rank": 3,
+          "word_index": 18,
+          "word": "to",
+          "raw_char_span": [
+            116,
+            118
+          ],
+          "token_slots": [
+            22
+          ],
+          "model_visible_char_spans": [
+            [
+              116,
+              118
+            ]
+          ],
+          "attribution_mass": 0.11021820016581484,
+          "attribution_net": 0.022673342894706308,
+          "evidence_status": "lexical_temporal_anchor_available",
+          "alignment_status": "aligned",
+          "alignment_score": 0.9998,
+          "alignment_flags": [],
+          "start_s": 8.066408,
+          "end_s": 8.146472,
+          "cached_feature_source_time_status": "unavailable",
+          "asset": {
+            "file": "samples/19/keyframes/frame000243.png",
+            "kind": "video_png",
+            "decoded_frame_index": 243,
+            "frame_pts_s": 8.1,
+            "frame_end_s": 8.133333,
+            "overlapping_decoded_frame_indices": [
+              241,
+              242,
+              243,
+              244
+            ],
+            "selection": "Frame whose presentation interval midpoint is nearest the aligned word midpoint.",
+            "interpretation": "Visual context at a post-hoc lexical interval; cached 35-D feature source time is unavailable."
+          }
+        }
+      ]
+    }
+  }
+}

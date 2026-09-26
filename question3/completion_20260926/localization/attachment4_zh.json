@@ -1,0 +1,422 @@
+{
+  "schema_version": 1,
+  "display_only": true,
+  "source_media_report": "/data_disk/disk_1/hl/workspace/huawei_cup/MultiModel-Sentiment/question3/completion_20260926/attachment4/attachment4_media_evidence.json",
+  "notes_zh": [
+    "译文和词语释义仅用于中文展示，原始文本、模型输入、预测结果及归因数值均不改变。",
+    "第15、16号样本按给定原文翻译，不以自动语音转写替换。",
+    "第07、18号样本的全文译文含未进入模型的后文；展示时应保留截断提示，不对后文添加归因。",
+    "visible_text_zh 仅翻译模型可见的原文前缀；第07、18号的省略号及方括注用于明确表示原文在输入边界处尚未说完，不补写截断内容。"
+  ],
+  "samples": {
+    "01": {
+      "raw_text": "Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+      "text_zh": "更换正时皮带时，同时更换这些磨损部件，对于确保新皮带达到规定的使用里程至关重要。",
+      "word_zh": {
+        "Replacing": "更换",
+        "ensuring": "确保",
+        "essential": "至关重要的",
+        "mileage": "使用里程",
+        "performs": "达到性能要求",
+        "requirements": "要求",
+        "these": "这些",
+        "to": "以；用于",
+        "when": "当……时"
+      },
+      "visible_text_zh": "更换正时皮带时，同时更换这些磨损部件，对于确保新皮带达到规定的使用里程至关重要。",
+      "visible_raw_text": "Replacing these wear components when replacing the timing belt is essential to ensuring the new belt performs to its mileage requirements",
+      "visible_character_end": 137,
+      "input_truncated": false
+    },
+    "02": {
+      "raw_text": "We want to live by each other’s happiness - not by each other’s misery.",
+      "text_zh": "我们希望彼此的幸福成为我们生活的依靠，而不是彼此的痛苦。",
+      "word_zh": {
+        "We": "我们",
+        "happiness": "幸福",
+        "live": "生活",
+        "misery": "痛苦",
+        "other’s": "对方的",
+        "to": "用于连接后续动词",
+        "want": "希望"
+      },
+      "visible_text_zh": "我们希望彼此的幸福成为我们生活的依靠，而不是彼此的痛苦。",
+      "visible_raw_text": "We want to live by each other’s happiness - not by each other’s misery.",
+      "visible_character_end": 71,
+      "input_truncated": false
+    },
+    "03": {
+      "raw_text": "There's one lender at the moment which I think is just Bankwest who don't take rental income into account, they take rental yield into account.",
+      "text_zh": "目前有一家贷款机构，我想应该就是 Bankwest，它不把租金收入纳入考量，而是把租金收益率纳入考量。",
+      "word_zh": {
+        "Bankwest": "Bankwest",
+        "I": "我",
+        "There's": "有",
+        "don't": "不",
+        "income": "收入",
+        "into": "纳入",
+        "lender": "贷款机构",
+        "think": "认为"
+      },
+      "visible_text_zh": "目前有一家贷款机构，我想应该就是 Bankwest，它不把租金收入纳入考量，而是把租金收益率纳入考量。",
+      "visible_raw_text": "There's one lender at the moment which I think is just Bankwest who don't take rental income into account, they take rental yield into account.",
+      "visible_character_end": 143,
+      "input_truncated": false
+    },
+    "04": {
+      "raw_text": "If I blow it at the team exercise, should I kiss my chances of cheering \"GO BLUE\" goodbye?] Absolutely not.",
+      "text_zh": "如果我在团队练习中搞砸了，我是不是就得和喊出“蓝队加油”的机会说再见？绝对不是。",
+      "word_zh": {
+        "Absolutely": "绝对",
+        "chances": "机会",
+        "cheering": "欢呼",
+        "goodbye": "再见",
+        "kiss": "与后面的“再见”连用，表示告别",
+        "not": "不",
+        "of": "……的",
+        "should": "是不是应该",
+        "team": "团队",
+        "the": "所指的"
+      },
+      "visible_text_zh": "如果我在团队练习中搞砸了，我是不是就得和喊出“蓝队加油”的机会说再见？绝对不是。",
+      "visible_raw_text": "If I blow it at the team exercise, should I kiss my chances of cheering \"GO BLUE\" goodbye?] Absolutely not.",
+      "visible_character_end": 107,
+      "input_truncated": false
+    },
+    "05": {
+      "raw_text": "Hi, my name is Chloe, video marketer for Red Wagon Marketing.",
+      "text_zh": "你好，我叫克洛伊，是红色马车营销（Red Wagon Marketing）的视频营销人员。",
+      "word_zh": {
+        "Chloe": "克洛伊",
+        "Hi": "你好",
+        "Marketing": "营销",
+        "is": "是",
+        "marketer": "营销人员",
+        "my": "我的",
+        "name": "名字"
+      },
+      "visible_text_zh": "你好，我叫克洛伊，是红色马车营销（Red Wagon Marketing）的视频营销人员。",
+      "visible_raw_text": "Hi, my name is Chloe, video marketer for Red Wagon Marketing.",
+      "visible_character_end": 61,
+      "input_truncated": false
+    },
+    "06": {
+      "raw_text": "If you're a fan of dancing in that sense, just like to watch people dance, see impressive dance moves then you might want to check out this movie solely for that",
+      "text_zh": "如果你喜欢这类舞蹈，就是喜欢看别人跳舞、欣赏精彩的舞步，那么你也许会仅仅为此而想去看看这部电影。",
+      "word_zh": {
+        "If": "如果",
+        "dance": "跳舞；舞蹈",
+        "fan": "爱好者",
+        "impressive": "精彩的",
+        "moves": "舞步",
+        "see": "观看",
+        "sense": "意义；方面",
+        "that": "那；这一点",
+        "then": "那么",
+        "you're": "你是"
+      },
+      "visible_text_zh": "如果你喜欢这类舞蹈，就是喜欢看别人跳舞、欣赏精彩的舞步，那么你也许会仅仅为此而想去看看这部电影。",
+      "visible_raw_text": "If you're a fan of dancing in that sense, just like to watch people dance, see impressive dance moves then you might want to check out this movie solely for that",
+      "visible_character_end": 161,
+      "input_truncated": false
+    },
+    "07": {
+      "raw_text": "As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading organizations involved in the stamp hobby can work together to make it succeed and grow",
+      "text_zh": "正如 Linn’s 的副主编迈克尔·巴德克在我们 11 月 28 日那一期中报道的那样，与会者“热情地讨论了如何发展这一爱好、邮展的未来，以及邮商与集邮界的合作关系，也讨论了参与集邮活动的主要组织如何共同推动这一爱好的发展壮大。",
+      "word_zh": {
+        "Baadke": "巴德克",
+        "Linn’s": "Linn’s",
+        "November": "十一月",
+        "attendees": "与会者",
+        "discussed": "讨论了",
+        "enthusiastically": "热情地",
+        "philatelic": "集邮的"
+      },
+      "visible_text_zh": "正如 Linn’s 的副主编迈克尔·巴德克在我们 11 月 28 日那一期中报道的那样，与会者“热情地讨论了发展这一爱好、邮展的未来，以及邮商与集邮合作关系等话题，也讨论了主要……的方式〔原文在此截断〕",
+      "visible_raw_text": "As Linn’s associate editor Michael Baadke reports in our November 28 issue, attendees “enthusiastically discussed the topics of growing the hobby, the future of stamp shows, and dealers and philatelic partnerships, along with ways the leading",
+      "visible_character_end": 242,
+      "input_truncated": true
+    },
+    "08": {
+      "raw_text": "That brings us to tonight, the Universal Design Grand Challenge",
+      "text_zh": "这就引出了今晚的通用设计大挑战赛。",
+      "word_zh": {
+        "Challenge": "挑战赛",
+        "Design": "设计",
+        "Grand": "大型的",
+        "That": "那；这一点",
+        "Universal": "通用的",
+        "brings": "引出",
+        "to": "到；引向",
+        "tonight": "今晚",
+        "us": "我们"
+      },
+      "visible_text_zh": "这就引出了今晚的通用设计大挑战赛。",
+      "visible_raw_text": "That brings us to tonight, the Universal Design Grand Challenge",
+      "visible_character_end": 63,
+      "input_truncated": false
+    },
+    "09": {
+      "raw_text": "(uhh) I did not like this movie at all, I would not recommend it",
+      "text_zh": "（呃）我一点也不喜欢这部电影，我不会推荐它。",
+      "word_zh": {
+        "did": "过去时助动词",
+        "it": "它",
+        "like": "喜欢",
+        "not": "不",
+        "recommend": "推荐",
+        "this": "这部",
+        "uhh": "呃",
+        "would": "会"
+      },
+      "visible_text_zh": "（呃）我一点也不喜欢这部电影，我不会推荐它。",
+      "visible_raw_text": "(uhh) I did not like this movie at all, I would not recommend it",
+      "visible_character_end": 64,
+      "input_truncated": false
+    },
+    "10": {
+      "raw_text": "(umm) And you know I really do like to see fluffy chick flicks sometimes so I'm not against that but this one was pretty terrible",
+      "text_zh": "（嗯）你知道，我有时确实喜欢看轻松的情感类电影，所以我并不反对这类电影，但这一部相当糟糕。",
+      "word_zh": {
+        "I'm": "我是",
+        "but": "但是",
+        "flicks": "电影",
+        "like": "喜欢",
+        "pretty": "相当",
+        "really": "确实",
+        "terrible": "糟糕的",
+        "to": "用于连接后续动词",
+        "was": "是"
+      },
+      "visible_text_zh": "（嗯）你知道，我有时确实喜欢看轻松的情感类电影，所以我并不反对这类电影，但这一部相当糟糕。",
+      "visible_raw_text": "(umm) And you know I really do like to see fluffy chick flicks sometimes so I'm not against that but this one was pretty terrible",
+      "visible_character_end": 129,
+      "input_truncated": false
+    },
+    "11": {
+      "raw_text": "I would be ashamed to have made this film if I was a director",
+      "text_zh": "如果我是导演，拍出这部电影会让我感到羞愧。",
+      "word_zh": {
+        "I": "我",
+        "ashamed": "羞愧的",
+        "be": "感到；是",
+        "have": "完成时助动词",
+        "to": "用于连接后续动词",
+        "would": "会"
+      },
+      "visible_text_zh": "如果我是导演，拍出这部电影会让我感到羞愧。",
+      "visible_raw_text": "I would be ashamed to have made this film if I was a director",
+      "visible_character_end": 61,
+      "input_truncated": false
+    },
+    "12": {
+      "raw_text": "Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag, and credit scores is very low.",
+      "text_zh": "或者更糟的是，一个人原本信用良好，但通常并非出于自身过错，也可能确实是自己的过错，这个人的信用下降了，信用评分很低。",
+      "word_zh": {
+        "Or": "或者",
+        "credit": "信用",
+        "good": "良好的",
+        "low": "低的",
+        "perhaps": "也许",
+        "sag": "下降",
+        "their": "他们的",
+        "usually": "通常",
+        "very": "很"
+      },
+      "visible_text_zh": "或者更糟的是，一个人原本信用良好，但通常并非出于自身过错，也可能确实是自己的过错，这个人的信用下降了，信用评分很低。",
+      "visible_raw_text": "Or worse, an individual previously had good credit, but usually by no fault of their own, or perhaps by fault of their own, they have let their credit sag, and credit scores is very low.",
+      "visible_character_end": 186,
+      "input_truncated": false
+    },
+    "13": {
+      "raw_text": "For example, I could take a set of data and from that data, I can find a relationship between any two of the given factors or more.",
+      "text_zh": "例如，我可以取一组数据，并从中找出任意两个或更多给定因素之间的关系。",
+      "word_zh": {
+        "For": "与后面的“例子”连用，表示例如",
+        "any": "任意的",
+        "could": "可以",
+        "example": "例子",
+        "factors": "因素",
+        "more": "更多",
+        "of": "……中的",
+        "or": "或者"
+      },
+      "visible_text_zh": "例如，我可以取一组数据，并从中找出任意两个或更多给定因素之间的关系。",
+      "visible_raw_text": "For example, I could take a set of data and from that data, I can find a relationship between any two of the given factors or more.",
+      "visible_character_end": 131,
+      "input_truncated": false
+    },
+    "14": {
+      "raw_text": "He is the co-founder of Rossen and Vettese Limited and the former Executive Director of Uniform Final Examination (UFE) courses at Toronto's York University.",
+      "text_zh": "他是罗森与维特塞有限公司的联合创办人，也曾任多伦多约克大学统一最终考试（UFE）课程的执行主任。",
+      "word_zh": {
+        "Limited": "有限公司",
+        "Rossen": "罗森",
+        "Toronto's": "多伦多的",
+        "University": "大学",
+        "Vettese": "维特塞",
+        "York": "约克",
+        "co-founder": "联合创办人",
+        "of": "……的"
+      },
+      "visible_text_zh": "他是罗森与维特塞有限公司的联合创办人，也曾任多伦多约克大学统一最终考试（UFE）课程的执行主任。",
+      "visible_raw_text": "He is the co-founder of Rossen and Vettese Limited and the former Executive Director of Uniform Final Examination (UFE) courses at Toronto's York University.",
+      "visible_character_end": 157,
+      "input_truncated": false
+    },
+    "15": {
+      "raw_text": "However, despite their poverty, the family prioritize education because they believed in its power to transform lives",
+      "text_zh": "然而，尽管生活贫困，这个家庭仍将教育放在首位，因为他们相信教育具有改变人生的力量。",
+      "word_zh": {
+        "believed": "相信",
+        "in": "与“相信”连用",
+        "its": "它的",
+        "lives": "人生",
+        "poverty": "贫困",
+        "prioritize": "优先考虑",
+        "they": "他们",
+        "transform": "改变"
+      },
+      "visible_text_zh": "然而，尽管生活贫困，这个家庭仍将教育放在首位，因为他们相信教育具有改变人生的力量。",
+      "visible_raw_text": "However, despite their poverty, the family prioritize education because they believed in its power to transform lives",
+      "visible_character_end": 117,
+      "input_truncated": false
+    },
+    "16": {
+      "raw_text": "It's a terrible, this is a terrible movie",
+      "text_zh": "这是一部糟糕的……这是一部糟糕的电影。",
+      "word_zh": {
+        "It's": "这是一部",
+        "a": "一部",
+        "movie": "电影",
+        "terrible": "糟糕的",
+        "this": "这"
+      },
+      "visible_text_zh": "这是一部糟糕的……这是一部糟糕的电影。",
+      "visible_raw_text": "It's a terrible, this is a terrible movie",
+      "visible_character_end": 41,
+      "input_truncated": false
+    },
+    "17": {
+      "raw_text": "Applying these four design concepts to your presentations is simple, easy and will make people think you turned into a design guru.",
+      "text_zh": "将这四个设计理念应用于你的演示文稿既简单又容易，还会让人们觉得你变成了设计大师。",
+      "word_zh": {
+        "Applying": "应用",
+        "a": "一位",
+        "and": "并且",
+        "concepts": "理念",
+        "easy": "容易的",
+        "into": "变成",
+        "is": "是",
+        "presentations": "演示文稿",
+        "simple": "简单的",
+        "these": "这些",
+        "turned": "变成了",
+        "will": "会",
+        "your": "你的"
+      },
+      "visible_text_zh": "将这四个设计理念应用于你的演示文稿既简单又容易，还会让人们觉得你变成了设计大师。",
+      "visible_raw_text": "Applying these four design concepts to your presentations is simple, easy and will make people think you turned into a design guru.",
+      "visible_character_end": 131,
+      "input_truncated": false
+    },
+    "18": {
+      "raw_text": "-And in Denmark - the first Baltic Cod fishery has been MSC – certified -Meanwhile, the Faeroese Mackerel Fishery has been denied MSC certification based on the fact that the fishery has failed to reach an agreement on mackerel quotas with Norway and the European Union.",
+      "text_zh": "在丹麦，波罗的海首个鳕鱼渔业已获得 MSC 认证。与此同时，法罗群岛鲭鱼渔业未获 MSC 认证，原因是该渔业未能与挪威和欧盟就鲭鱼配额达成协议。",
+      "word_zh": {
+        "Cod": "鳕鱼",
+        "Faeroese": "法罗群岛的",
+        "Mackerel": "鲭鱼",
+        "denied": "未获准",
+        "failed": "未能",
+        "mackerel": "鲭鱼"
+      },
+      "visible_text_zh": "在丹麦，波罗的海首个鳕鱼渔业已获得 MSC 认证。与此同时，法罗群岛鲭鱼渔业未获 MSC 认证，原因是该渔业未能就鲭鱼……达成协议〔原文在此截断〕",
+      "visible_raw_text": "-And in Denmark - the first Baltic Cod fishery has been MSC – certified -Meanwhile, the Faeroese Mackerel Fishery has been denied MSC certification based on the fact that the fishery has failed to reach an agreement on mackerel",
+      "visible_character_end": 227,
+      "input_truncated": true
+    },
+    "19": {
+      "raw_text": "People are surprisingly forgiving brands when they own up to mistakes, and unfortunately some haters out there love to point fingers and jump all over imperfections, but for the most part, people understand",
+      "text_zh": "当品牌坦承错误时，人们对它们的宽容程度令人意外。不幸的是，有些心怀反感的人喜欢指指点点，抓住缺点不放，但大多数情况下，人们还是理解的。",
+      "word_zh": {
+        "are": "表示当前状态",
+        "forgiving": "宽容；原谅",
+        "haters": "心怀反感的人",
+        "imperfections": "缺点",
+        "surprisingly": "令人意外地",
+        "to": "用于连接后续动词",
+        "understand": "理解"
+      },
+      "visible_text_zh": "当品牌坦承错误时，人们对它们的宽容程度令人意外。不幸的是，有些心怀反感的人喜欢指指点点，抓住缺点不放，但大多数情况下，人们还是理解的。",
+      "visible_raw_text": "People are surprisingly forgiving brands when they own up to mistakes, and unfortunately some haters out there love to point fingers and jump all over imperfections, but for the most part, people understand",
+      "visible_character_end": 206,
+      "input_truncated": false
+    },
+    "20": {
+      "raw_text": "And of course, click in the link of the description of this video for more, and we'll have more live updates and a stock market video (wrap-up) at the end of the day today.",
+      "text_zh": "当然，点击本视频说明中的链接可了解更多信息；今天我们还会提供更多实时更新，并在当天结束时提供股市回顾视频。",
+      "word_zh": {
+        "And": "并且",
+        "and": "并且",
+        "course": "与前面的介词连用，表示当然",
+        "end": "结束",
+        "more": "更多",
+        "of": "……的",
+        "stock": "股票；股市",
+        "the": "所指的",
+        "this": "这个",
+        "video": "视频",
+        "we'll": "我们将会"
+      },
+      "visible_text_zh": "当然，点击本视频说明中的链接可了解更多信息；今天我们还会提供更多实时更新，并在当天结束时提供股市回顾视频。",
+      "visible_raw_text": "And of course, click in the link of the description of this video for more, and we'll have more live updates and a stock market video (wrap-up) at the end of the day today.",
+      "visible_character_end": 172,
+      "input_truncated": false
+    }
+  },
+  "evidence_status_zh": {
+    "raw_text_located": "已精确定位原文",
+    "lexical_temporal_anchor_available": "词语时间关联可用",
+    "needs_review_alignment": "对齐结果待复核",
+    "unavailable_alignment": "无法取得可靠对齐",
+    "unavailable_raw_zero_input": "原始输入全零，不能作为观察证据",
+    "needs_review_partial_raw_zero_input": "部分原始输入为零，待复核",
+    "unavailable_partial_word_truncation": "词语被输入截断，无法定位完整证据",
+    "unavailable_no_model_representation": "未进入模型输入，无归因证据",
+    "unavailable_no_video_frame": "对应时段没有可用视频帧",
+    "unavailable_asset_export": "媒体片段导出失败"
+  },
+  "alignment_status_zh": {
+    "aligned": "对齐通过",
+    "needs_review": "待复核",
+    "unaligned": "未对齐",
+    "annotation_candidate": "疑似非语音标注"
+  },
+  "provenance_status_zh": {
+    "exact_array_equality": "与原始特征行数值完全一致",
+    "no_exact_match": "未找到数值完全一致的原始特征行",
+    "raw_zero": "原始输入全零",
+    "checked": "已核查",
+    "unavailable": "不可获得",
+    "not_applicable": "不适用"
+  },
+  "mapping_status_zh": {
+    "represented": "已进入模型输入",
+    "partial_word_truncation": "词语被输入截断",
+    "no_model_representation": "未进入模型输入",
+    "lexical_anchor": "词语时间关联",
+    "unavailable_nonlexical": "非词语槽位，无法对应语音时间"
+  },
+  "alignment_flags_zh": {
+    "number_normalized": "数字已转换为读法",
+    "acronym_reading_review": "缩略词读法待复核",
+    "speaker_label_candidate": "疑似说话人标签",
+    "invalid_interval": "时间区间无效",
+    "partial_char_alignment": "字符仅部分对齐",
+    "low_alignment_score": "对齐分数偏低",
+    "transcript_mismatch_candidate": "转写与语音疑似不一致",
+    "long_word_interval": "单词时间区间偏长",
+    "no_video_frame": "未找到对应视频帧"
+  }
+}

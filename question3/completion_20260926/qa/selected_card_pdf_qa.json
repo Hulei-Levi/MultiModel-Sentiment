@@ -1,0 +1,179 @@
+{
+  "result": "PASS",
+  "timestamp_utc": "2026-09-26T14:26:15.973531+00:00",
+  "source_book": "validation/validation_explanation_cards.pdf",
+  "source_book_sha256": "2b5ebabcac6229c6af7edb2c69d236787f49b7e8e29d419abe7cbee0ea13d52d",
+  "pymupdf_version": "1.28.2",
+  "original_book_qa": "qa/chinese_validation__validation_explanation_cards.pdf.audit.json",
+  "verification": "独立PDF与已通过中文QA的原书页面逐项比对，包括内容流、可选文字、矢量路径、文字trace以及144 dpi RGB实际渲染像素；本次无重新绘图或栅格化写入PDF。",
+  "files": [
+    {
+      "sample_id": "v0050",
+      "file": "validation/cards/v0050.pdf",
+      "source_page_1based": 5,
+      "single_pdf_sha256": "4ce5c3168ab5cc36814bbc8fef5f46c45686246a13b77707fdf32d6f56b5381e",
+      "matches": {
+        "page_size_equal": true,
+        "text_equal": true,
+        "vector_drawings_equal": true,
+        "text_traces_equal": true,
+        "content_stream_equal": true,
+        "no_raster_images": true,
+        "sample_id_present": true,
+        "144dpi_RGB_pixels_equal": true
+      },
+      "page_size_pt": [
+        0.0,
+        0.0,
+        595.4400024414062,
+        841.6799926757812
+      ],
+      "vector_path_count": 106,
+      "selectable_text_length": 908,
+      "chinese_characters": 371,
+      "minimum_font_pt": 7.0,
+      "raster_image_count": 0,
+      "text_sha256": "6bc9aaca3a11657b88da344124e7b90220a430ce5e410c43a7d2a07a1e38c743",
+      "pixel_sha256_144dpi": "86e53ebbf3aacc7156102b21f795f83b8b5a2c84779c95e514507e9f8d08c07e",
+      "collision_audit": {
+        "pdf": "validation\\cards\\v0050.pdf",
+        "auditable": true,
+        "verdict": "PASS",
+        "page_count": 1,
+        "visible_text_box_count": 108,
+        "text_trace_count": 151,
+        "stroke_path_count": 83,
+        "filled_region_count": 88,
+        "image_region_count": 0,
+        "summary": {
+          "fail": 0,
+          "warn": 0,
+          "contained_fill_overlays": 0,
+          "contained_image_overlays": 0
+        },
+        "thresholds": {
+          "text_inset_pt": 0.6,
+          "min_overlap_ratio": 0.05,
+          "clipping_tolerance_pt": 0.5
+        },
+        "findings": []
+      },
+      "result": "PASS"
+    },
+    {
+      "sample_id": "v0063",
+      "file": "validation/cards/v0063.pdf",
+      "source_page_1based": 7,
+      "single_pdf_sha256": "fb2bcf32f1eacdfcf88761339d7b73a2e2929d67f95b498ea722a89132754efd",
+      "matches": {
+        "page_size_equal": true,
+        "text_equal": true,
+        "vector_drawings_equal": true,
+        "text_traces_equal": true,
+        "content_stream_equal": true,
+        "no_raster_images": true,
+        "sample_id_present": true,
+        "144dpi_RGB_pixels_equal": true
+      },
+      "page_size_pt": [
+        0.0,
+        0.0,
+        595.4400024414062,
+        841.6799926757812
+      ],
+      "vector_path_count": 103,
+      "selectable_text_length": 858,
+      "chinese_characters": 358,
+      "minimum_font_pt": 7.0,
+      "raster_image_count": 0,
+      "text_sha256": "d9b6f54f71de27380859ebfb2ba53bdbe99052c535384b68e450b31d33f6a2f1",
+      "pixel_sha256_144dpi": "a12cd045cd1371a04e32f63724455feb7214e33115308b912863fc43e97d070a",
+      "collision_audit": {
+        "pdf": "validation\\cards\\v0063.pdf",
+        "auditable": true,
+        "verdict": "PASS",
+        "page_count": 1,
+        "visible_text_box_count": 104,
+        "text_trace_count": 149,
+        "stroke_path_count": 80,
+        "filled_region_count": 85,
+        "image_region_count": 0,
+        "summary": {
+          "fail": 0,
+          "warn": 0,
+          "contained_fill_overlays": 0,
+          "contained_image_overlays": 0
+        },
+        "thresholds": {
+          "text_inset_pt": 0.6,
+          "min_overlap_ratio": 0.05,
+          "clipping_tolerance_pt": 0.5
+        },
+        "findings": []
+      },
+      "result": "PASS"
+    },
+    {
+      "sample_id": "v0614",
+      "file": "validation/cards/v0614.pdf",
+      "source_page_1based": 51,
+      "single_pdf_sha256": "19805732acba1427f1d6b17800957619d1c35129b8e4ba07aed2209a652e9c22",
+      "matches": {
+        "page_size_equal": true,
+        "text_equal": true,
+        "vector_drawings_equal": true,
+        "text_traces_equal": true,
+        "content_stream_equal": true,
+        "no_raster_images": true,
+        "sample_id_present": true,
+        "144dpi_RGB_pixels_equal": true
+      },
+      "page_size_pt": [
+        0.0,
+        0.0,
+        595.4400024414062,
+        841.6799926757812
+      ],
+      "vector_path_count": 105,
+      "selectable_text_length": 793,
+      "chinese_characters": 347,
+      "minimum_font_pt": 7.0,
+      "raster_image_count": 0,
+      "text_sha256": "cb53de715e670af599d910a6efa494209e9190d6533b1252a8848ca14356735a",
+      "pixel_sha256_144dpi": "bd7576b7054ccfb6506c60fa56dd54b255b6e4dda033903f1b97d5c6d86518b5",
+      "collision_audit": {
+        "pdf": "validation\\cards\\v0614.pdf",
+        "auditable": true,
+        "verdict": "PASS",
+        "page_count": 1,
+        "visible_text_box_count": 106,
+        "text_trace_count": 151,
+        "stroke_path_count": 82,
+        "filled_region_count": 87,
+        "image_region_count": 0,
+        "summary": {
+          "fail": 0,
+          "warn": 0,
+          "contained_fill_overlays": 0,
+          "contained_image_overlays": 0
+        },
+        "thresholds": {
+          "text_inset_pt": 0.6,
+          "min_overlap_ratio": 0.05,
+          "clipping_tolerance_pt": 0.5
+        },
+        "findings": []
+      },
+      "result": "PASS"
+    }
+  ],
+  "visual_review": {
+    "result": "PASS",
+    "pages_checked": [
+      "v0050:1",
+      "v0063:1",
+      "v0614:1"
+    ],
+    "details": "Actual PyMuPDF PDF rasterizations inspected panel by panel: Chinese and English are visible and readable; all six panels, labels and footnotes are intact; no clipping, overlap or missing glyphs. Pixel equality to original pages was independently confirmed."
+  }
+}

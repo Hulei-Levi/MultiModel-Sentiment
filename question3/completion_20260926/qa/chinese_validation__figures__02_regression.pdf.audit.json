@@ -1,0 +1,56 @@
+{
+  "file": "validation/figures/02_regression.pdf",
+  "sha256": "f9c1ef0a4c2f1981c572f1c7a99ff9b066f4e9e8ccc723f4a7c501c4f574dbcd",
+  "source_sha256": "6d55791c31c6be33d2f70d4708e0a3c4da606b4f4a607c90854c9f36556b258f",
+  "collision": {
+    "pdf": "validation\\figures\\02_regression.pdf",
+    "auditable": true,
+    "verdict": "PASS",
+    "page_count": 1,
+    "visible_text_box_count": 17,
+    "text_trace_count": 19,
+    "stroke_path_count": 17,
+    "filled_region_count": 16,
+    "image_region_count": 1,
+    "summary": {
+      "fail": 0,
+      "warn": 0,
+      "contained_fill_overlays": 0,
+      "contained_image_overlays": 0
+    },
+    "thresholds": {
+      "text_inset_pt": 0.6,
+      "min_overlap_ratio": 0.05,
+      "clipping_tolerance_pt": 0.5
+    },
+    "findings": []
+  },
+  "text_audit": {
+    "auditable": true,
+    "minimum_required_pt": 5.0,
+    "minimum_found_pt": 7.0,
+    "text_run_count": 19,
+    "below_minimum_count": 0,
+    "below_minimum": [],
+    "warnings": []
+  },
+  "chinese_glyph_audit": {
+    "pages": [
+      {
+        "page": 1,
+        "minimum_font_pt": 7.0,
+        "cjk_characters": 27,
+        "font_names": [
+          "DejaVuSans",
+          "DroidSansFallback"
+        ],
+        "missing_or_replacement_characters": []
+      }
+    ],
+    "cjk_count": 27,
+    "replacement_or_null": [],
+    "notdef_glyphs": [],
+    "cjk_unexpected_font": [],
+    "result": "PASS"
+  }
+}
