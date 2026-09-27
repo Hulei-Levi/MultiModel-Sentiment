@@ -1,0 +1,33 @@
+{
+  "claim_zh": "分别展示当前样本情感极性及强度预测相对于训练均值参考的模态贡献、局部归因与媒体对应。",
+  "backend": "python",
+  "archetype": "asymmetric mixed-modality figure",
+  "reuse": "structural adaptation",
+  "panels": {
+    "a": "signed Shapley sum decomposition",
+    "b-d": "target-specific top three visual word anchors",
+    "e": "all valid local signed attributions including unmapped punctuation and special tokens",
+    "f": "WhisperX post-hoc word-to-time correspondence"
+  },
+  "data_mapping": {
+    "reference": "coalitions[0]",
+    "output": "coalitions[7]",
+    "waterfall": "phi[head]",
+    "heatmap": "NPZ signed dimension sums, word slot weights",
+    "top3": "saved absolute attribution mass ranking",
+    "time": "WhisperX alignment; not recovered feature windows"
+  },
+  "integrity": "all valid slots retained; only exactly zero padding omitted; unread truncated words have no attribution",
+  "image_policy": "original frames without crop/enhancement; supplemental frames retain provenance",
+  "statistics": "one individual sample, no aggregate uncertainty",
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "minimum_font_pt": 7.5,
+  "alignment_tolerance_pt": 1.5,
+  "figure_level_title": false,
+  "visible_panel_letters": false,
+  "panel_label_qa": "Explicit user request: hide a-f letters; retain strict 1.5 pt panel geometry checks."
+}

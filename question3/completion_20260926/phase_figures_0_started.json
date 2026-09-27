@@ -1,9 +1,0 @@
-{
-  "phase": "figures",
-  "started_utc": "2026-09-26T12:45:23.594150+00:00",
-  "script_sha256": "287a86c0976dd4a862e3536d40a235e123cb35d8c9d13973e0d8befefb009034",
-  "checkpoint_sha256": "8564933b9c62fa1951a0aba0d1aa4c1c708e9180990852e1ecc202641da58f92",
-  "device": "cuda:1",
-  "worker_index": 0,
-  "worker_count": 1
-}

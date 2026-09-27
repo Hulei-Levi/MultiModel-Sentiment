@@ -233,6 +233,22 @@ class _CascadeFusion(nn.Module):
             return fused, paths, pairs
         return fused, paths
 
+class _AdditiveSequenceFusion(nn.Module):
+    """HyCon elementwise addition adapted to aligned sequence reconstruction."""
+    def forward(self, x, masks, return_intermediates=False):
+        streams = [x[m].masked_fill(~masks[m].bool().unsqueeze(-1), 0)
+                   for m in MODALITIES]
+        union = masks[MODALITIES[0]].bool()
+        for m in MODALITIES[1:]:
+            union = union | masks[m].bool()
+        fused = torch.stack(streams, dim=0).sum(dim=0)
+        fused = fused.masked_fill(~union.unsqueeze(-1), 0)
+        paths = [fused]
+        if return_intermediates:
+            return fused, paths, {}
+        return fused, paths
+
+
 class ThisWork(nn.Module):
     default_auxiliary_weights = {"reconstruction": 0.1}
     default_pretrain_epochs = 3
@@ -247,6 +263,11 @@ class ThisWork(nn.Module):
         self.project = ProjectedInputs(feature_dims, d, config.dropout)
         self.encoders = nn.ModuleDict({m: _ResidualSequenceEncoder(d, config.nhead, config.dropout)
                                       for m in MODALITIES})
+        self.fusion_variant = _options(config).get("this_work_fusion_variant", "cascade")
+        if self.fusion_variant not in ("cascade", "hycon_additive"):
+            raise ValueError("this_work_fusion_variant must be 'cascade' or 'hycon_additive'")
+        # Reference fusion initialization keeps common decoder/head weights
+        # identical across paired seeds. The additive arm replaces it below.
         self.fusion = _CascadeFusion(d, config.nhead, config.dropout)
         self.decoders = nn.ModuleDict({m: nn.Sequential(
             nn.Linear(d, d), nn.GELU(), nn.Linear(d, feature_dims[m])
@@ -270,6 +291,8 @@ class ThisWork(nn.Module):
             nn.Dropout(config.dropout),
             nn.Linear(head_hidden, 1),
         )
+        if self.fusion_variant == "hycon_additive":
+            self.fusion = _AdditiveSequenceFusion()
 
     def forward(self, features, masks, targets=None, return_intermediates=False):
         ## 这里的 union 是三路掩码的 “或” ，也就是某个位置只要至少一路有效，这个位置就可以进入最终池化。
@@ -333,15 +356,20 @@ class ThisWork(nn.Module):
             result.update(
                 projected_sequences={m: value.detach() for m, value in projected.items()},
                 encoded_sequences={m: value.detach() for m, value in x.items()},
-                pair_sequences={name: value.detach() for name, value in pairs.items()},
-                cascade_sequences={"_".join(route): value.detach()
-                                   for route, value in zip(self.fusion.routes, paths)},
-                concatenated=torch.cat(paths, dim=-1).detach(),
                 fusion_sequence=fused.detach(), pooled_features=pooled.detach(),
                 reconstructions=reconstructions,
                 reconstruction_losses={m: value.detach() for m, value in losses.items()},
                 fusion_mask=union.detach(),
             )
+            if self.fusion_variant == "cascade":
+                result.update(
+                    pair_sequences={name: value.detach() for name, value in pairs.items()},
+                    cascade_sequences={"_".join(route): value.detach()
+                                       for route, value in zip(self.fusion.routes, paths)},
+                    concatenated=torch.cat(paths, dim=-1).detach(),
+                )
+            else:
+                result["fusion_operator"] = "elementwise_addition"
         return result
 
 

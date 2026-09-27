@@ -3007,64 +3007,260 @@ def q3_plot_validation(cohort, details, summary, out):
     return manifests
 
 
+
+def q3_prepare_visual_previews(args, out, media):
+    """Export source-frame review/context previews without changing evidence.
+
+    A preview is never promoted to confirmed evidence. Candidate word times and
+    alignment flags remain unchanged; unavailable times receive explicitly
+    unlocalized context frames from the video's presentation timeline.
+    """
+    import subprocess
+    from PIL import Image
+    out = Path(out).resolve()
+    allowed = (ROOT / "question3").resolve()
+    if out != allowed and allowed not in out.parents:
+        raise ValueError("Visual review previews must remain inside question3")
+    ffmpeg = str(getattr(args, "ffmpeg", ROOT / "work/ffmpeg-7.0.2-amd64-static/ffmpeg"))
+    manifest = {
+        "schema_version": 1, "created_utc": datetime.now(timezone.utc).isoformat(),
+        "purpose_zh": "补充待复核画面及原始视频参考画面，不改变已确认的证据状态。",
+        "confirmed_evidence_added": 0, "source_records_modified": False,
+        "source_feature_time_recovered": False, "samples": {}, "source_videos": {},
+        "role_definitions_zh": {
+            "alignment_review": "按已有候选词语时间选取的原始帧；词语时间仍待复核。",
+            "raw_context_only": "原始视频参考帧；原视觉输入特征全零，不代表模型实际观察到的视觉证据。",
+            "unlocalized_context": "没有可靠的词语时间关联，按视频时长位置选取的普通原始参考帧。"},
+        "errors": []}
+    unique_assets = set()
+    for sample in media["samples"]:
+        sid = str(sample["sample_id"]).zfill(2)
+        missing = {}
+        for head in HEADS:
+            for item in sample["top_evidence"][head]["vision"]:
+                if not item.get("asset"):
+                    missing.setdefault(int(item["word_index"]), item)
+        if not missing:
+            continue
+        manifest["samples"][sid] = []
+        video = Path(sample["source_video"])
+        alignment_file = out / sample["alignment_file"]
+        alignment = json.loads(alignment_file.read_text(encoding="utf-8"))
+        video_hash = sha256(video)
+        if (video_hash != sample["source_sha256"] or
+                video_hash != alignment["source_sha256"]):
+            raise ValueError(f"{sid}: source video hash differs from evidence/alignment")
+        pts = list(map(float, alignment["video_pts_s"]))
+        ends = list(map(float, alignment["video_frame_end_s"]))
+        if not pts or len(pts) != len(ends) or any(b <= a for a, b in zip(pts, ends)):
+            raise ValueError(f"{sid}: invalid cached video presentation timeline")
+        manifest["source_videos"][sid] = {
+            "file": str(video), "sha256": video_hash,
+            "alignment_file": str(alignment_file.relative_to(out)),
+            "alignment_sha256": sha256(alignment_file),
+            "decoded_frame_count": len(pts), "first_pts_s": pts[0],
+            "last_frame_end_s": ends[-1]}
+        destination = out / "samples" / sid / "review_keyframes"
+        destination.mkdir(parents=True, exist_ok=True)
+        for word_index, item in sorted(missing.items()):
+            start, end = item.get("start_s"), item.get("end_s")
+            valid_time = (start is not None and end is not None and
+                          np.isfinite(start) and np.isfinite(end) and 0 <= start < end)
+            overlaps = ([i for i, (a, b) in enumerate(zip(pts, ends))
+                         if b > start and a < end] if valid_time else [])
+            status = item["evidence_status"]
+            if overlaps:
+                midpoint = (start + end) / 2
+                choices = [(min(overlaps, key=lambda i: (abs((pts[i]+ends[i])/2-midpoint), i)),
+                            None)]
+                if status == "unavailable_raw_zero_input":
+                    role = "raw_context_only"
+                    label = "原始视频参考画面（视觉特征全零）"
+                else:
+                    role = "alignment_review"
+                    label = "词语时间待复核"
+            else:
+                # Fractions are media context only, never fabricated word times.
+                choices = [(min(range(len(pts)), key=lambda i: (
+                            abs((pts[i]+ends[i])/2-(pts[0]+fraction*(ends[-1]-pts[0]))), i)),
+                            fraction) for fraction in (0.25, 0.5, 0.75)]
+                role, label = "unlocalized_context", "原始视频参考画面（未确认词语时间）"
+            record = {
+                "word_index": word_index, "word": item["word"],
+                "start_s": start, "end_s": end,
+                "evidence_status": status, "alignment_score": item.get("alignment_score"),
+                "alignment_status": item.get("alignment_status"),
+                "alignment_flags": list(item.get("alignment_flags", [])),
+                "display_status_zh": label, "role": role,
+                "candidate_word_interval_used": bool(overlaps),
+                "confirmed_word_time": False,
+                "counts_as_confirmed_evidence": False,
+                "source_feature_time_status": "unavailable",
+                "asset": None}
+            try:
+                assets = []
+                for frame_index, fraction in choices:
+                    path = destination / f"frame{frame_index:06d}_{video_hash[:12]}.png"
+                    if not path.is_file() or path.stat().st_size == 0:
+                        command = [ffmpeg, "-nostdin", "-v", "error", "-threads", "2",
+                                   "-y", "-i", str(video), "-map", "0:v:0",
+                                   "-vf", f"select=eq(n\\,{frame_index})",
+                                   "-fps_mode", "passthrough", "-frames:v", "1",
+                                   "-threads", "1", str(path)]
+                        subprocess.run(command, check=True, stdout=subprocess.PIPE,
+                                       stderr=subprocess.PIPE)
+                    with Image.open(path) as frame:
+                        width, height = frame.size
+                        frame.verify()
+                    if width <= 0 or height <= 0:
+                        raise ValueError("Decoded preview frame has invalid dimensions")
+                    relative = str(path.relative_to(out))
+                    unique_assets.add(relative)
+                    asset = {
+                        "file": relative, "kind": "video_png",
+                        "decoded_frame_index": frame_index, "frame_pts_s": pts[frame_index],
+                        "frame_end_s": ends[frame_index], "width": width, "height": height,
+                        "sha256": sha256(path), "source_video_sha256": video_hash,
+                        "interpretation_zh": label,
+                        "overlapping_candidate_frame_indices": overlaps}
+                    if fraction is not None:
+                        asset["video_context_fraction"] = fraction
+                    assets.append(asset)
+                record["asset"] = assets[0] if overlaps else assets[1]
+                if not overlaps:
+                    record["context_assets"] = assets
+            except Exception as error:
+                message = f"{type(error).__name__}: {error}"
+                if isinstance(error, subprocess.CalledProcessError):
+                    message += " " + error.stderr.decode(errors="replace")[-1500:]
+                record["preview_error"] = message
+                manifest["errors"].append({"sample_id": sid, "word_index": word_index,
+                                           "error": message})
+            manifest["samples"][sid].append(record)
+    counts = {}
+    for records in manifest["samples"].values():
+        for record in records:
+            counts[record["role"]] = counts.get(record["role"], 0) + 1
+    manifest["summary"] = {
+        "sample_count": len(manifest["samples"]),
+        "preview_item_count": sum(len(v) for v in manifest["samples"].values()),
+        "unique_png_count": len(unique_assets), "role_counts": counts,
+        "export_error_count": len(manifest["errors"])}
+    q3_media_write_json(out / "visual_review_previews.json", manifest)
+    return manifest
+
+
 def q3_media_card(sample, out, book):
+    """Show each task's original visual Top3 without merging task identities."""
     from PIL import Image
     plt=q3_plot_style()
-    fig=plt.figure(figsize=(11.69,8.27))
+    out=Path(out)
+    fig=plt.figure(figsize=(11.69,11.69))
     sid=sample["sample_id"]
     translation=q3_zh_case(sample)
-    fig.text(.06,.955,f"附件四样本 {sid}｜原始证据定位",fontsize=14,fontweight="normal")
-    fig.text(.06,.920,"通过 WhisperX 词语对齐，将模型可见文本对应至语音时段和解码后的视频帧。",fontsize=9)
+    preview_path=out/"visual_review_previews.json"
+    previews=(json.loads(preview_path.read_text(encoding="utf-8")).get("samples",{}).get(sid,[])
+              if preview_path.is_file() else [])
+    by_word={row["word_index"]:row for row in previews}
+    # fig.text(.06,.965,f"附件四样本 {sid}｜分类与回归的原始媒体定位",fontsize=14,fontweight="normal")
+    # fig.text(.06,.935,"两项任务分别保留前三名；共有画面重复展示，并保留各自排名、归因数值及证据状态。",fontsize=9)
     candidates=[]
-    for rank in range(3):
-        for head in HEADS:
-            rows=sample["top_evidence"][head]["vision"]
-            if rank<len(rows):
-                item=rows[rank]
-                if item.get("asset") and item["word_index"] not in [w["word_index"] for _,w in candidates]:
-                    candidates.append((head,item))
-    candidates=candidates[:3]
-    shape=(9,16)
-    if candidates:
-        first=np.asarray(Image.open(Path(out)/candidates[0][1]["asset"]["file"]))
-        shape=first.shape[:2]
-    grid=fig.add_gridspec(1,3,left=.06,right=.95,bottom=.54,top=.84,wspace=.16)
+    for head in HEADS:
+        rows=sample["top_evidence"][head]["vision"]
+        if len(rows)!=3 or [item["rank"] for item in rows]!=[1,2,3]:
+            raise AssertionError(f"{sid}/{head}: expected original ordered visual Top3")
+        for item in rows:
+            preview=None if item.get("asset") else by_word.get(item["word_index"])
+            asset=preview.get("asset") if preview else item.get("asset")
+            if not asset or not (out/asset["file"]).is_file():
+                raise FileNotFoundError(f"{sid}/{head}/rank{item['rank']}: original Top3 image missing")
+            candidates.append((head,item,preview,asset))
+    with Image.open(out/candidates[0][3]["file"]) as first:
+        shape=(first.height,first.width)
+    grid=fig.add_gridspec(2,3,left=.06,right=.95,bottom=.35,top=.80,wspace=.16,hspace=1.0)
     axes=[]
-    for j in range(3):
-        ax=fig.add_subplot(grid[0,j]);axes.append(ax)
+    shown=[]
+    for row,head in enumerate(HEADS):
+        y=.895-row*.30
+        heading=("情感极性分类" if head=="classification" else "情感强度回归")
+        fig.text(.06,y,heading+"｜视觉关键位置前三名",fontsize=11,fontweight="normal")
+        direction=("净贡献为正：增强原预测类别相对次高类别的优势；为负：削弱该优势。"
+                   if head=="classification" else
+                   "净贡献为正：提高情感强度预测分数；为负：降低预测分数。")
+        fig.text(.06,y-.025,direction,fontsize=8.5,color="#47545B")
+    for j,(head,item,preview,asset) in enumerate(candidates):
+        ax=fig.add_subplot(grid[j//3,j%3]);axes.append(ax)
         ax.set_box_aspect(shape[0]/shape[1]);ax.set_axis_off()
-        if j<len(candidates):
-            head,item=candidates[j]
-            pic=np.asarray(Image.open(Path(out)/item["asset"]["file"]))
-            ax.imshow(pic)
-            label=q3_zh_word(translation,item["word"])
-            ax.set_title(f"{q3_zh(head)}第{item['rank']}位：{label}\n"
-                         f"{item['start_s']:.3f}—{item['end_s']:.3f}秒｜第{item['asset']['decoded_frame_index']}帧",fontsize=8,pad=8)
+        with Image.open(out/asset["file"]) as source:
+            ax.imshow(np.asarray(source),interpolation="none")
+        label=q3_zh_word(translation,item["word"])
+        frame_label=f"{asset['frame_pts_s']:.3f}秒｜第{asset['decoded_frame_index']}帧"
+        role=preview["role"] if preview else "accepted_lexical_anchor"
+        color="#283B45"
+        rank_label=f"第{item['rank']}位："
+        if role=="raw_context_only":
+            status="原始参考画面｜视觉特征全零"
+            rank_label=f"候选第{item['rank']}位："
+            color="#626A71"
+        elif role=="unlocalized_context":
+            status="原始参考画面｜词语时间未确认"
+            color="#8B642D"
+        elif role=="alignment_review":
+            score=item.get("alignment_score")
+            status=(f"待复核画面｜对齐分数 {score:.3f}" if score is not None
+                    else "待复核画面｜对齐分数不可用")
+            color="#8B642D"
         else:
-            ax.text(.5,.5,"无可导出的可靠视觉定位",transform=ax.transAxes,ha="center",va="center",fontsize=8)
+            status="词语时间对应可用"
+        mass=float(item["attribution_mass"]);net=float(item["attribution_net"])
+        title=(q3_wrap_display(rank_label+label,44)+"\n"+frame_label+
+               f"\n绝对归因量 {mass:.4f}｜净贡献 {net:+.4f}\n"+status)
+        ax.set_title(title,fontsize=8,pad=8,color=color,linespacing=1.35)
         q3_figure_label(ax,chr(97+j))
+        shown.append({"panel":chr(97+j),"head":head,"rank":item["rank"],
+                      "word_index":item["word_index"],"word":item["word"],
+                      "attribution_mass":mass,"attribution_net":net,
+                      "role":role,"original_evidence_status":item["evidence_status"],
+                      "asset":asset["file"],"frame_pts_s":asset["frame_pts_s"],
+                      "decoded_frame_index":asset["decoded_frame_index"],
+                      "counts_as_confirmed_evidence":preview is None})
     for j,head in enumerate(HEADS):
         left=.06+j*.48
-        fig.text(left,.46,q3_zh(head)+"｜关键语音片段",fontsize=10,fontweight="normal")
+        heading=("情感极性分类" if head=="classification" else "情感强度回归")
+        # fig.text(left,.295,heading+"｜关键语音片段",fontsize=10,fontweight="normal")
         lines=[]
         for item in sample["top_evidence"][head]["audio"]:
-            timing=(f"{item['start_s']:.3f}—{item['end_s']:.3f}秒" if item["start_s"] is not None else "无可靠时间")
+            timing=(f"{item['start_s']:.3f}—{item['end_s']:.3f}秒"
+                    if item["start_s"] is not None else "词语时间尚未确认")
             lines.append(f"{item['rank']}. {q3_zh_word(translation,item['word'])}｜{timing}")
-            status=("已导出语音片段，可在结果索引中播放" if item.get("asset") else q3_zh_status(item["evidence_status"]))
+            status=("已导出语音片段，可在结果索引中播放" if item.get("asset")
+                    else q3_zh_status(item["evidence_status"]))
             lines.append("    "+status)
-        fig.text(left,.425,"\n".join(lines),va="top",fontsize=8,linespacing=1.6)
+        fig.text(left,.267,"\n".join(lines),va="top",fontsize=8,linespacing=1.6)
     warnings=[
-        "图中帧与语音片段是词语对应的时间背景，不代表已恢复原缓存音视频特征的提取窗口。",
-        "原始画面直接解码，未作图像增强；视频帧号按实际解码顺序从0开始计数。",
-        "低分或不完整的对齐保留复核标记，不使用推测时间生成证据。",
-        "完整字符范围、编码位置、对齐分数、特征行匹配和文件校验值均保存在详细记录中。",
-        "中文释义仅供阅读；英文原词用于对应原始输入，原始画面内文字保持原样。"]
+        "各任务独立按绝对归因量排序；同一画面可重复出现。采用训练集均值参考，两项任务的归因数值不直接比较。",
+        "绝对归因量为该位置各维度归因绝对值之和；净贡献为有符号和，方向按各任务的解释目标理解。",
+        "截图对应词语时间附近的视觉背景，不表示已恢复缓存视觉特征的原始提取窗口。",
+        "待复核画面的词语时间关联尚未确认；原始参考画面不作为模型已观察到的视觉证据。",
+        "原始视频帧未增强；帧号从0开始。原始预测、归因数值和证据状态均保留，中文释义仅供阅读。"]
+    if sample.get("acoustic_text_match_ratio") is not None and sample["acoustic_text_match_ratio"]<.5:
+        warnings.insert(0,"本例给定文本与声学转写匹配程度偏低，待复核画面不能视为已确认的词语定位。")
     if sample["data_quality"].get("all_zero_content_modalities"):
-        warnings.insert(0,"原始输入全零："+"、".join(q3_zh(m) for m in sample["data_quality"]["all_zero_content_modalities"])+"；不将该模态归因为观察到的媒体证据。")
-    fig.text(.06,.17,"\n".join(warnings),fontsize=7.5,va="top",linespacing=1.7)
-    result=q3_export_figure(fig,Path(out)/"cards"/(sid+"_media"),
-            "哪些原始媒体位置可以与高归因词语建立可复核的对应关系？",
-            "附件四媒体证据、逐样本对齐记录及原始画面",book,axes)
+        warnings.insert(0,"本例原始视觉内容特征全零；六张画面仅供原始视频复核，所示位置归因不能解释为画面内容的贡献。")
+    fig.text(.06,.145,"\n".join(warnings),fontsize=7.5,va="top",linespacing=1.65)
+    path=out/"cards"/(sid+"_media")
+    result=q3_export_figure(fig,path,
+            "分类与回归分别将哪些视觉位置排在前三，其归因方向及原始媒体对应状态有何差异？",
+            "附件四各任务独立的视觉前三位置、媒体证据及复核预览记录",book,axes)
+    fig.savefig(path.with_suffix(".pdf"))
+    result["pdf"]=path.with_suffix(".pdf").name
+    result["archetype"]="image plate + quant"
+    result["layout"]="two task rows, three original ranked visual positions per row"
+    result["cross_head_deduplication"]=False
+    result["displayed_visual_panels"]=shown
+    result["preview_manifest"]="visual_review_previews.json"
+    result["image_processing"]="original frames, no crop or enhancement; repeated across tasks when independently selected"
+    q3_write_json(path.with_suffix(".figure.json"),result)
     plt.close(fig)
     return result
 
@@ -3076,6 +3272,22 @@ def q3_plot_attachment4(args,out):
     media=json.loads((out/"attachment4_media_evidence.json").read_text(encoding="utf-8"))
     if media["sample_count"]!=20 or len(media["samples"])!=20:
         raise AssertionError("Need all 20 Attachment-4 evidence records")
+    previews=q3_prepare_visual_previews(args,out,media)
+    if previews["errors"]:
+        raise RuntimeError("Visual preview exports need review: "+str(previews["errors"]))
+    preview_rows=[]
+    for sid,records in previews["samples"].items():
+        loc=q3_zh_catalog("attachment4")["samples"][sid]
+        for record in records:
+            asset=record.get("asset") or {}
+            preview_rows.append({"样本编号":sid,"原词":record["word"],
+                "中文释义":loc["word_zh"].get(record["word"],record["word"]),
+                "画面用途":record["display_status_zh"],"原证据状态":q3_zh_status(record["evidence_status"]),
+                "候选开始时间秒":record["start_s"],"候选结束时间秒":record["end_s"],
+                "对齐分数":record["alignment_score"],"视频帧时间秒":asset.get("frame_pts_s"),
+                "解码帧序号":asset.get("decoded_frame_index"),"画面文件":asset.get("file"),
+                "计入已确认定位":"否"})
+    q3_write_csv(out.parent/"中文表格"/"附件四复核画面索引.csv",preview_rows)
     by_id={r["sample_id"]:r for r in media["samples"]}
     manifests=[];predictions=[]
     with np.load(args.attachment4_report.parent/"attributions.npz",allow_pickle=False) as saved, \
@@ -3261,6 +3473,9 @@ def q3_chinese_note(value):
 def q3_write_result_index(out,cohort,summary,media):
     import html
     out=Path(out);esc=html.escape
+    preview_path=out/"attachment4"/"visual_review_previews.json"
+    preview_catalog=(json.loads(preview_path.read_text(encoding="utf-8")).get("samples",{})
+                     if preview_path.is_file() else {})
     lines=['<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>问题三中文结果</title>',
         '<style>body{font-family:system-ui,"Microsoft YaHei",sans-serif;max-width:1120px;margin:36px auto;line-height:1.7;color:#22313b}'
         'table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #ddd;padding:9px;text-align:left}'
@@ -3295,7 +3510,9 @@ def q3_write_result_index(out,cohort,summary,media):
         '<li><a href="中文表格/附件四全量预测与解释.csv">全量预测、模态作用与中文释义</a></li>',
         '<li><a href="中文表格/附件四关键证据定位.csv">全部关键证据定位</a></li>',
         '<li><a href="attachment4/attachment4_explanation_cards.pdf">40页中文解释卡与媒体定位卡</a></li>',
-        '<li><a href="attachment4/attachment4_media_evidence.json">原始证据计算记录</a></li></ul>']
+        '<li><a href="attachment4/attachment4_media_evidence.json">原始证据计算记录</a></li>',
+        '<li><a href="中文表格/附件四复核画面索引.csv">待复核与原始参考画面的独立索引</a></li></ul>',
+        '<p class="notice">媒体卡按分类、回归分为两排，各自完整保留排名前三的视觉位置；共有画面重复展示，分别标注排名、绝对归因量与净贡献。可用词语时间对应、待复核截图和原始参考画面分别标注；补充截图不改变原证据状态，也不计入已确认定位。</p>']
     for sample in media["samples"]:
         sid=sample["sample_id"];loc=q3_zh_case(sample)
         lines+=['<section><h3>样本 '+esc(sid)+'</h3>',
@@ -3303,7 +3520,17 @@ def q3_write_result_index(out,cohort,summary,media):
             '<p><strong>原始文本：</strong>'+esc(sample["raw_text"])+'</p>',
             '<p><a href="attachment4/samples/'+esc(sid)+'/evidence.json">详细解释与定位记录</a></p>',
             '<div class="grid"><img loading="lazy" src="attachment4/cards/'+sid+'_analysis.png">',
-            '<img loading="lazy" src="attachment4/cards/'+sid+'_media.png"></div>']
+            '<img loading="lazy" src="attachment4/cards/'+sid+'_media.png"></div>',
+            '<p><a href="attachment4/cards/'+sid+'_media.pdf">下载本样本媒体卡PDF</a></p>']
+        if sid in preview_catalog:
+            lines+=['<details><summary>查看待复核或原始参考画面的完整索引</summary><ul>']
+            for preview in preview_catalog[sid]:
+                asset=preview.get("asset")
+                if asset:
+                    lines.append('<li>'+esc(q3_zh_word(loc,preview["word"]))+'：'+
+                                 esc(preview["display_status_zh"])+'，视频 '+f'{asset["frame_pts_s"]:.3f}'+
+                                 ' 秒；<a href="attachment4/'+esc(asset["file"],quote=True)+'">查看原始尺寸截图</a></li>')
+            lines.append('</ul></details>')
         if sample["data_quality"].get("input_truncated"):
             lines.append('<p class="notice">本例输入存在截断。模型可见部分的中文释义：'+esc(loc["visible_text_zh"])+'。完整原文的其余部分不参与解释。</p>')
         if sample.get("acoustic_text_match_ratio") is not None and sample["acoustic_text_match_ratio"]<.5:
@@ -3459,6 +3686,261 @@ def q3_plot_error_contrast(out):
     return result
 
 
+def q3_overview_source(args, sample_id):
+    """Load and verify saved data for a task-specific original-media overview."""
+    sid=str(sample_id).zfill(2)
+    completion=Path(args.completion_root).resolve()
+    media_root=completion/"attachment4"
+    destination=(Path(args.output_dir).resolve() if args.output_dir else
+                 media_root/"figures"/("sample"+sid))
+    if not destination.is_relative_to(ROOT/"question3"):
+        raise ValueError("Overview outputs must remain inside question3")
+    destination.mkdir(parents=True,exist_ok=True)
+    report_path=Path(args.attachment4_report)
+    report=json.loads(report_path.read_text(encoding="utf-8"))
+    record=next(row for row in report["samples"] if row["id"]==sid)
+    evidence_path=media_root/"samples"/sid/"evidence.json"
+    evidence=json.loads(evidence_path.read_text(encoding="utf-8"))
+    alignment_path=media_root/evidence["alignment_file"]
+    alignment=json.loads(alignment_path.read_text(encoding="utf-8"))
+    words=[w for w in evidence["words"] if w["represented"] and w["full_word_represented"]]
+    if len(words)!=len(evidence["words"]):
+        raise ValueError("This overview requires all words to be represented; handle truncation explicitly")
+    valid=np.asarray(record["valid_mask"],bool)
+    content=np.asarray(record["content_mask"],bool)
+    special=np.flatnonzero(valid & ~content).tolist()
+    if len(special)!=2 or special[0]!=0 or special[-1]!=int(np.flatnonzero(valid)[-1]):
+        raise ValueError("Overview expects one starting and one ending special position")
+    with np.load(report_path.parent/"attributions.npz",allow_pickle=False) as z:
+        arrays={m:np.asarray(z[f"s{sid}_mean_{m}"],np.float64) for m in MODALITIES}
+    heat=np.zeros((2,3,len(words)+2),np.float64)
+    masses=np.zeros_like(heat)
+    for hi,head in enumerate(HEADS):
+        for mi,m in enumerate(MODALITIES):
+            if np.any(arrays[m][hi,~valid]):
+                raise ValueError("Nonzero padding attribution cannot be silently omitted")
+            heat[hi,mi,0]=arrays[m][hi,special[0]].sum()
+            heat[hi,mi,-1]=arrays[m][hi,special[1]].sum()
+            masses[hi,mi,0]=np.abs(arrays[m][hi,special[0]]).sum()
+            masses[hi,mi,-1]=np.abs(arrays[m][hi,special[1]]).sum()
+            for wi,w in enumerate(words):
+                value=sum(float(arrays[m][hi,slot].sum())*weight
+                          for slot,weight in zip(w["token_slots"],w["slot_weights"]))
+                mass=sum(float(np.abs(arrays[m][hi,slot]).sum())*weight
+                         for slot,weight in zip(w["token_slots"],w["slot_weights"]))
+                np.testing.assert_allclose(value,w["attribution_net"][head][m],rtol=1e-10,atol=1e-10)
+                np.testing.assert_allclose(mass,w["attribution_mass"][head][m],rtol=1e-10,atol=1e-10)
+                heat[hi,mi,wi+1]=value;masses[hi,mi,wi+1]=mass
+            np.testing.assert_allclose(heat[hi,mi].sum(),arrays[m][hi].sum(),rtol=1e-10,atol=1e-10)
+    base=record["baselines"]["mean"]
+    reference=np.asarray(base["coalitions"][0],float)
+    full=np.asarray(base["coalitions"][7],float)
+    phi=np.asarray(base["phi"],float)
+    np.testing.assert_allclose(reference+phi.sum(1),full,rtol=1e-12,atol=1e-12)
+    np.testing.assert_allclose(heat.sum(2),base["integrated_modality_totals"],rtol=1e-10,atol=1e-10)
+    if not all(w["start_s"] is not None and w["end_s"]>w["start_s"] for w in words):
+        raise ValueError("Overview requires observed word intervals")
+    limits=[max(float(np.abs(heat[h]).max()),1e-12) for h in range(2)]
+    columns=[{"label":"[CLS]","kind":"special","slot":special[0]}]
+    columns += [{"label":w["word"],"kind":"word","word_index":w["word_index"],
+                 "start_s":w["start_s"],"end_s":w["end_s"],"token_slots":w["token_slots"],
+                 "slot_weights":w["slot_weights"],"raw_char_span":w["raw_char_span"]} for w in words]
+    columns += [{"label":"[SEP]","kind":"special","slot":special[-1]}]
+    source={
+        "sample_id":sid,"baseline":"training_mean","prediction":record["prediction"],
+        "reference_output":reference.tolist(),"full_coalition_output":full.tolist(),
+        "signed_modality_shapley":phi.tolist(),"modality_shares":base["shares"],
+        "columns":columns,"heatmap_signed_net":heat.tolist(),"absolute_attribution_mass":masses.tolist(),
+         "heatmap_color_limits":{head:[-limits[h],limits[h]] for h,head in enumerate(HEADS)},"heatmap_modality_sums":heat.sum(2).tolist(),
+        "shapley_completeness_residual":(heat.sum(2)-phi).tolist(),
+        "source_feature_windows_recovered":False,
+        "time_mapping":"WhisperX post-hoc word intervals; no assigned media time for CLS/SEP",
+        "top_evidence":evidence["top_evidence"],
+        "source_files":{str(v):sha256(v) for v in
+            [report_path,report_path.parent/"attributions.npz",evidence_path,alignment_path]},
+        "video_start_s":alignment["video_pts_s"][0],
+        "video_end_s":alignment["video_frame_end_s"][-1],
+        "padding_positions_omitted":np.flatnonzero(~valid).tolist(),
+        "padding_attribution_exactly_zero":True}
+    q3_write_json(destination/(sid+"_overview_source_data.json"),source)
+    return destination,media_root,record,evidence,alignment,words,heat,source
+
+
+def q3_plot_sample_overview(args, sample_id):
+    """Draw separate target overviews from saved values and original media."""
+    from PIL import Image
+    from matplotlib.backends.backend_pdf import PdfPages
+    from matplotlib.colors import TwoSlopeNorm
+    from matplotlib.patches import Rectangle, Polygon
+    destination,media_root,record,evidence,alignment,words,heat,source=q3_overview_source(args,sample_id)
+    sid=record["id"]
+    plt=q3_plot_style()
+    modalities=list(MODALITIES)
+    modality_colors=["#3B6E8C","#BF8845","#5C8D78"]
+    translation=q3_zh_case(record)
+    gloss={"Replacing":"更换","these":"这些","wear":"磨损","components":"部件","when":"当……时",
+           "replacing":"更换","the":"该","timing":"正时","belt":"皮带","is":"是","essential":"至关重要",
+           "to":"以；用于","ensuring":"确保","new":"新的","performs":"发挥性能","its":"其",
+           "mileage":"使用里程","requirements":"要求"}
+    labels=["[CLS]\n起始标记"]+[w["word"]+"\n"+gloss.get(w["word"],translation["word_zh"].get(w["word"],w["word"]))
+                                    for w in words]+["[SEP]\n结束标记"]
+    column_by_word={w["word_index"]:i+1 for i,w in enumerate(words)}
+    ncol=len(labels)
+    cmap=plt.get_cmap("RdBu")
+    start=float(source["video_start_s"]);end=float(source["video_end_s"])
+    duration=end-start
+    outputs=[]
+    book_path=destination/(sid+"_attribution_overview.pdf")
+    with PdfPages(book_path) as book:
+        for hi,head in enumerate(HEADS):
+            limit=source["heatmap_color_limits"][head][1]
+            norm=TwoSlopeNorm(vmin=-limit,vcenter=0,vmax=limit)
+            fig=plt.figure(figsize=(13,7.5))
+            base=record["baselines"]["mean"]
+            phi=np.asarray(base["phi"][hi],float)
+            shares=np.asarray(base["shares"][hi],float)
+            reference=float(source["reference_output"][hi])
+            final=float(source["full_coalition_output"][hi])
+            title_head="情感极性分类" if head=="classification" else "情感强度回归"
+            main= q3_zh(modalities[int(np.argmax(shares))])
+            polarity=("负向","中性","正向")[record["prediction"]["class_index"]]
+            fig.text(.075,.920,f"预测：{polarity}    情感强度：{record['prediction']['regression']:+.3f}"
+                     f"    主要参考模态：{main}（{100*max(shares):.2f}%）",fontsize=10)
+            axes=[]
+            water=fig.add_axes([.075,.660,.260,.210]);axes.append(water)
+            water.set_title("模态贡献的加和分解",fontsize=10,pad=12)
+            running=reference
+            levels=[reference]
+            water.bar(0,reference,bottom=0,width=.63,color="#AFB3AC",edgecolor="#848A84",linewidth=.7)
+            water.annotate(f"{reference:+.4f}",(0,reference),xytext=(0,7 if reference>=0 else -10),
+                           textcoords="offset points",ha="center",va="bottom" if reference>=0 else "top",fontsize=8.5)
+            for mi,value in enumerate(phi):
+                previous=running;running+=float(value);levels.append(running)
+                water.bar(mi+1,float(value),bottom=previous,width=.63,
+                          color=modality_colors[mi],edgecolor=modality_colors[mi],linewidth=.8)
+                water.plot([mi+.315,mi+.685],[previous,previous],color="#909898",lw=.65,ls="--")
+                water.annotate(f"{value:+.4f}",(mi+1,running),xytext=(0,7 if value>=0 else -10),
+                               textcoords="offset points",ha="center",va="bottom" if value>=0 else "top",fontsize=8.5)
+            water.bar(4,final,bottom=0,width=.63,color="#424A4D",edgecolor="#424A4D",linewidth=.7)
+            water.plot([3.315,3.685],[final,final],color="#909898",lw=.65,ls="--")
+            water.annotate(f"{final:+.4f}",(4,final),xytext=(0,7 if final>=0 else -10),
+                           textcoords="offset points",ha="center",va="bottom" if final>=0 else "top",fontsize=8.5)
+            low=min(0,*levels,final);high=max(0,*levels,final);span=max(high-low,1e-3)
+            water.set_ylim(low-.25*span,high+.28*span)
+            water.set_xlim(-.6,4.6)
+            water.axhline(0,color="#C8CDCD",lw=.7,zorder=0)
+            water.set_xticks(range(5),["参考\n输入"]+
+                [q3_zh(m)+f"\n{100*shares[i]:.2f}%" for i,m in enumerate(modalities)]+["完整\n输入"])
+            water.tick_params(axis="both",labelsize=8)
+            winner=("负向","中性","正向")[record["prediction"]["class_index"]]
+            runner=("负向","中性","正向")[record["prediction"]["runnerup_index"]]
+            water.set_ylabel(f"{winner}相对{runner}的得分差" if hi==0 else "情感强度分数",fontsize=9)
+            frame_grid=fig.add_gridspec(1,3,left=.405,right=.965,bottom=.648,top=.87,wspace=.10)
+            frame_records=[]
+            for j,item in enumerate(evidence["top_evidence"][head]["vision"]):
+                asset=item.get("asset")
+                if not asset: raise ValueError("Overview needs the original ranked frame asset")
+                ax=fig.add_subplot(frame_grid[0,j]);axes.append(ax)
+                with Image.open(media_root/asset["file"]) as image:
+                    raw=np.asarray(image)
+                    ax.imshow(raw,interpolation="none")
+                    ax.set_box_aspect(image.height/image.width)
+                ax.set_anchor("N");ax.set_axis_off()
+                ax.set_title(f"视觉关键帧 {j+1}",fontsize=10,pad=12)
+                word_label=q3_zh_word(translation,item["word"])
+                ax.text(.5,-.07,word_label+f"\n{asset['frame_pts_s']:.3f}秒｜第{asset['decoded_frame_index']}帧",
+                        transform=ax.transAxes,ha="center",va="top",fontsize=8.5,linespacing=1.5)
+                frame_records.append({"rank":item["rank"],"word_index":item["word_index"],"word":item["word"],
+                    "asset":asset["file"],"asset_sha256":sha256(media_root/asset["file"]),
+                    "frame_pts_s":asset["frame_pts_s"],"frame_index":asset["decoded_frame_index"]})
+            axh=fig.add_axes([.075,.425,.89,.115]);axes.append(axh)
+            mesh=axh.pcolormesh(np.arange(ncol+1),np.arange(4),heat[hi],cmap=cmap,norm=norm,
+                               edgecolors="#FFFFFF",linewidth=.5,shading="flat")
+            axh.set_xlim(0,ncol);axh.set_ylim(3,0)
+            axh.set_xticks(np.arange(ncol)+.5,labels,rotation=90,ha="right",va="center",rotation_mode="anchor",fontsize=7.5)
+            axh.set_yticks(np.arange(3)+.5,["文本","语音","视觉"],fontsize=9)
+            axh.tick_params(axis="both",length=0,pad=6)
+            for tick,color in zip(axh.get_yticklabels(),modality_colors):tick.set_color(color)
+            for spine in axh.spines.values():spine.set_visible(False)
+            for mi,m in enumerate(modalities):
+                for item in evidence["top_evidence"][head][m]:
+                    col=column_by_word[item["word_index"]]
+                    axh.add_patch(Rectangle((col+.045,mi+.045),.91,.91,fill=False,
+                                            edgecolor="#222B30",linewidth=1.3))
+            axh.set_title("三模态局部归因",loc="left",fontsize=10,pad=12)
+            cbax=fig.add_axes([.783,.568,.182,.012])
+            colorbar=fig.colorbar(mesh,cax=cbax,orientation="horizontal")
+            colorbar.set_ticks([-limit,0,limit],labels=[f"{-limit:.3f}","0",f"{limit:.3f}"])
+            colorbar.ax.tick_params(labelsize=7.5,length=2,pad=2)
+            colorbar.outline.set_linewidth(.4)
+
+            # fig.text(.783,.591,"净贡献：红色为负，蓝色为正",fontsize=8)
+
+            axt=fig.add_axes([.075,.115,.89,.150]);axes.append(axt)
+            axt.set_xlim(start,end);axt.set_ylim(-.02,1.02)
+            for wi,w in enumerate(words):
+                col=wi+1
+                left=start+col/ncol*duration;right=start+(col+1)/ncol*duration
+                axt.add_patch(Polygon([(left,1),(right,1),(w["end_s"],.61),(w["start_s"],.61)],
+                                     closed=True,facecolor="#DFE9EF",edgecolor="white",linewidth=.55,alpha=.85))
+                axt.add_patch(Rectangle((w["start_s"],.0),w["end_s"]-w["start_s"],.265,
+                                       facecolor="#EDF2F4",edgecolor="white",linewidth=.55))
+            for mi,m in enumerate(("audio","text")):
+                band_y=.015 if m=="audio" else .145
+                color=modality_colors[modalities.index(m)]
+                for item in evidence["top_evidence"][head][m]:
+                    axt.add_patch(Rectangle((item["start_s"],band_y),
+                                            item["end_s"]-item["start_s"],.105,
+                                            facecolor=color+"30",edgecolor=color,linewidth=1.25))
+            for item in frame_records:
+                t=item["frame_pts_s"]
+                axt.scatter([t],[.34],marker="v",s=34,color=modality_colors[2],zorder=5)
+                axt.text(t,.43,str(item["rank"]),ha="center",va="bottom",fontsize=8.5,
+                         color="#356851",zorder=6)
+            axt.set_yticks([.1975,.0675],["文本","语音"],fontsize=8)
+            axt.tick_params(axis="y",length=0,pad=7)
+            axt.set_xticks(np.arange(int(np.ceil(start)),int(np.floor(end))+1))
+            axt.tick_params(axis="x",labelsize=8)
+            axt.set_xlabel("原始视频时间（秒）",fontsize=9,labelpad=5)
+            for side in ["top","right","left"]:axt.spines[side].set_visible(False)
+            axt.spines["bottom"].set_color("#98A5AB")
+            fig.text(.075,.295,"WhisperX 词语时间对应",fontsize=10)
+            # fig.text(.51,.295,"蓝框：文本前三｜橙框：语音前三｜绿标：视觉前三帧",fontsize=8.5)
+            # target_note=(f"分类解释目标为“{winner}相对{runner}的得分差”；正贡献增大该差值，负贡献减小该差值。"
+            #              if hi==0 else "回归解释目标为情感强度分数；正贡献提高分数，负贡献降低分数。")
+            # fig.text(.075,.045,target_note+"同图三模态共用色标；两任务数值不直接比较。",fontsize=7.5)
+            # fig.text(.075,.019,"起始、结束标记参与归因但不对应媒体时间；连带表示词语时间对应，不代表缓存特征的原始提取窗口。",fontsize=7.5)
+            prefix=destination/(sid+"_"+head+"_overview")
+            fig.canvas.draw()
+            alignment_report=q3_alignment_auditor()(fig,json_out=prefix.with_suffix(".alignment.json"),
+                tolerance_pt=1.5,gutter_tolerance_pt=1.5,require_panel_labels=False,strict=True,
+                axes=axes,panel_ids=list("abcdef"),row_groups=[["b","c","d"]],column_groups=[["e","f"]])
+            fig.savefig(prefix.with_suffix(".pdf"))
+            fig.savefig(prefix.with_suffix(".svg"))
+            fig.savefig(prefix.with_suffix(".png"),dpi=360)
+            book.savefig(fig)
+            metadata={"sample_id":sid,"head":head,"size_inches":[13,7.5],"dpi":360,
+                      "source_sha256":sha256(__file__),"source_data":sid+"_overview_source_data.json",
+                      "heatmap_columns":ncol,"heatmap_signed_net":heat[hi].tolist(),
+                      "reference_output":reference,"signed_shapley":phi.tolist(),"full_output":final,
+                      "frames":frame_records,"alignment_verdict":alignment_report["verdict"],
+                      "rendered_text":[t.get_text() for t in fig.findobj(match=__import__("matplotlib").text.Text)
+                                       if t.get_visible() and t.get_text()],
+                      "formats":["pdf","svg","png"],"prediction_values_unchanged":True,
+                      "image_processing":"original frames; no crop or enhancement",
+                      "color_limits":source["heatmap_color_limits"][head],"special_positions_mapped_to_time":False}
+            q3_write_json(prefix.with_suffix(".figure.json"),metadata)
+            outputs.append({"head":head,"stem":prefix.name,"frames":frame_records})
+            plt.close(fig)
+    q3_write_json(destination/(sid+"_overview_manifest.json"),
+        {"status":"rendered_pending_qa","sample_id":sid,"source_sha256":sha256(__file__),
+         "source_data":sid+"_overview_source_data.json","outputs":outputs,"combined_pdf":book_path.name,
+         "reproduce_command":f"{sys.executable} -B {Path(__file__).resolve()} --sample-overview {sid}",
+         "previous_cards_modified":False})
+    print("OVERVIEW_RENDERED="+str(destination),flush=True)
+    return outputs
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--checkpoint", type=Path, default=DEFAULT_CHECKPOINT)
@@ -3486,7 +3968,11 @@ def main():
     parser.add_argument("--alignment-min-score",type=float,default=0.5)
     parser.add_argument("--evidence-topk",type=int,default=3)
     parser.add_argument("--media-sample-ids",nargs="*")
+    parser.add_argument("--sample-overview", help="Draw separate classification/regression media overviews for a saved sample ID.")
+    parser.add_argument("--completion-root", type=Path, default=ROOT/"question3/completion_20260926")
     args = parser.parse_args()
+    if args.sample_overview:
+        return q3_plot_sample_overview(args,args.sample_overview)
     if args.complete_q3:
         return q3_completion_main(args)
     if args.ig_steps < 2 or args.max_steps < 2*args.ig_steps or args.grad_batch < 1:

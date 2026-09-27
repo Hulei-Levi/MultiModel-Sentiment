@@ -33,3 +33,14 @@ Thumbs.db
 experiments/
 *.npy
 *.npz
+
+# 运行输出 / 实验产物
+question3/completion_*/
+question3/waterfall_results/qa/
+question3/waterfall_results/*/
+*.npy
+*.npz
+*.pkl
+*.pt
+*.pth
+*.ckpt
