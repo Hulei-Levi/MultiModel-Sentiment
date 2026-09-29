@@ -14,6 +14,20 @@
 
 以下数值来自当前服务器保存的实验报告。完整输入、受扰输入、验证集诊断和无标签附件的统计分别呈现。
 
+## 核心代码快速导航
+
+如果第一次阅读项目，先按下面的入口查看，再进入各问的脚本职责表。表中的结果目录指**当前已保存的实验批次**，新运行的输出位置由实际配置决定。
+
+| 想了解的问题 | 建议首先打开 | 接着看什么 |
+| --- | --- | --- |
+| 第一问：如何把原始媒体变成对齐特征？ | [extract_this_work.py](question1/extract_this_work.py) 的 `extract_sample()` | `align_words()` → 各模态特征函数 → `pool_intervals()`；[第一问脚本导航](#q1-code) |
+| 第二问：本文模型如何训练和预测？ | [second_question_ourwork.ipynb](question2/second_question_ourwork.ipynb) | [attention_models.py](multimodal_suite/attention_models.py) 的 `ThisWork` → [multitask_runtime.py](multimodal_suite/multitask_runtime.py)；[第二问脚本导航](#q2-code) |
+| 第二问：缺失数据如何修复、怎样比较前后效果？ | [train_recap_reconstructor.py](question2/train_recap_reconstructor.py) 的 `RECAPReconstructor` | [evaluate_reconstructed_this_work.py](question2/evaluate_reconstructed_this_work.py)，再看单模态与位置消融入口 |
+| 第三问：贡献值与关键证据怎样计算？ | [explain_this_work.py](question3/explain_this_work.py) 的 `run_analysis()` | `shapley_from_coalitions()` → `conditional_ig()` → 干预与媒体定位；[第三问脚本导航](#q3-code) |
+| 只想查看／重画一个样本的解释图？ | [plot_sample_waterfall.py](question3/plot_sample_waterfall.py) | 读取已有归因与媒体，生成分类、回归综合图，不重新推理或训练 |
+
+**区分三个层次：**Notebook 负责组织实验；`multi_fusion_model/this_work.py` 提供导入接口；真正的 ThisWork 网络与训练实现分别位于 `multimodal_suite/attention_models.py` 和 `multimodal_suite/multitask_runtime.py`。已有结果放在 `results/` 和第三问的输出目录中，不能将这些目录当作模型源码入口。
+
 ## 数据与任务设置
 
 | 数据 | 用途 | 当前规模与形式 |
@@ -37,6 +51,19 @@ text_bert  [ 3,  50]   token IDs、attention mask、token type IDs
 第一问重新提取的特征为词级变长序列，其音视频维度与上述预提取特征不同。两条数据流程分别保存；第一问的新特征不能直接送入当前按 `768/74/35` 维训练的最优权重。
 
 ## 第一问：词级对齐与特征提取
+
+<a id="q1-code"></a>
+
+### 核心脚本与结果对应
+
+**推荐顺序：**先读完整提取器的 `extract_sample()`，理解输入到输出的流程；需要单独查看强制对齐和异常复核规则时，再读 `first_question.py`。
+
+| 脚本 | 负责的工作与核心函数 | 对应的主要结果 |
+| --- | --- | --- |
+| [question1/extract_this_work.py](question1/extract_this_work.py) | 完整特征提取主入口。`extract_sample()` 串起流程；`align_words()` 生成词级时间区间；`text_features()`、`audio_features()`、`visual_features()` 提取三模态特征；`pool_intervals()` 按时间重叠汇聚；`video_frame_budget()` 控制采帧预算 | 每样本 `samples/*.npz` 与 `samples/*.json`、批次 `summary.csv` 和 `run_config.json`；对应本节 100 条样本与 6,553 帧的完整动态提取结果 |
+| [question1/first_question.py](question1/first_question.py) | 独立词级对齐工具。`process()` 组织单样本处理；`align_characters()` 完成 CTC 对齐；`media_timeline()`、`frame_ids()` 关联原始视频时间轴与帧索引 | [results/word_alignment/](results/word_alignment/) 中的 `summary.csv`、`words.csv` 与逐样本 JSON；用于检查对齐覆盖与待复核词项 |
+
+两个脚本都可以直接读取原始媒体和文本。完整提取器内部会执行对齐，不要求先运行 `first_question.py`，也不读取后者的输出作为中间输入。
 
 ### 方法
 
@@ -65,6 +92,59 @@ text_bert  [ 3,  50]   token IDs、attention mask、token type IDs
 - 当前完整动态提取批次保存在仓库外：`/data_disk/disk_1/lhx/huawei_cup/q1/20260926_dynamic/outputs/runs/q1_dynamic_all100_20260926_01/`，统计来源为其中的 `run_config.json`、`summary.csv` 和 `samples/`。
 
 ## 第二问：双任务情感预测与缺失重构
+
+<a id="q2-code"></a>
+
+### 核心脚本与结果对应
+
+**推荐顺序：**先看 ThisWork Notebook 中的数据与配置，再看网络和训练代码；需要理解抗缺失结果时，依次阅读扰动生成、重构模型和下游评估。
+
+#### 预测模型与训练
+
+| 文件 | 负责的工作与定位点 | 对应的主要结果 |
+| --- | --- | --- |
+| [second_question_ourwork.ipynb](question2/second_question_ourwork.ipynb) | 本文模型的实验组织入口：读取附件二，设置 `ThisWorkConfig`，调用 `fit_this_work_experiment()` | [results/second_question/this_work/](results/second_question/this_work/) 下的训练记录、最佳权重、分类／回归指标与预测 |
+| [multi_fusion_model/this_work.py](multi_fusion_model/this_work.py) | 面向 Notebook 和推理脚本的公共接口，导出 `Config`、`Model`、`fit_experiment()`、`load_experiment_model()`、`predict_split()` | 本文件主要转导出实现；调用现有模型时从这里导入 |
+| [attention_models.py](multimodal_suite/attention_models.py) | 网络主体。`ThisWork` 定义双任务模型；`_ResidualSequenceEncoder` 实现模态内编码；`_BidirectionalPairFusion` 与 `_CascadeFusion` 实现跨模态融合 | 决定 ThisWork 的网络结构、前向输出和辅助重建分支 |
+| [multitask_runtime.py](multimodal_suite/multitask_runtime.py) | 联合训练与推理。`fit_experiment()` 组织预训练和监督训练；`compute_task_losses()` 计算分类／回归损失；`selection_score()` 选优；`predict_split()` 执行预测 | `best.pt`、`history.json`、`metrics.json`、`valid/test_predictions.*` |
+| [common.py](multimodal_suite/common.py) | 公共网络工具：`ProjectedInputs`、`SafeAttention`、`masked_mean()`，用于投影、掩码注意力和池化 | 无独立实验输出；排查输入维度或全缺失分支时查看 |
+| [weighted_sum_fusion.py](multi_fusion_model/weighted_sum_fusion.py) | 同时包含被其他模型复用的数据工具：`resolve_masks()`、`fit_normalizers()`、`FeatureDataset` | 查有效掩码、训练集标准化和数据装载逻辑时查看 |
+
+[分类对比 Notebook](question2/second_question_classfication.ipynb) 和 [分类／回归对比 Notebook](question2/second_question_classfication_regression.ipynb) 负责比较模型的配置与调用；后者也包含 ThisWork 的实验单元。历史基线结果分别保存在 [calssification/](results/second_question/calssification/) 和 [regression/](results/second_question/regression/)（前者保留已有目录拼写）。
+
+<details>
+<summary>其他比较模型：网络实现位置</summary>
+
+| 模型 | 主要网络文件／类 |
+| --- | --- |
+| Weighted Sum | [weighted_sum_fusion.py](multi_fusion_model/weighted_sum_fusion.py)：`WeightedSumFusion` |
+| Poria / bc-LSTM | [context_lstm_fusion.py](multi_fusion_model/context_lstm_fusion.py)：`ContextLSTMFusion` |
+| Ren、Zheng、Pan | [attention_models.py](multimodal_suite/attention_models.py)：`Ren2021Model`、`Zheng2022Model`、`Pan2020Model` |
+| MFRM、TransModality | [memory_translation.py](multimodal_suite/memory_translation.py)：`MFRM2022Model`、`TransModality2020Model` |
+| M3ER、MEmoBERT、HyCon | [robust_pretraining.py](multimodal_suite/robust_pretraining.py)：`M3ER2020Model`、`MEmoBERT2022Model`、`HyCon2022Model` |
+| EMOE | [emotion_experts.py](multimodal_suite/emotion_experts.py)：`EMOE2025Model` |
+| CaReFlow | [rectified_flow.py](multimodal_suite/rectified_flow.py)：`CaReFlow2026Model` |
+
+各模型的调用入口位于 [multi_fusion_model/](multi_fusion_model/) 对应的 `*_fusion.py` 文件；公共单任务运行逻辑位于 [runtime.py](multimodal_suite/runtime.py)。Poria、Pan 等带专门分阶段训练的实现还在各自入口文件中定义训练流程。
+
+</details>
+
+#### 扰动、重构与鲁棒性评估
+
+| 脚本 | 负责的工作与定位点 | 对应的主要结果 |
+| --- | --- | --- |
+| [bert_feature_adapter.py](question2/bert_feature_adapter.py) | `fit_experiment()` 拟合 BERT 输出到既有文本特征空间的线性映射；`BertTextAdapter.encode_text_bert()`、`load_adapter()` 提供编码接口 | [experiments/bert_feature_adapter/](experiments/bert_feature_adapter/) 下的 `adapter.pt` 和适配评估 |
+| [generate_perturbed_dataset.py](question2/generate_perturbed_dataset.py) | `generate_datasets()` 组织生成；`make_corruption_mask()`、`perturb_split()` 添加同步扰动；`encode_split()` 重新编码受扰文本 | [datasets/附件2-同步扰动特征/](datasets/附件2-同步扰动特征/) 中的特征 PKL、缺失掩码和生成记录 |
+| [train_recap_reconstructor.py](question2/train_recap_reconstructor.py) | 六种重构方法的统一实现与训练。`RECAPReconstructor` 是本文模型；`BaseReconstructor` 规定共同输入输出；`train()`、`evaluate()` 训练并评估重建质量；`ReconstructionBundle.reconstruct()` 提供修复接口 | `results/second_question/*_reconstruction/` 下的权重、重建误差和报告；本脚本不负责下游情感任务评估 |
+| [evaluate_this_work_perturbations.py](question2/evaluate_this_work_perturbations.py) | `main()` 加载冻结 ThisWork，直接预测受扰测试集；`compare_historical()` 核对完整输入基准 | [this_work_robustness/](results/second_question/this_work_robustness/)：未重构条件的分类／回归指标和预测 |
+| [evaluate_reconstructed_this_work.py](question2/evaluate_reconstructed_this_work.py) | `main()` 串联“冻结重构器 → 冻结 ThisWork”；`check_restoration()` 检查修复范围；`metrics()` 计算下游指标 | [this_work_reconstruction_evaluation/](results/second_question/this_work_reconstruction_evaluation/) 及指定的其他方法评估目录：修复后的下游预测与效果比较 |
+| [single_modality_robustness.py](question2/single_modality_robustness.py) | `run_experiment()` 训练单模态受扰版本；`SingleModalityRECAP`、`apply_corruption()` 保持未受扰模态；`evaluate_test()` 评估；`reconstruction_metrics()` 统计误差；`recompute_reconstruction_mae()` 对应补算 MAE 的 `reconstruction-mae` 入口 | [single_modality_robustness/](results/second_question/single_modality_robustness/)：文本／音频／视觉分别受扰的重建与预测结果 |
+| [evaluate_missing_positions.py](question2/evaluate_missing_positions.py) | `position_mask()` 生成首／中／尾连续缺失；`worker()` 执行冻结模型比较；`aggregate()` 汇总 | [missing_position_ablation/](results/second_question/missing_position_ablation/)：`summary.csv`、三种位置对照表、`comparison_tables.tex` 和报告 |
+| [infer_attachment3_aligned.py](question2/infer_attachment3_aligned.py) | 附件三实际推理入口。`load_inputs()` 读取样本；`infer_masks()` 识别缺失标记；`main()` 串联编码、重构与 ThisWork | [attachment3_aligned_inference/](results/second_question/attachment3_aligned_inference/)：30 条样本的预测 CSV、掩码与统计报告 |
+
+**复现范围说明：**两个 `evaluate_*this_work*` 脚本中的 `LEVELS` 当前固定为 `(0, 10, 20, 30)`。40%／50% 的历史追加测试及 `comparison_all_rates.csv` 已保存在 [frozen_high_missing_evaluation/](results/second_question/frozen_high_missing_evaluation/)，当前仓库未保留单独的一键生成该整合表的脚本。位置实验中的 `position_before_after.csv` 是主实验之后补充整理的结果，也不是 `aggregate()` 直接生成的文件。
+
+`generate_perturbed_dataset.py` 和上述两个评估脚本迁移到 `question2/` 后，部分默认数据／结果路径仍按脚本目录拼接；复现时应显式传入项目根目录下的数据、权重和输出路径。这里的导航用于定位现有实现，不意味着直接使用所有默认参数就能复现每份历史结果。
 
 ### ThisWork：共享融合表示，分别预测类别与强度
 
@@ -173,6 +253,33 @@ ThisWork 自身的预处理 → 分类与回归
 成果：[预测 CSV](results/second_question/attachment3_aligned_inference/run_20260926T172935_071166Z/predictions.csv)、[推理报告](results/second_question/attachment3_aligned_inference/run_20260926T172935_071166Z/report.md)。
 
 ## 第三问：分层归因与关键证据追踪
+
+<a id="q3-code"></a>
+
+### 核心脚本与结果对应
+
+**推荐顺序：**先看 `run_analysis()` 理解单样本解释如何产生，再看 Shapley 与积分梯度；需要完整验证分析与媒体证据时，继续看 `q3_completion_main()`。只需重画已有样本图时，可直接使用独立绘图脚本。
+
+主流程和算法集中在 [question3/explain_this_work.py](question3/explain_this_work.py)，可按下面的函数名直接定位：
+
+| 想查看的内容 | 核心函数／入口 | 对应的主要结果 |
+| --- | --- | --- |
+| 附件四全量预测与归因 | `main()` → `run_analysis()` | [attachment4_all_20260925T152718_260737Z/](question3/attachment4_all_20260925T152718_260737Z/) 中的 `analysis_report.json` 和 `attributions.npz` |
+| 模态贡献如何计算 | `scalar_outputs()` 固定解释目标；`coalition_predictions()` 枚举组合；`shapley_from_coalitions()` 计算 Shapley | 分类／回归模态贡献、组合预测与总体作用度 |
+| 时间步和特征维度如何归因 | `integrate_edge()`、`conditional_ig()` | `attributions.npz` 中的局部归因及数值收敛记录 |
+| 解释是否符合模型响应 | `deletion_check()`、`word_validation()` | 位置替换、整词替换记录，以及验证集的 `diagnostic_occlusion.csv` |
+| 728 条验证样本与 60 条详细诊断 | `q3_completion_main()` 调度；`q3_validation_prepare()`、`q3_select_diagnostic_cases()`、`q3_validation_details()`、`q3_validation_summary()` 计算与汇总 | [completion_20260926/validation/](question3/completion_20260926/validation/) 中的全量预测、诊断样本、逐例归因和分析汇总 |
+| 归因怎样对应词语、音频与视频 | `q3_build_attachment4_evidence()`、`q3_media_word_mapping()`、`q3_media_export_asset()` | [completion_20260926/attachment4/](question3/completion_20260926/attachment4/) 下的对齐 JSON、音频片段、视频帧与关键证据 CSV |
+| 完整图表与结果汇编 | `q3_make_completion_figures()`、`q3_plot_validation()`、`q3_plot_attachment4()`、`q3_write_result_index()` | 综合结果索引、中文表格、验证和附件四解释卡 PDF |
+
+`--complete-q3` 流程以**已有附件四归因报告**为前置输入，通过 `--completion-stage prepare/details/media/figures` 分阶段组织验证分析、媒体证据和图表；它不会自动重算前面的附件四归因。当前对应成果为 [completion_20260926/](question3/completion_20260926/)。
+
+独立绘图入口为 [question3/plot_sample_waterfall.py](question3/plot_sample_waterfall.py)：`main()` → `q3_overview_source()` → `q3_plot_sample_overview()`，默认输出至 [question3/waterfall_results/](question3/waterfall_results/) 的 `sampleXX/`，每个样本分别生成分类、回归综合图及合并 PDF。它只读取已有归因、对齐记录与媒体，不加载 ThisWork，不重新计算 IG，也不重新执行对齐。
+
+```bash
+# 从项目根目录重画附件四第 1 个样本，要求已有对应归因和媒体结果
+.venv-align/bin/python -B question3/plot_sample_waterfall.py 1
+```
 
 ### 方法
 
